@@ -1,7 +1,7 @@
 # LukeDinsdale
 Freelance project working with an experienced copywriter, creative director, and UX designer to create a portfolio website.
 
-##Notes from the VC
+## Notes from the VC
 
 Josh, Abbey, Luke 
 
@@ -23,4 +23,4 @@ MileStone day: 23rd July (1 day before they present at school) We shall arrange 
 
 30% deposit
 
-###Jana to supply price breakdown by Friday morning
+### Jana to supply price breakdown by Friday morning
