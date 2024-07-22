@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "some title",
+        "smp": "some text",
+        "insight": "some more text",
+        "imgUrl": ""
+    },
+    {
+        "id": 2,
+        "title": "some title",
+        "smp": "some text",
+        "insight": "some more text",
+        "imgUrl": ""
+    },
+    {
+        "id": 3,
+        "title": "some title",
+        "smp": "some text",
+        "insight": "some more text",
+        "imgUrl": ""
+    },
+    {
+        "id": 4,
+        "title": "some title",
+        "smp": "some text",
+        "insight": "some more text",
+        "imgUrl": ""
+    },
+    {
+        "id": 5,
+        "title": "some title",
+        "smp": "some text",
+        "insight": "some more text",
+        "imgUrl": ""
+    },
+    {
+        "id": 6,
+        "title": "some title",
+        "smp": "some text",
+        "insight": "some more text",
+        "imgUrl": ""
+    },
+    {
+        "id": 7,
+        "title": "some title",
+        "smp": "some text",
+        "insight": "some more text",
+        "imgUrl": ""
+    },
+    {
+        "id": 8,
+        "title": "some title",
+        "smp": "some text",
+        "insight": "some more text",
+        "imgUrl": ""
+    },
+    {
+        "id": 9,
+        "title": "some title",
+        "smp": "some text",
+        "insight": "some more text",
+        "imgUrl": ""
+    },
+    {
+        "id": 10,
+        "title": "some title",
+        "smp": "some text",
+        "insight": "some more text",
+        "imgUrl": ""
+    }
+]
