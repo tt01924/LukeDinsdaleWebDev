@@ -119,7 +119,7 @@ const App = () => {
           );
         })}
       </div>
-      <button onClick={moveToEnd}>next</button>
+      <button style={{position: "fixed", bottom: 10}} onClick={moveToEnd}>next</button>
     </div>
   );
 };
