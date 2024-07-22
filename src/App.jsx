@@ -109,7 +109,7 @@ const App = () => {
                   initial={{y: 5}} 
                   style={{backgroundImage: `url(${record})`, y: transformedX}} 
                  ></motion.div>
-                <div className="inner" style={{backgroundImage: `url(${sleeveBack})`,}}>
+                <div className="inner" style={{backgroundImage: `url("${sleeveBack}")`,}}>
                   <h3 style={{gridArea: "title"}}>{el.title}</h3>
                   <p style={{gridArea: "insight"}}>{el.insight}</p>
                   <p style={{gridArea: "smp"}}>{el.smp}</p>
