@@ -4,42 +4,45 @@
         "title": "some title",
         "smp": "some text",
         "insight": "some more text",
-        "imgUrl": ""
+        "imgUrl": "src/assets/vinylCoverImages/AL White Stripes Cover Sleeve.jpg"
     },
     {
         "id": 2,
-        "title": "some title",
-        "smp": "some text",
-        "insight": "some more text",
-        "imgUrl": ""
+        "title": "Brut",
+        "smp": "Smell unflappable.",
+        "insight": "You sweat more in high pressure situations, which makes you smell.",
+        "imgUrl": "src/assets/vinylCoverImages/Brut Bruce Springsteen.jpg",
+        // Added endline also - this needs to be linked in!
+        "endline": "Smell Unflappable"
     },
     {
         "id": 3,
-        "title": "some title",
-        "smp": "some text",
-        "insight": "some more text",
-        "imgUrl": ""
+        "title": "Chase Bank",
+        "smp": "bank more American.",
+        "insight": "Brits are uncomfortable talking about money, but Americans aren't.",
+        "imgUrl": "src/assets/vinylCoverImages/Chase Foo Fighters.jpg"
     },
     {
         "id": 4,
         "title": "some title",
         "smp": "some text",
         "insight": "some more text",
-        "imgUrl": ""
+        "imgUrl": "src/assets/vinylCoverImages/Coke Green Day.jpg"
     },
     {
         "id": 5,
-        "title": "some title",
-        "smp": "some text",
-        "insight": "some more text",
-        "imgUrl": ""
+        "title": "Eurostar",
+        "smp": "See things you wouldn’t see from the air",
+        "insight": "You miss detailed scenery when you travel by plane.",
+        "imgUrl": "src/assets/vinylCoverImages/eurostar blur.jpg",
+        "endline": "Take a more scenic route."
     },
     {
         "id": 6,
         "title": "some title",
         "smp": "some text",
         "insight": "some more text",
-        "imgUrl": ""
+        "imgUrl": "src/assets/vinylCoverImages/Extra Nirvana Baby.jpg"
     },
     {
         "id": 7,
