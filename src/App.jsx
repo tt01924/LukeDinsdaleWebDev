@@ -1,4 +1,4 @@
-import {useState, useRef} from "react";
+import {useState} from "react";
 import { motion } from "framer-motion";
 import data from "./data.json"
 import "./App.css"
@@ -9,6 +9,8 @@ import { useTransform } from "framer-motion";
 import { useFollowPointer } from "./useFollowPointer";
 import ExpandedItem from "./Components/ExpandedItem";
 import { AnimatePresence } from "framer-motion";
+import { usePresence } from "framer-motion";
+import { stagger } from "framer-motion";
 
 const OFFSET = 35;
 const SCALE_FACTOR = 0.05;
@@ -18,11 +20,8 @@ const App = () => {
   const [clicked, setClicked] = useState(false)
   const [expanded, setExpanded] = useState(null)
   const [scope, animate] = useAnimate();
+  const [isPresent, safeToRemove] = usePresence();
   // const {x} = useFollowPointer(ref)
-  console.log("clicked:", clicked)
-  console.log("expanded:", expanded?.id)
-
-
   // const transformedX = useTransform(x,[-10000,-500,0,500,1200],[5,5, -120, -250,-350])
 
   const moveToEnd = () => {
@@ -76,22 +75,36 @@ const App = () => {
   }
 
   const expand = (element) => {
-    console.log("aaa i'm expanding")
-    console.log("clicked:", clicked)
-    console.log("expanded:", expanded?.id)
     if(expanded) {
       setExpanded(null)
     } else {
-      setExpanded(element)
-      setClicked(false)
+      animate([
+        [".card:nth-child(n+2)",{x: 100, opacity: 0},{duration: 0.3,delay: stagger(0.05, {from: "last"}), ease: "circOut"} ],
+        [".card:nth-child(1) .record-image", {y: 5},{duration: 0.3, at: "<"}],
+        [".card:nth-child(1)",{rotateY: 0},{duration: 0.5}]
+      ]).then(() => {
+        setExpanded(element)
+        setClicked(false)
+        safeToRemove();
+      })
     }
   }
 
   return (
     <AnimatePresence>
     {expanded ? <ExpandedItem key="expanded" setExpanded={setExpanded} data={expanded} /> : 
-    <div style={wrapperStyle} key="stack">
-      <div ref={scope} style={cardWrapStyle}>
+    <motion.div style={wrapperStyle} key="stack"  ref={scope}
+      // initial={{opacity: 0, y: -300 }}
+      // animate={{opacity: 1, x: 0, y: 0}}
+      // exit={{opacity: 0, x: 500}}
+      // transition={{duration: 0.3}}
+    >
+      <motion.div style={cardWrapStyle}
+        initial={{opacity: 0, x: -300 }}
+        animate={{opacity: 1, x: 0, y: 0}}
+        // exit={{opacity: 0, x: 500}}
+        transition={{duration: 0.3, staggerChildren: 0.1 }}
+      >
         {cards.map((el, index) => {
           return <motion.div
               key={el.id}
@@ -144,9 +157,9 @@ const App = () => {
         // }
         // </>
         })}
-      </div>
+      </motion.div>
       <button style={{position: "fixed", bottom: 10}} onClick={moveToEnd}>next</button>
-    </div>}
+    </motion.div>}
     </AnimatePresence>
   );
 };

@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-// import sleeveBack from "../assets/sleeve_back.svg";
 // import record from "../assets/record.png"
 import {motion} from "framer-motion"
 import "./ExpandedItem.css"
 import { usePresence } from "framer-motion";
 import { useAnimate } from "framer-motion";
 import { useEffect } from "react";
+import { stagger } from "framer-motion";
 
 const ExpandedItem = ({data, setExpanded}) => {
     // const transformedX = useTransform(x,[-10000,-500,0,500,1200],[5,5, -120, -250,-350])
@@ -16,9 +16,10 @@ const ExpandedItem = ({data, setExpanded}) => {
       if(!isPresent) {
         const exitAnimation = async () => {
           await animate([
-            [".expandedview__textcontainer", {y:100, opacity: 0}, {duration: 0.2, ease: "circInOut"}],
+            [".expandedview__textcontainer > *", {y:100, opacity: 0}, {duration: 0.2, ease: "easeInOut", delay: stagger(0.05,{from: "last"})}],
             [".expandedview__image", {
-              y: 100
+              y: 100,
+              scale: 0.8,
             }, {duration: 0.5, ease: "easeInOut", at: "<"}],
             [
               scope.current, {opacity: 0}, {duration: 0.5}
@@ -55,10 +56,13 @@ const ExpandedItem = ({data, setExpanded}) => {
           <div className="expandedview__wrapper">
             <motion.div 
               className="expandedview__image"
-              style={{}}
-              initial={{rotate: 15, y: 30}}
-              animate={{rotate: 0, y: 30}}
-              transition={{type: "spring", duration: 0.5}}
+              style={{
+                backgroundColor: `hsl(${data.id * 41}, 60%, 70%)`,
+                backgroundImage: data.imgUrl, 
+                backgroundSize: "cover"}}
+              initial={{rotate: 15, y: 100}}
+              animate={{rotate: 0, y: 0}}
+              transition={{type: "spring", duration: 0.8}}
               />
             <motion.div 
               className="expandedview__textcontainer"
