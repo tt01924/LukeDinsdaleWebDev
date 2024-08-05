@@ -5,8 +5,6 @@ import "./App.css"
 import { useAnimate } from "framer-motion";
 import sleeveBack from "./assets/sleeve_back.svg";
 import record from "./assets/record.png"
-import { useTransform } from "framer-motion";
-import { useFollowPointer } from "./useFollowPointer";
 import ExpandedItem from "./Components/ExpandedItem";
 import { AnimatePresence } from "framer-motion";
 import { usePresence } from "framer-motion";
@@ -81,7 +79,7 @@ const App = () => {
       animate([
         [".card:nth-child(n+2)",{x: 100, opacity: 0},{duration: 0.3,delay: stagger(0.05, {from: "last"}), ease: "circOut"} ],
         [".card:nth-child(1) .record-image", {y: 5},{duration: 0.3, at: "<"}],
-        [".card:nth-child(1)",{rotateY: 0},{duration: 0.5}]
+        [".card:nth-child(1)",{rotateY: 0},{duration: 0.4, ease: "easeInOut"}]
       ]).then(() => {
         setExpanded(element)
         setClicked(false)
@@ -93,23 +91,15 @@ const App = () => {
   return (
     <AnimatePresence>
     {expanded ? <ExpandedItem key="expanded" setExpanded={setExpanded} data={expanded} /> : 
-    <motion.div style={wrapperStyle} key="stack"  ref={scope}
-      // initial={{opacity: 0, y: -300 }}
-      // animate={{opacity: 1, x: 0, y: 0}}
-      // exit={{opacity: 0, x: 500}}
-      // transition={{duration: 0.3}}
-    >
+    <motion.div style={wrapperStyle} key="stack"  ref={scope}>
       <motion.div style={cardWrapStyle}
         initial={{opacity: 0, x: -300 }}
         animate={{opacity: 1, x: 0, y: 0}}
-        // exit={{opacity: 0, x: 500}}
-        transition={{duration: 0.3, staggerChildren: 0.1 }}
+        transition={{duration: 0.3, ease: [0.83, 0, 0.17, 1], opacity: {ease: "circOut"} }}
       >
         {cards.map((el, index) => {
           return <motion.div
               key={el.id}
-              // layout
-              // layoutId={el.id}
               className="card"
               style={{
                 ...cardStyle,
@@ -132,6 +122,7 @@ const App = () => {
               }}
               onDragEnd={moveToEnd}
               onClick={() => handleClick(index)}
+              whileDrag={{scale:0.9, opacity:0.9}}
             >
               <div className="card__front" style={cardInnerStyle}>
                 {el.id}

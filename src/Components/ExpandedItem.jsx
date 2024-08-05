@@ -1,14 +1,13 @@
 /* eslint-disable react/prop-types */
-// import record from "../assets/record.png"
 import {motion} from "framer-motion"
 import "./ExpandedItem.css"
 import { usePresence } from "framer-motion";
 import { useAnimate } from "framer-motion";
 import { useEffect } from "react";
 import { stagger } from "framer-motion";
+import rewind from "../assets/rewind.svg"
 
 const ExpandedItem = ({data, setExpanded}) => {
-    // const transformedX = useTransform(x,[-10000,-500,0,500,1200],[5,5, -120, -250,-350])
     const [isPresent, safeToRemove] = usePresence()
     const [scope, animate] = useAnimate()
 
@@ -16,13 +15,14 @@ const ExpandedItem = ({data, setExpanded}) => {
       if(!isPresent) {
         const exitAnimation = async () => {
           await animate([
-            [".expandedview__textcontainer > *", {y:100, opacity: 0}, {duration: 0.2, ease: "easeInOut", delay: stagger(0.05,{from: "last"})}],
+            [".expandedview__back", {x: -30, opacity: 0}, {duration:0.3}],
+            [".expandedview__textcontainer > *", {y:100, opacity: 0}, {duration: 0.2, ease: "easeInOut", at: "<", delay: stagger(0.05,{from: "last"})}],
             [".expandedview__image", {
-              y: 100,
-              scale: 0.8,
-            }, {duration: 0.5, ease: "easeInOut", at: "<"}],
+              x: window.innerWidth < 800 ? 0 : "50%",
+            }, {duration: 0.3, ease: [0.83, 0, 0.17, 1], at: "<"}],
+            [".expandedview__image",{y: 100, scale: 0.8}, {duration: 0.3}],
             [
-              scope.current, {opacity: 0}, {duration: 0.5}
+              scope.current, {opacity: 0}, {duration: 0.3}
           ]])
           
           safeToRemove();
@@ -52,7 +52,7 @@ const ExpandedItem = ({data, setExpanded}) => {
           transition={{duration: 0.5, ease: [0.83, 0, 0.17, 1]}}
           ref={scope}
           >
-          <button onClick={back} className="expandedview__back">rewind</button>
+          <motion.img src={rewind} className="expandedview__back" alt="back" onClick={back} whileHover={{x: 10}} />
           <div className="expandedview__wrapper">
             <motion.div 
               className="expandedview__image"
