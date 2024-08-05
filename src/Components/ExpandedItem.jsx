@@ -29,6 +29,7 @@ const ExpandedItem = ({data, setExpanded}) => {
         }
         exitAnimation();
       } 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isPresent])
 
     const overlayStyle = {
