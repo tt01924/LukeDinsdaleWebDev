@@ -7,6 +7,8 @@ import sleeveBack from "./assets/sleeve_back.svg";
 import record from "./assets/record.png"
 import { useTransform } from "framer-motion";
 import { useFollowPointer } from "./useFollowPointer";
+import ExpandedItem from "./Components/ExpandedItem";
+import { AnimatePresence } from "framer-motion";
 
 const OFFSET = 35;
 const SCALE_FACTOR = 0.05;
@@ -14,16 +16,28 @@ const SCALE_FACTOR = 0.05;
 const App = () => {
   const [cards, setCards] = useState(data);
   const [clicked, setClicked] = useState(false)
+  const [expanded, setExpanded] = useState(null)
   const [scope, animate] = useAnimate();
-  const ref = useRef(null)
-  const {x} = useFollowPointer(ref)
+  // const {x} = useFollowPointer(ref)
+  console.log("clicked:", clicked)
+  console.log("expanded:", expanded?.id)
 
-  const transformedX = useTransform(x,[-10000,-500,0,500,1200],[5,5, -120, -250,-350])
+
+  // const transformedX = useTransform(x,[-10000,-500,0,500,1200],[5,5, -120, -250,-350])
 
   const moveToEnd = () => {
     resetAnimation();
     setCards([...cards.slice(1), cards[0]]);
+    setClicked(false)
   };
+
+  const handleClick = (index) => {
+    if(clicked && index === 0) {
+      expand(cards[index])
+    } else {
+      flip(index)
+    }
+  }
 
   const resetAnimation = () => {
     animate([
@@ -40,11 +54,11 @@ const App = () => {
     ]])
   }
 
-  const expand = (index) => {
+  const flip = (index) => {
     if(clicked || index != 0) {
       setClicked(false)
       resetAnimation()
-    }
+    } 
     else {
       animate([[
         ".card:nth-child(1)",
@@ -57,37 +71,46 @@ const App = () => {
         {duration: 0.5, ease: "easeInOut"}
       ],
       [ ".card:nth-child(1) .record-image", {y: -120}, {at: "-0.1", duration: 0.7, ease: "backOut" } ],
-    ]).then(() => {
-      setClicked(true)
-      // animate([
-      //   [ ".card:nth-child(1) .record-image", {y: -120 + yMotion}, { } ]
-      // ])
-    })
+    ]).then(() => setClicked(true))
+    }
+  }
+
+  const expand = (element) => {
+    console.log("aaa i'm expanding")
+    console.log("clicked:", clicked)
+    console.log("expanded:", expanded?.id)
+    if(expanded) {
+      setExpanded(null)
+    } else {
+      setExpanded(element)
+      setClicked(false)
     }
   }
 
   return (
-    <div style={wrapperStyle} ref={ref}>
+    <AnimatePresence>
+    {expanded ? <ExpandedItem key="expanded" setExpanded={setExpanded} data={expanded} /> : 
+    <div style={wrapperStyle} key="stack">
       <div ref={scope} style={cardWrapStyle}>
         {cards.map((el, index) => {
-          const canDrag = index === 0;
-
-          return (
-            <motion.div
+          return <motion.div
               key={el.id}
+              // layout
+              // layoutId={el.id}
               className="card"
               style={{
                 ...cardStyle,
                 backgroundColor: `hsl(${el.id * 41}, 60%, 70%)`,
-                cursor: canDrag ? "grab" : "auto",
+                cursor: index === 0 ? "grab" : "auto",
               }}
+              initial={false}
               animate={{
                 top: index * -OFFSET,
                 scale: 1 - index * SCALE_FACTOR,
                 zIndex: cards.length - index,
                 rotate: 0,
               }}
-              drag={canDrag}
+              drag={index === 0}
               dragConstraints={{
                 top: 0,
                 bottom: 0,
@@ -95,7 +118,7 @@ const App = () => {
                 right: 0
               }}
               onDragEnd={moveToEnd}
-              onClick={() => expand(index)}
+              onClick={() => handleClick(index)}
             >
               <div className="card__front" style={cardInnerStyle}>
                 {el.id}
@@ -107,7 +130,9 @@ const App = () => {
                 }}>
                 <motion.div className="record-image" 
                   initial={{y: 5}} 
-                  style={{backgroundImage: `url(${record})`, y: transformedX}} 
+                  style={{backgroundImage: `url(${record})`}}
+                  animate={{rotate: 360}}
+                  onClick={() => expand(el)}
                  ></motion.div>
                 <div className="inner" style={{backgroundImage: `url("${sleeveBack}")`,}}>
                   <h3 style={{gridArea: "title"}}>{el.title}</h3>
@@ -116,11 +141,13 @@ const App = () => {
                 </div>
               </div>
             </motion.div>
-          );
+        // }
+        // </>
         })}
       </div>
       <button style={{position: "fixed", bottom: 10}} onClick={moveToEnd}>next</button>
-    </div>
+    </div>}
+    </AnimatePresence>
   );
 };
 const wrapperStyle = {
