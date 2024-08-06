@@ -4,7 +4,8 @@
         "title": "some title",
         "smp": "some text",
         "insight": "some more text",
-        "imgUrl": "src/assets/vinylCoverImages/AL White Stripes Cover Sleeve.jpg"
+        "imgUrl": "src/assets/vinylCoverImages/AL White Stripes Cover Sleeve.jpg",
+        "endline": ""
     },
     {
         "id": 2,
@@ -20,14 +21,16 @@
         "title": "Chase Bank",
         "smp": "bank more American.",
         "insight": "Brits are uncomfortable talking about money, but Americans aren't.",
-        "imgUrl": "src/assets/vinylCoverImages/Chase Foo Fighters.jpg"
+        "imgUrl": "src/assets/vinylCoverImages/Chase Foo Fighters.jpg",
+        "endline": ""
     },
     {
         "id": 4,
         "title": "some title",
         "smp": "some text",
         "insight": "some more text",
-        "imgUrl": "src/assets/vinylCoverImages/Coke Green Day.jpg"
+        "imgUrl": "src/assets/vinylCoverImages/Coke Green Day.jpg",
+        "endline": ""
     },
     {
         "id": 5,
@@ -42,7 +45,8 @@
         "title": "some title",
         "smp": "some text",
         "insight": "some more text",
-        "imgUrl": "src/assets/vinylCoverImages/Extra Nirvana Baby.jpg"
+        "imgUrl": "src/assets/vinylCoverImages/Extra Nirvana Baby.jpg",
+        "endline": ""
     },
     {
         "id": 7,
@@ -65,13 +69,15 @@
         "title": "Rustlers",
         "smp": "Rustlers will ensure your night out gets a happy ending.",
         "insight": "Drama can ruin a night out.",
-        "imgUrl": "src/assets/vinylCoverImages/Rustlers Rolling Stones.jpg"
+        "imgUrl": "src/assets/vinylCoverImages/Rustlers Rolling Stones.jpg",
+        "endline": ""
     },
     {
         "id": 10,
         "title": "Wotsits",
         "smp": "Wotsits are so addictive they should be illegal.",
         "insight": "Cheese releases the same chemical in our brains as hard drugs.",
-        "imgUrl": "src/assets/vinylCoverImages/Wotsits Andy Warhol.jpg"
+        "imgUrl": "src/assets/vinylCoverImages/Wotsits Andy Warhol.jpg",
+        "endline": ""
     }
 ]
