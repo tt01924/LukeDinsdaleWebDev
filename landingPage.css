@@ -1,0 +1,12 @@
+* {
+    background-color: white;
+}
+
+.box {
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    bottom: 10%;
+    right: 10%;
+    position: fixed;
+}

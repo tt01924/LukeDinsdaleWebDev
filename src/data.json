@@ -4,7 +4,7 @@
         "title": "some title",
         "smp": "some text",
         "insight": "some more text",
-        "imgUrl": "src/assets/vinylCoverImages/AL White Stripes Cover Sleeve.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/ALWhiteStripesCoverSleeve.jpg",
         "endline": ""
     },
     {
@@ -12,7 +12,7 @@
         "title": "Brut",
         "smp": "Smell unflappable.",
         "insight": "You sweat more in high pressure situations, which makes you smell.",
-        "imgUrl": "src/assets/vinylCoverImages/Brut Bruce Springsteen.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/BrutBruceSpringsteen.jpg",
         // Added endline also - this needs to be linked in!
         "endline": "Smell Unflappable"
     },
@@ -21,7 +21,7 @@
         "title": "Chase Bank",
         "smp": "bank more American.",
         "insight": "Brits are uncomfortable talking about money, but Americans aren't.",
-        "imgUrl": "src/assets/vinylCoverImages/Chase Foo Fighters.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/ChaseFooFighters.jpg",
         "endline": ""
     },
     {
@@ -29,7 +29,7 @@
         "title": "some title",
         "smp": "some text",
         "insight": "some more text",
-        "imgUrl": "src/assets/vinylCoverImages/Coke Green Day.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/CokeGreenDay.jpg",
         "endline": ""
     },
     {
@@ -37,7 +37,7 @@
         "title": "Eurostar",
         "smp": "See things you wouldn’t see from the air",
         "insight": "You miss detailed scenery when you travel by plane.",
-        "imgUrl": "src/assets/vinylCoverImages/eurostar blur.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/EurostarBlur.jpg",
         "endline": "Take a more scenic route."
     },
     {
@@ -45,7 +45,7 @@
         "title": "some title",
         "smp": "some text",
         "insight": "some more text",
-        "imgUrl": "src/assets/vinylCoverImages/Extra Nirvana Baby.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/ExtraNirvanaBaby.jpg",
         "endline": ""
     },
     {
@@ -53,7 +53,7 @@
         "title": "Halfords",
         "smp": "We speak Bike so you don’t have to.",
         "insight": "Bicycle owners don't know what the bike's parts are called.",
-        "imgUrl": "src/assets/vinylCoverImages/Halfords The Beatles.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/HalfordsTheBeatles.jpg",
         "endline": "We speak Bike so you don’t have to."
     },
     {
@@ -61,7 +61,7 @@
         "title": "Paul Smith",
         "smp": "A Paul Smith tie makes you hard to forget.",
         "insight": "No one stands out in a suit anymore because they don’t wear a tie.",
-        "imgUrl": "src/assets/vinylCoverImages/Paul Smith Pink Floyd.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/PaulSmithPinkFloyd.jpg",
         "endline": "Leave an impression"
     },
     {
@@ -69,7 +69,7 @@
         "title": "Rustlers",
         "smp": "Rustlers will ensure your night out gets a happy ending.",
         "insight": "Drama can ruin a night out.",
-        "imgUrl": "src/assets/vinylCoverImages/Rustlers Rolling Stones.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/RustlersRollingStones.jpg",
         "endline": ""
     },
     {
@@ -77,7 +77,7 @@
         "title": "Wotsits",
         "smp": "Wotsits are so addictive they should be illegal.",
         "insight": "Cheese releases the same chemical in our brains as hard drugs.",
-        "imgUrl": "src/assets/vinylCoverImages/Wotsits Andy Warhol.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/Wotsits`AndyWarhol.jpg",
         "endline": ""
     }
 ]
