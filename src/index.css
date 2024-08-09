@@ -75,3 +75,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+.box {
+  width: 20vw;
+  height: 20vw;
+  background-color: red;
+  bottom: 10%;
+  right: 10%;
+  position: fixed;
+  border: transparent;
+}
