@@ -13,7 +13,6 @@
         "smp": "Smell unflappable.",
         "insight": "You sweat more in high pressure situations, which makes you smell.",
         "imgUrl": "src/assets/vinylCoverImages/BrutBruceSpringsteen.jpg",
-        // Added endline also - this needs to be linked in!
         "endline": "Smell Unflappable"
     },
     {
