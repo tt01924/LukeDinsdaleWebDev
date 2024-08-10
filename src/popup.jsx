@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './popup.css';
 
-function App() {
+function Popup() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
 
     const showPopup = () => {
@@ -36,4 +36,4 @@ function App() {
     );
 }
 
-export default App;
+export default Popup;
