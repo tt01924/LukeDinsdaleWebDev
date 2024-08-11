@@ -7,6 +7,7 @@ import sleeveBack from "./assets/sleeve_back.svg";
 import record from "./assets/record.png"
 import { useTransform } from "framer-motion";
 import { useFollowPointer } from "./useFollowPointer";
+import { Popup} from "./popup.jsx"
 
 const OFFSET = 35;
 const SCALE_FACTOR = 0.05;
@@ -120,6 +121,7 @@ const App = () => {
         })}
       </div>
       <button style={{position: "fixed", bottom: 10}} onClick={moveToEnd}>next</button>
+      <Popup />
     </div>
   );
 };
