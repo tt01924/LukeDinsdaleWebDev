@@ -1,5 +1,5 @@
 body{
-    background-image: url(./src/assets/BrutImages/LucasTexture.jpg);
+    background-image: url(/src/assets/LucasTexture.jpg);
 }
 
 .rectangle{
@@ -73,5 +73,4 @@ h1 {
     position: relative;
     z-index: 2;
     margin: 0 auto
-
 }
