@@ -58,3 +58,20 @@ h1 {
     position: relative;
     z-index: 2;
 }
+
+.prText {
+    text-align: right;
+    margin-right: 15%;
+    position: relative;
+    z-index: 2;
+}
+.prVideo {
+    width: 80vw;
+    height: 30vw;
+    background-color: darkgray;
+    margin-top: 40px; 
+    position: relative;
+    z-index: 2;
+    margin: 0 auto
+
+}
