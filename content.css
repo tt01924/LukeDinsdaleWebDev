@@ -1,0 +1,20 @@
+body{
+    background-image: url(./src/assets/BrutImages/LucasTexture.jpg);
+}
+
+.rectangle{
+    background-color: antiquewhite;
+    height: 100vw;
+    width: 30%;
+    position: absolute;
+    right: 0; 
+}
+
+.poster {
+    width: 20%;
+}
+
+h1 {
+    justify-content: center;
+    align-items: center;
+}
