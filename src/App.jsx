@@ -7,7 +7,7 @@ import sleeveBack from "./assets/sleeve_back.svg";
 import record from "./assets/record.png"
 import { useTransform } from "framer-motion";
 import { useFollowPointer } from "./useFollowPointer";
-import { Popup} from "./popup.jsx"
+import  Popup from "./components/Popup"
 
 const OFFSET = 35;
 const SCALE_FACTOR = 0.05;
@@ -80,6 +80,8 @@ const App = () => {
               style={{
                 ...cardStyle,
                 backgroundColor: `hsl(${el.id * 41}, 60%, 70%)`,
+                background: `url(${el.imgUrl})`,
+                backgroundSize: "cover",
                 cursor: canDrag ? "grab" : "auto",
               }}
               animate={{
@@ -99,7 +101,7 @@ const App = () => {
               onClick={() => expand(index)}
             >
               <div className="card__front" style={cardInnerStyle}>
-                {el.id}
+
               </div>
               <div className="card__back" style={
                 {

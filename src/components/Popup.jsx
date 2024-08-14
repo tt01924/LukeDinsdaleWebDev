@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import './popup.css';
 
-function Popup() {
+const Popup = () => {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
 
     const showPopup = () => {
