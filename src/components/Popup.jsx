@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './popup.css';
+import { AnimatePresence, motion } from "framer-motion";
 
 const Popup = () => {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -12,14 +13,26 @@ const Popup = () => {
         setIsPopupVisible(false);
     };
 
+    const popupVariants = {
+        initial: {
+            x: "100%"
+        },
+        animate: {
+            x: 0
+        },
+        exit: {
+            x: "100%"
+        }
+    }
+
     return (
         <div>
-            <button id="indexShowHelp" className="indexShowHelp box" onClick={showPopup}>
+            <motion.button id="indexShowHelp" className="indexShowHelp card box" onClick={showPopup}>
                 Avi and Luke
-            </button>
-
+            </motion.button>
+            <AnimatePresence>
             {isPopupVisible && (
-                <div id="indexHelpPopup" className="contactPopup" onClick={closePopup}>
+                <motion.div id="indexHelpPopup" variants={popupVariants} exit="exit" animate="animate" initial="initial" className="contactPopup" onClick={closePopup}>
                     <div className="contactContent" onClick={(e) => e.stopPropagation()}>
                         <span id="indexPopupClose" onClick={closePopup}></span>
                         <h2>
@@ -30,8 +43,9 @@ const Popup = () => {
                             The lasting impression is you want to keep going back for more. Let's hope they don't sell out.
                         </h2>
                     </div>
-                </div>
+                </motion.div>
             )}
+            </AnimatePresence>
         </div>
     );
 }

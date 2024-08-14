@@ -1,11 +1,16 @@
 .box {
-    width: 20vw;
-    height: 20vw;
+    width: 250px;
+    height: 250px;
     background-color: red;
-    bottom: 10%;
-    right: 10%;
+    background-image: url("src/assets/vinylCoverImages/ALWhiteStripesCoverSleeve.jpg");
+    background-size: cover;
+    bottom: -1rem;
+    right: 0;
     position: fixed;
     border: transparent;
+    color: transparent;
+    border-radius: 2px;
+    z-index: 50;
 }
 
 /* Styling for Help popup */
@@ -27,4 +32,13 @@
     width: 30%;
     border-radius: 8px;
     text-align: center;
+}
+
+@media (min-width: 600px) {
+    .box {
+        height: 300px;
+        width: 300px;
+        bottom: 10%;
+        right: 10%;    
+    }
 }
