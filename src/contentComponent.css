@@ -65,7 +65,7 @@ body {
 
 .rectangle {
     background-color: antiquewhite;
-    height: 3000px;
+    height: 4600px;
     width: 30%;
     position: absolute;
     top: 0;
@@ -107,6 +107,11 @@ h4 {
     font-size: larger;
 }
 
+.scriptBold {
+    font-family: 'CustomSubtitle';
+    font-size: large;
+}
+
 .video {
     width: 80vw;
     height: 30vw;
@@ -118,6 +123,14 @@ h4 {
 
 }
 
+.radio {
+    height: 30vw;
+    background-color: darkgray;
+    position: relative;
+    z-index: 2;
+    left: -60vw;
+}
+
 .activation {
     width: 65vw;
     background-color: darkgray;
@@ -126,7 +139,7 @@ h4 {
     z-index: 2;
 }
 
-.prVideo {
+.socialMedia {
     width: 80vw;
     height: 30vw;
     background-color: darkgray;
