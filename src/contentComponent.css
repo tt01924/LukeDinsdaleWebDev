@@ -148,3 +148,34 @@ h4 {
     z-index: 2;
     left: -60vw;
 }
+
+/* Topicals section */
+
+.topicalWrapper{
+    position: relative;
+}
+
+.topicalPoster {
+    width: 30vw;
+    height: 40vw;
+    background-color: darkgray;
+    position: absolute;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+.topicalPoster:nth-child(1) {
+    top: 50px;
+    transform: rotate(-2deg);
+}
+
+.topicalPoster:nth-child(2) {
+    top: 100px;
+    left: 520px;
+    transform: rotate(2deg);
+}
+
+.topicalPoster:nth-child(3) {
+    top: 650px;
+    left: 70px;
+    transform: rotate(-1deg);
+}
