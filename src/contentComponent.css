@@ -30,15 +30,7 @@ body {
     background-image: url(/src/assets/LucasTexture.jpg);
 }
 
-.rectangle {
-    background-color: antiquewhite;
-    height: 3000px;
-    width: 30%;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    right: 0; 
-}
+/* Poster section */
 
 .posterWrapper{
     position: relative;
@@ -67,6 +59,18 @@ body {
     top: 650px;
     left: 70px;
     transform: rotate(-1deg);
+}
+
+/* Rectangle and text */
+
+.rectangle {
+    background-color: antiquewhite;
+    height: 3000px;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: 0; 
 }
 
 h2, h3, h4, p {
