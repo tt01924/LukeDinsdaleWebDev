@@ -1,14 +1,22 @@
 [
     {
         "id": 1,
-        "title": "some title",
-        "smp": "some text",
-        "insight": "some more text",
-        "imgUrl": "src/assets/vinylCoverImages/ALWhiteStripesCoverSleeve.jpg",
+        "title": "Wotsits",
+        "smp": "Wotsits are so addictive they should be illegal.",
+        "insight": "Cheese releases the same chemical in our brains as hard drugs.",
+        "imgUrl": "src/assets/vinylCoverImages/Wotsits`AndyWarhol.jpg",
         "endline": ""
     },
     {
         "id": 2,
+        "title": "Chase Bank",
+        "smp": "bank more American.",
+        "insight": "Brits are uncomfortable talking about money, but Americans aren't.",
+        "imgUrl": "src/assets/vinylCoverImages/ChaseFooFighters.jpg",
+        "endline": ""
+    },
+    {
+        "id": 3,
         "title": "Brut",
         "smp": "Smell unflappable.",
         "insight": "You sweat more in high pressure situations, which makes you smell.",
@@ -16,12 +24,12 @@
         "endline": "Smell Unflappable"
     },
     {
-        "id": 3,
-        "title": "Chase Bank",
-        "smp": "bank more American.",
-        "insight": "Brits are uncomfortable talking about money, but Americans aren't.",
-        "imgUrl": "src/assets/vinylCoverImages/ChaseFooFighters.jpg",
-        "endline": ""
+        "id": 4,
+        "title": "Paul Smith",
+        "smp": "A Paul Smith tie makes you hard to forget.",
+        "insight": "No one stands out in a suit anymore because they don’t wear a tie.",
+        "imgUrl": "src/assets/vinylCoverImages/PaulSmithPinkFloyd.jpg",
+        "endline": "Leave an impression"
     },
     {
         "id": 4,
@@ -33,19 +41,19 @@
     },
     {
         "id": 5,
+        "title": "Rustlers",
+        "smp": "Rustlers will ensure your night out gets a happy ending.",
+        "insight": "Drama can ruin a night out.",
+        "imgUrl": "src/assets/vinylCoverImages/RustlersRollingStones.jpg",
+        "endline": ""
+    },
+    {
+        "id": 6,
         "title": "Eurostar",
         "smp": "See things you wouldn’t see from the air",
         "insight": "You miss detailed scenery when you travel by plane.",
         "imgUrl": "src/assets/vinylCoverImages/EurostarBlur.jpg",
         "endline": "Take a more scenic route."
-    },
-    {
-        "id": 6,
-        "title": "some title",
-        "smp": "some text",
-        "insight": "some more text",
-        "imgUrl": "src/assets/vinylCoverImages/ExtraNirvanaBaby.jpg",
-        "endline": ""
     },
     {
         "id": 7,
@@ -55,28 +63,14 @@
         "imgUrl": "src/assets/vinylCoverImages/HalfordsTheBeatles.jpg",
         "endline": "We speak Bike so you don’t have to."
     },
+
+
     {
-        "id": 8,
-        "title": "Paul Smith",
-        "smp": "A Paul Smith tie makes you hard to forget.",
-        "insight": "No one stands out in a suit anymore because they don’t wear a tie.",
-        "imgUrl": "src/assets/vinylCoverImages/PaulSmithPinkFloyd.jpg",
-        "endline": "Leave an impression"
-    },
-    {
-        "id": 9,
-        "title": "Rustlers",
-        "smp": "Rustlers will ensure your night out gets a happy ending.",
-        "insight": "Drama can ruin a night out.",
-        "imgUrl": "src/assets/vinylCoverImages/RustlersRollingStones.jpg",
-        "endline": ""
-    },
-    {
-        "id": 10,
-        "title": "Wotsits",
-        "smp": "Wotsits are so addictive they should be illegal.",
-        "insight": "Cheese releases the same chemical in our brains as hard drugs.",
-        "imgUrl": "src/assets/vinylCoverImages/Wotsits`AndyWarhol.jpg",
+        "id": 1,
+        "title": "Coke",
+        "smp": "Connect GenZ to Coca Cola",
+        "insight": "D&AD New Blood Brief:",
+        "imgUrl": "src/assets/vinylCoverImages/CokeGreenDay.jpg",
         "endline": ""
     }
 ]
