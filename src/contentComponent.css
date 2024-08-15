@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: 'CustomBold';
+    src: url('./assets/fonts/oliver_3/static/Mohave-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'CustomText';
     src: url('./assets/fonts/oliver_3/static/Mohave-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -28,18 +35,41 @@ body {
     height: 3000px;
     width: 30%;
     position: absolute;
+    top: 0;
     z-index: 1;
     right: 0; 
 }
 
-.poster {
-    display: inline-block;
-    width: 200px;
-    height: 300px;
-    background-color: darkgray;
+.posterWrapper{
+    position: relative;
 }
 
-h2, h3, p {
+.poster {
+    width: 30vw;
+    height: 40vw;
+    background-color: darkgray;
+    position: absolute;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+.poster:nth-child(1) {
+    top: 50px;
+    transform: rotate(-2deg);
+}
+
+.poster:nth-child(2) {
+    top: 100px;
+    left: 520px;
+    transform: rotate(2deg);
+}
+
+.poster:nth-child(3) {
+    top: 650px;
+    left: 70px;
+    transform: rotate(-1deg);
+}
+
+h2, h3, h4, p {
     margin-left: 2vw;
 }
 
@@ -54,8 +84,18 @@ h2 {
     font-family: 'CustomSubtitle';
 }
 
-h3, p{
+h4 {
+    font-family: 'CustomBold'
+}
+
+h3, p {
     font-family: 'CustomText';
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'CustomBold';
+    font-size: larger;
 }
 
 .video {
