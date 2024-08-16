@@ -10,7 +10,7 @@
     border: transparent;
     color: transparent;
     border-radius: 2px;
-    z-index: 50;
+    z-index: 11;
 }
 
 /* Styling for Help popup */
@@ -22,17 +22,33 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(217, 217, 217, 0.45);
+    background-color: transparent;
+    display: flex;
 }
 
 .contactContent {
-    margin: 10vw auto;
+    margin-left:40%;
+    position: relative;
     padding: 20px;
-    border: 1px solid #888;
-    width: 30%;
-    border-radius: 8px;
-    text-align: center;
+    /* border: 1px solid #888; */
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    /* border-radius: 8px; */
+    /* text-align: center; */
+    box-shadow: -4px -4px 10px rgba(22, 0, 60, 0.3);
 }
+
+#indexPopupClose {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #777
+}
+
+
 
 @media (min-width: 600px) {
     .box {
@@ -40,5 +56,10 @@
         width: 300px;
         bottom: 10%;
         right: 10%;    
+    }
+
+    .contactContent {
+        width: 30%;
+        margin-left: 70%;
     }
 }
