@@ -5,8 +5,6 @@ import "./App.css"
 import { useAnimate } from "framer-motion";
 import sleeveBack from "./assets/sleeve_back.svg";
 import record from "./assets/record.png"
-import { useTransform } from "framer-motion";
-import { useFollowPointer } from "./useFollowPointer";
 import  Popup from "./components/Popup"
 
 const OFFSET = 35;
@@ -17,9 +15,6 @@ const App = () => {
   const [clicked, setClicked] = useState(false)
   const [scope, animate] = useAnimate();
   const ref = useRef(null)
-  const {x} = useFollowPointer(ref)
-
-  const transformedX = useTransform(x,[-10000,-500,0,500,1200],[5,5, -120, -250,-350])
 
   const moveToEnd = () => {
     resetAnimation();
@@ -60,9 +55,6 @@ const App = () => {
       [ ".card:nth-child(1) .record-image", {y: -120}, {at: "-0.1", duration: 0.7, ease: "backOut" } ],
     ]).then(() => {
       setClicked(true)
-      // animate([
-      //   [ ".card:nth-child(1) .record-image", {y: -120 + yMotion}, { } ]
-      // ])
     })
     }
   }
@@ -110,7 +102,7 @@ const App = () => {
                 }}>
                 <motion.div className="record-image" 
                   initial={{y: 5}} 
-                  style={{backgroundImage: `url(${record})`, y: transformedX}} 
+                  style={{backgroundImage: `url(${record})`}} 
                  ></motion.div>
                 <div className="inner" style={{backgroundImage: `url("${sleeveBack}")`,}}>
                   <h3 style={{gridArea: "title"}}>{el.title}</h3>
