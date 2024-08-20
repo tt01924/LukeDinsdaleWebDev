@@ -8,9 +8,20 @@ import record from "./assets/record.png"
 import { useTransform } from "framer-motion";
 import { useFollowPointer } from "./useFollowPointer";
 import { Popup} from "./popup.jsx"
+// import React from 'react';
+import ContentComponent from './ContentComponent';
 
 const OFFSET = 35;
 const SCALE_FACTOR = 0.05;
+
+function App() {
+  return (
+    <div>
+      <ContentComponent />
+    </div>
+  );
+}
+
 
 const App = () => {
   const [cards, setCards] = useState(data);
@@ -161,4 +172,3 @@ const cardInnerStyle = {
 }
 
 export default App
-
