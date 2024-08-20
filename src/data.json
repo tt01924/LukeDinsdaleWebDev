@@ -4,7 +4,7 @@
         "title": "Wotsits",
         "smp": "Wotsits are so addictive they should be illegal.",
         "insight": "Cheese releases the same chemical in our brains as hard drugs.",
-        "imgUrl": "src/assets/vinylCoverImages/Wotsits`AndyWarhol.jpg",
+        "imgUrl": "src/assets/vinylCoverImages/WotsitsAndyWarhol.jpg",
         "endline": ""
     },
     {
@@ -30,14 +30,6 @@
         "insight": "No one stands out in a suit anymore because they don’t wear a tie.",
         "imgUrl": "src/assets/vinylCoverImages/PaulSmithPinkFloyd.jpg",
         "endline": "Leave an impression"
-    },
-    {
-        "id": 4,
-        "title": "some title",
-        "smp": "some text",
-        "insight": "some more text",
-        "imgUrl": "src/assets/vinylCoverImages/CokeGreenDay.jpg",
-        "endline": ""
     },
     {
         "id": 5,

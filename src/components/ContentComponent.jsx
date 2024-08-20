@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import "./ContentComponent.css";
+import { useEffect } from "react";
+import "./contentComponent.css";
 
 const ContentComponent = () => {
   useEffect(() => {

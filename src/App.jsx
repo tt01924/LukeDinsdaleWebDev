@@ -1,36 +1,20 @@
-import {useState, useRef} from "react";
-import { motion } from "framer-motion";
+import { useState, useRef } from "react";
+import { motion, useAnimate } from "framer-motion";
 import data from "./data.json"
-import "./App.css"
-import { useAnimate } from "framer-motion";
 import sleeveBack from "./assets/sleeve_back.svg";
 import record from "./assets/record.png"
-import { useTransform } from "framer-motion";
-import { useFollowPointer } from "./useFollowPointer";
-import { Popup} from "./popup.jsx"
-// import React from 'react';
-import ContentComponent from './ContentComponent';
+import Popup from "./components/Popup.jsx"
+import ContentComponent from './components/ContentComponent.jsx';
+import "./App.css"
 
 const OFFSET = 35;
 const SCALE_FACTOR = 0.05;
-
-function App() {
-  return (
-    <div>
-      <ContentComponent />
-    </div>
-  );
-}
-
 
 const App = () => {
   const [cards, setCards] = useState(data);
   const [clicked, setClicked] = useState(false)
   const [scope, animate] = useAnimate();
   const ref = useRef(null)
-  const {x} = useFollowPointer(ref)
-
-  const transformedX = useTransform(x,[-10000,-500,0,500,1200],[5,5, -120, -250,-350])
 
   const moveToEnd = () => {
     resetAnimation();
@@ -71,9 +55,6 @@ const App = () => {
       [ ".card:nth-child(1) .record-image", {y: -120}, {at: "-0.1", duration: 0.7, ease: "backOut" } ],
     ]).then(() => {
       setClicked(true)
-      // animate([
-      //   [ ".card:nth-child(1) .record-image", {y: -120 + yMotion}, { } ]
-      // ])
     })
     }
   }
@@ -91,6 +72,8 @@ const App = () => {
               style={{
                 ...cardStyle,
                 backgroundColor: `hsl(${el.id * 41}, 60%, 70%)`,
+                background: `url(${el.imgUrl})`,
+                backgroundSize: "cover",
                 cursor: canDrag ? "grab" : "auto",
               }}
               animate={{
@@ -110,7 +93,7 @@ const App = () => {
               onClick={() => expand(index)}
             >
               <div className="card__front" style={cardInnerStyle}>
-                {el.id}
+
               </div>
               <div className="card__back" style={
                 {
@@ -119,7 +102,7 @@ const App = () => {
                 }}>
                 <motion.div className="record-image" 
                   initial={{y: 5}} 
-                  style={{backgroundImage: `url(${record})`, y: transformedX}} 
+                  style={{backgroundImage: `url(${record})`}} 
                  ></motion.div>
                 <div className="inner" style={{backgroundImage: `url("${sleeveBack}")`,}}>
                   <h3 style={{gridArea: "title"}}>{el.title}</h3>
@@ -133,6 +116,7 @@ const App = () => {
       </div>
       <button style={{position: "fixed", bottom: 10}} onClick={moveToEnd}>next</button>
       <Popup />
+      {/* <ContentComponent /> */}
     </div>
   );
 };
