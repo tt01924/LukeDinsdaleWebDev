@@ -1,27 +1,27 @@
 @font-face {
     font-family: 'CustomTitle';
-    src: url('./assets/fonts/oliver_3/static/Mohave-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/oliver_3/static/Mohave-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CustomSubtitle';
-    src: url('./assets/fonts/oliver_3/static/Mohave-Medium.ttf') format('truetype');
+    src: url('../assets/fonts/oliver_3/static/Mohave-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CustomBold';
-    src: url('./assets/fonts/oliver_3/static/Mohave-SemiBold.ttf') format('truetype');
+    src: url('../assets/fonts/oliver_3/static/Mohave-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CustomText';
-    src: url('./assets/fonts/oliver_3/static/Mohave-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/oliver_3/static/Mohave-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
