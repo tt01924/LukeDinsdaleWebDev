@@ -1,12 +1,11 @@
-import {useState, useRef} from "react";
-import { motion } from "framer-motion";
+import { useState, useRef } from "react";
+import { motion, useAnimate } from "framer-motion";
 import data from "./data.json"
-import "./App.css"
-import { useAnimate } from "framer-motion";
 import sleeveBack from "./assets/sleeve_back.svg";
 import record from "./assets/record.png"
-import { Popup} from "./popup.jsx"
-import ContentComponent from './ContentComponent';
+import Popup from "./components/Popup.jsx"
+import ContentComponent from './components/ContentComponent.jsx';
+import "./App.css"
 
 const OFFSET = 35;
 const SCALE_FACTOR = 0.05;
@@ -117,7 +116,7 @@ const App = () => {
       </div>
       <button style={{position: "fixed", bottom: 10}} onClick={moveToEnd}>next</button>
       <Popup />
-      <ContentComponent />
+      {/* <ContentComponent /> */}
     </div>
   );
 };
