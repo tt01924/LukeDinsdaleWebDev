@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'CustomTitle';
+    src: url('./assets/fonts/oliver_3/static/Mohave-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomSubtitle';
+    src: url('./assets/fonts/oliver_3/static/Mohave-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomBold';
+    src: url('./assets/fonts/oliver_3/static/Mohave-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomText';
+    src: url('./assets/fonts/oliver_3/static/Mohave-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(/src/assets/LucasTexture.jpg);
+}
+
+/* Poster section */
+
+.posterWrapper{
+    position: relative;
+}
+
+.poster {
+    width: 30vw;
+    height: 40vw;
+    background-color: darkgray;
+    position: absolute;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+.poster:nth-child(1) {
+    top: 50px;
+    transform: rotate(-2deg);
+}
+
+.poster:nth-child(2) {
+    top: 100px;
+    left: 520px;
+    transform: rotate(2deg);
+}
+
+.poster:nth-child(3) {
+    top: 650px;
+    left: 70px;
+    transform: rotate(-1deg);
+}
+
+/* Rectangle and text */
+
+.rectangle {
+    background-color: antiquewhite;
+    height: 6500px;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    right: 0; 
+}
+
+.rectangle h2 {
+    margin-top: 80px;
+}
+
+h2, h3, h4, p {
+    margin-left: 2vw;
+    margin-right: 1vw;
+}
+
+h1 {
+    font-family: 'CustomTitle';
+    text-align: right;
+    margin-right: 2vw;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: 'CustomSubtitle';
+}
+
+h4 {
+    font-family: 'CustomBold'
+}
+
+h3, p {
+    font-family: 'CustomText';
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'CustomBold';
+    font-size: larger;
+}
+
+.scriptBold {
+    font-family: 'CustomSubtitle';
+    font-size: large;
+}
+
+.video {
+    width: 80vw;
+    height: 30vw;
+    background-color: darkgray;
+    margin-top: 40px; 
+    position: relative;
+    z-index: 2;
+    left: -60vw;
+
+}
+
+.radio {
+    height: 30vw;
+    background-color: darkgray;
+    position: relative;
+    z-index: 2;
+    left: -60vw;
+}
+
+.activation {
+    width: 65vw;
+    background-color: darkgray;
+    margin-top: -200px; 
+    position: relative;
+    z-index: 2;
+}
+
+.socialMedia {
+    width: 80vw;
+    height: 30vw;
+    background-color: darkgray;
+    margin-top: 40px; 
+    position: relative;
+    z-index: 2;
+    left: -60vw;
+}
+
+/* Topicals section */
+
+.topicalsWrapper {
+    margin-top: 50px; /* Adds space between the radio ad section and this section */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the topical posters within the wrapper */
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px 0; /* Optional padding for better spacing */
+    position: relative; /* Position relative to allow absolute centering */
+}
+
+.topicalPoster {
+    width: 30vw;
+    height: 40vw;
+    background-color: darkgray;
+    position: absolute; /* Ensure it's in the normal document flow */
+    transform: translateX(-50%); /* Center it horizontally */
+}
+
+.topicalPoster:nth-child(1) {
+    position: relative;
+    left: -850px;
+    top: -50px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    transform:rotate(91deg)
+}
+
+.topicalPoster:nth-child(2) {
+    left: -150px;
+    top:70px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
+    transform:rotate(2deg);
+}
+
+.topicalPoster:nth-child(3) {
+    left:-900px;
+    top:490px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
+    transform:rotate(-2deg);
+}
+
+.topicalPoster:nth-child(4) {
+    position: relative;
+    left: -180px;
+    top: 100px;
+    box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.2);
+    transform: rotate(-91deg);
+}
+
+.topicalPoster:nth-child(5) {
+    left:-900px;
+    top:1100px;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.7);
+    transform:rotate(-92deg);
+}
+
+.topicalPoster:nth-child(6) {
+    position: relative;
+    left: -180px;
+    top: 250px;
+    box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.2);
+    transform:rotate(1deg);
+}
+
+.topicalPoster:nth-child(7) {
+    left:-800px;
+    top:1690px;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.7);
+    transform:rotate(-2deg);
+}
