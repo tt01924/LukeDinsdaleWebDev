@@ -5,7 +5,8 @@ import "./App.css"
 import { useAnimate } from "framer-motion";
 import sleeveBack from "./assets/sleeve_back.svg";
 import record from "./assets/record.png"
-import  Popup from "./components/Popup"
+import { Popup} from "./popup.jsx"
+import ContentComponent from './ContentComponent';
 
 const OFFSET = 35;
 const SCALE_FACTOR = 0.05;
@@ -116,6 +117,7 @@ const App = () => {
       </div>
       <button style={{position: "fixed", bottom: 10}} onClick={moveToEnd}>next</button>
       <Popup />
+      <ContentComponent />
     </div>
   );
 };
@@ -155,4 +157,3 @@ const cardInnerStyle = {
 }
 
 export default App
-
