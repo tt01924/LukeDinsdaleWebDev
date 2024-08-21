@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect } from "react";
 import "./contentComponent.css";
 import rewind from "../assets/rewind.svg"
@@ -37,17 +38,19 @@ const ContentComponent = ({data, setExpanded}) => {
 
       {/* Rectangle w.text */}
       <div className="rectangle">
-        <h1>BRUT</h1>
+        <h1>{data.title}</h1>
         <h2>Insight</h2>
-        <h3>You sweat more in high pressure situations.</h3>
+        <h3>{data.insight}</h3>
         <h2>SMP</h2>
-        <h4>Smell unflappable</h4>
+        <h4>{data.smp}</h4>
 
         {/* Section for TV video */}
-        <section>
-          <h2>30 second TV ad</h2>
-          <div className="video"></div>
-        </section>
+        {data.tvAdvert &&
+          <section>
+            <h2>30 second TV ad</h2>
+            <div className="video"></div>
+          </section>
+        }
 
         {/* Section for activation */}
         <section>
