@@ -1,9 +1,24 @@
 .card {
+    --base-size: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     /* font-size: 3rem; */
-    box-shadow: 0 4px 10px rgba(22, 0, 60, 0.3);
+    box-shadow: 0 0px 8px rgba(22, 0, 60, 0.5);
+    width: var(--base-size);
+    height: var(--base-size);
+    transform-origin: top center;
+    list-style: none;
+    border-radius: 2px;
+    transform-style: preserve-3d;
+  }
+
+  .card__front, .card__back {
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    position: absolute;
   }
   
   .card__back .inner {
@@ -15,12 +30,21 @@
     grid-template-areas: "title title"
     "insight smp";
     position: absolute;
+    background-size: cover;
   }
   
   .record-image {
-    width: 300px;
-    height: 300px;
+    width: var(--base-size);
+    height: var(--base-size);
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  @media (min-width: 800px) {
+    .card {
+        --base-size: 350px;
+    }
+
+
   }

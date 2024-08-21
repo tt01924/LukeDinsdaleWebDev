@@ -57,9 +57,9 @@ const App = () => {
       animate([[
         ".card:nth-child(1)",
         {
-          scale: 1.5,
-          top: 100,
-          rotate: 15,
+          scale: 1.2,
+          top: 80,
+          rotate: 10,
           rotateY: 180
         },
         { duration: 0.5, ease: "easeInOut" }

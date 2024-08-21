@@ -13,34 +13,16 @@ const Record = ({index, data, setIsDragging, handleClick, moveToEnd, totalRecord
 
     const cardStyle = {
         position: "absolute",
-        width: "300px",
-        height: "300px",
-        borderRadius: "2px",
-        transformOrigin: "top center",
-        listStyle: "none",
-        transformStyle: "preserve-3d",
+        background: `url(${data.imgUrl})`,
+        backgroundSize: "cover",
+        cursor: canDrag ? "grab" : "auto",
       };
-      
-      const cardInnerStyle = { 
-        height: "100%", 
-        width: "100%", 
-        backfaceVisibility: "hidden", 
-        // overflow: "hidden",
-        position: "absolute",
-        textAlign: "center"
-      }
       
     return (
         <motion.div
               key={data.id}
               className="card"
-              style={{
-                ...cardStyle,
-                backgroundColor: `hsl(${data.id * 41}, 60%, 70%)`,
-                background: `url(${data.imgUrl})`,
-                backgroundSize: "cover",
-                cursor: canDrag ? "grab" : "auto",
-              }}
+              style={{ ...cardStyle }}
               animate={{
                 top: index * -OFFSET,
                 scale: 1 - index * SCALE_FACTOR,
@@ -58,14 +40,10 @@ const Record = ({index, data, setIsDragging, handleClick, moveToEnd, totalRecord
               onDragEnd={moveToEnd}
               onClick={() => handleClick(index)}
             >
-              <div className="card__front" style={cardInnerStyle}>
+              <div className="card__front">
 
               </div>
-              <div className="card__back" style={
-                {
-                  ...cardInnerStyle, 
-                  transform: "rotateY(180deg)",
-                }}>
+              <div className="card__back" style={{transform: "rotateY(180deg)",}}>
                 <motion.div className="record-image" 
                   initial={{y: 5}} 
                   style={{backgroundImage: `url(${record})`}} 
