@@ -1,11 +1,12 @@
 import { useState, useRef } from "react";
-import { motion, useAnimate } from "framer-motion";
+import { motion, useAnimate, stagger } from "framer-motion";
 import data from "./data.json"
 import sleeveBack from "./assets/sleeve_back.svg";
 import record from "./assets/record.png"
 import Popup from "./components/Popup.jsx"
 import ContentComponent from './components/ContentComponent.jsx';
 import "./App.css"
+import { AnimatePresence, usePresence } from "framer-motion";
 
 const OFFSET = 35;
 const SCALE_FACTOR = 0.05;
@@ -13,16 +14,31 @@ const SCALE_FACTOR = 0.05;
 const App = () => {
   const [cards, setCards] = useState(data);
   const [clicked, setClicked] = useState(false)
+  const [expanded, setExpanded] = useState(null)
   const [scope, animate] = useAnimate();
+  const [isPresent, safeToRemove] = usePresence();
+  const [isDragging, setIsDragging] = useState(false);
   const ref = useRef(null)
 
   const moveToEnd = () => {
     resetAnimation();
     setCards([...cards.slice(1), cards[0]]);
+    setClicked(false);
   };
 
+  const handleClick = (index) => {
+    if(isDragging) {
+      return
+    }
+    if (clicked && index === 0) {
+      expand(cards[index])
+    } else {
+      flip(index)
+    }
+  }
+
   const resetAnimation = () => {
-    animate([
+    return animate([
       [".card:nth-child(1) .record-image", {y: 5},{duration: 0.3}],
       [
       ".card:nth-child(1)",
@@ -36,7 +52,7 @@ const App = () => {
     ]])
   }
 
-  const expand = (index) => {
+  const flip = (index) => {
     if(clicked || index != 0) {
       setClicked(false)
       resetAnimation()
@@ -53,13 +69,29 @@ const App = () => {
         {duration: 0.5, ease: "easeInOut"}
       ],
       [ ".card:nth-child(1) .record-image", {y: -120}, {at: "-0.1", duration: 0.7, ease: "backOut" } ],
-    ]).then(() => {
-      setClicked(true)
-    })
+    ]).then(() => setClicked(true))
+    }
+  }
+
+  const expand = (element) => {
+    if (expanded) {
+      setExpanded(null)
+    } else {
+      animate([
+        [".card:nth-child(n+2)", { x: 100, opacity: 0 }, { duration: 0.3, delay: stagger(0.05, { from: "last" }), ease: "circOut" }],
+        [".card:nth-child(1) .record-image", { y: 5 }, { duration: 0.3, at: "<" }],
+        [".card:nth-child(1)", { rotateY: 0 }, { duration: 0.4, ease: "easeInOut" }]
+      ]).then(() => {
+        setExpanded(element)
+        setClicked(false)
+        safeToRemove();
+      })
     }
   }
 
   return (
+    <AnimatePresence>
+      {expanded ? <ContentComponent setExpanded={setExpanded} data={expanded} /> :
     <div style={wrapperStyle} ref={ref}>
       <div ref={scope} style={cardWrapStyle}>
         {cards.map((el, index) => {
@@ -89,8 +121,9 @@ const App = () => {
                 left: 0,
                 right: 0
               }}
+              onDragStart={() => setIsDragging(true)}
               onDragEnd={moveToEnd}
-              onClick={() => expand(index)}
+              onClick={() => handleClick(index)}
             >
               <div className="card__front" style={cardInnerStyle}>
 
@@ -117,7 +150,8 @@ const App = () => {
       <button style={{position: "fixed", bottom: 10}} onClick={moveToEnd}>next</button>
       <Popup />
       {/* <ContentComponent /> */}
-    </div>
+    </div>}
+    </AnimatePresence>
   );
 };
 const wrapperStyle = {

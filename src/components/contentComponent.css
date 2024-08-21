@@ -28,6 +28,7 @@
 
 body {
     background-image: url(/src/assets/LucasTexture.jpg);
+    background-attachment: fixed;
 }
 
 /* Poster section */
@@ -220,4 +221,12 @@ h4 {
     top:1690px;
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.7);
     transform:rotate(-2deg);
+}
+
+.expandedview__back {
+    position:fixed;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    width: 80px;
 }

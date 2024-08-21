@@ -41,43 +41,43 @@ const Popup = () => {
 
     return (
         <div>
-            <motion.button id="indexShowHelp" 
-            variants={buttonVariants} 
-            animate={isPopupVisible ? "open" : "closed"} 
-            transition={{type: "spring", duration: 0.5}}
-            whileTap={{scale: 1.2}}
-            className="indexShowHelp card box" 
-            onClick={showPopup}>
+            <motion.button id="indexShowHelp"
+                variants={buttonVariants}
+                animate={isPopupVisible ? "open" : "closed"}
+                transition={{ type: "spring", duration: 0.5 }}
+                whileTap={{ scale: 1.2 }}
+                className="indexShowHelp card box"
+                onClick={showPopup}>
                 Avi and Luke
             </motion.button>
             <AnimatePresence>
-            {isPopupVisible && (
-                <motion.div 
-                    id="indexHelpPopup" 
-                    variants={popupVariants} 
-                    exit="exit" animate="animate" 
-                    initial="initial" 
-                    transition={{duration: 0.5, ease: [0.22, 1, 0.36, 1]}}
-                    className="contactPopup" 
-                    onClick={closePopup}>
-                    <div className="contactContent" onClick={(e) => e.stopPropagation()}>
-                        <span id="indexPopupClose" onClick={closePopup}>close</span>
-                        <p>
-                            Avi and Luke.
-                        </p>
-                        <p>
-                            The hottest upcoming duo you've never heard of, are about to make their debut.
-                        </p>
-                        <p>
-                            We recently caught up with them and managed to see what's whipped this small, yet loyal following up into a frenzy. </p>
-                        <p>
-                            On first impression, space oddities wouldn't even cut it when describing their creative output. </p>
-                        <p>
-                            The lasting impression is you want to keep going back for more. Let's hope they don't sell out.
-                        </p>
-                    </div>
-                </motion.div>
-            )}
+                {isPopupVisible && (
+                    <motion.div
+                        id="indexHelpPopup"
+                        variants={popupVariants}
+                        exit="exit" animate="animate"
+                        initial="initial"
+                        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                        className="contactPopup"
+                        onClick={closePopup}>
+                        <div className="contactContent" onClick={(e) => e.stopPropagation()}>
+                            <span id="indexPopupClose" onClick={closePopup}>close</span>
+                            <p>
+                                Avi and Luke.
+                            </p>
+                            <p>
+                                The hottest upcoming duo you've never heard of, are about to make their debut.
+                            </p>
+                            <p>
+                                We recently caught up with them and managed to see what's whipped this small, yet loyal following up into a frenzy. </p>
+                            <p>
+                                On first impression, space oddities wouldn't even cut it when describing their creative output. </p>
+                            <p>
+                                The lasting impression is you want to keep going back for more. Let's hope they don't sell out.
+                            </p>
+                        </div>
+                    </motion.div>
+                )}
             </AnimatePresence>
         </div>
     );

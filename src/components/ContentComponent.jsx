@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import "./contentComponent.css";
+import rewind from "../assets/rewind.svg"
 
-const ContentComponent = () => {
+const ContentComponent = ({data, setExpanded}) => {
   useEffect(() => {
     const thirdPoster = document.querySelector(".poster:nth-child(3)");
     const allSections = document.querySelectorAll(".rectangle section");
@@ -20,8 +21,13 @@ const ContentComponent = () => {
     });
   }, []);
 
+  const back = () => {
+    setExpanded(null)
+  }
+
   return (
     <div className="container">
+      <img src={rewind} className="expandedview__back" alt="back" onClick={back} />
       {/* Poster section */}
       <section className="posterWrapper">
         <div className="poster" src=""></div>
