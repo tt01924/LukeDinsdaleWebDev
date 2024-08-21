@@ -1,12 +1,11 @@
 import { useState, useRef } from "react";
-import { motion, useAnimate, stagger } from "framer-motion";
+import { motion, useAnimate, stagger, AnimatePresence, usePresence } from "framer-motion";
 import data from "./data.json"
 import sleeveBack from "./assets/sleeve_back.svg";
 import record from "./assets/record.png"
 import Popup from "./components/Popup.jsx"
 import ContentComponent from './components/ContentComponent.jsx';
 import "./App.css"
-import { AnimatePresence, usePresence } from "framer-motion";
 
 const OFFSET = 35;
 const SCALE_FACTOR = 0.05;
@@ -16,6 +15,7 @@ const App = () => {
   const [clicked, setClicked] = useState(false)
   const [expanded, setExpanded] = useState(null)
   const [scope, animate] = useAnimate();
+  // eslint-disable-next-line no-unused-vars
   const [isPresent, safeToRemove] = usePresence();
   const [isDragging, setIsDragging] = useState(false);
   const ref = useRef(null)
@@ -24,6 +24,7 @@ const App = () => {
     resetAnimation();
     setCards([...cards.slice(1), cards[0]]);
     setClicked(false);
+    setIsDragging(false)
   };
 
   const handleClick = (index) => {
@@ -149,7 +150,6 @@ const App = () => {
       </div>
       <button style={{position: "fixed", bottom: 10}} onClick={moveToEnd}>next</button>
       <Popup />
-      {/* <ContentComponent /> */}
     </div>}
     </AnimatePresence>
   );
