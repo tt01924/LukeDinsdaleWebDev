@@ -46,7 +46,7 @@ const Popup = () => {
                 animate={isPopupVisible ? "open" : "closed"}
                 transition={{ type: "spring", duration: 0.5 }}
                 whileTap={{ scale: 1.2 }}
-                className="indexShowHelp card box"
+                className="card indexShowHelp"
                 onClick={showPopup}>
                 Avi and Luke
             </motion.button>
