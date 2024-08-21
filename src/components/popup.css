@@ -1,4 +1,4 @@
-.indexShowHelp {
+.card.indexShowHelp {
     width: 250px;
     height: 250px;
     background-color: red;
@@ -52,7 +52,7 @@
 
 
 @media (min-width: 600px) {
-    .indexShowHelp {
+    .card.indexShowHelp {
         height: 300px;
         width: 300px;
         bottom: 10%;
@@ -66,7 +66,9 @@
 }
 
 @media (min-width: 1600px) {
-    .indexShowHelp {
+    .card.indexShowHelp {
+        height: 350px;
+        width: 350px;
         bottom: 10%;
         right: 15%;    
     }

@@ -45,6 +45,11 @@
     .card {
         --base-size: 350px;
     }
+  }
 
 
+  @media (min-width: 1600px) {
+    .card {
+        --base-size: 400px;
+    }
   }
