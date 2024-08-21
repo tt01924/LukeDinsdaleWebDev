@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useEffect } from "react";
 import "./contentComponent.css";
+import rewind from "../assets/rewind.svg"
 
-const ContentComponent = () => {
+const ContentComponent = ({data, setExpanded}) => {
   useEffect(() => {
     const thirdPoster = document.querySelector(".poster:nth-child(3)");
     const allSections = document.querySelectorAll(".rectangle section");
@@ -20,8 +22,13 @@ const ContentComponent = () => {
     });
   }, []);
 
+  const back = () => {
+    setExpanded(null)
+  }
+
   return (
     <div className="container">
+      <img src={rewind} className="expandedview__back" alt="back" onClick={back} />
       {/* Poster section */}
       <section className="posterWrapper">
         <div className="poster" src=""></div>
@@ -31,17 +38,19 @@ const ContentComponent = () => {
 
       {/* Rectangle w.text */}
       <div className="rectangle">
-        <h1>BRUT</h1>
+        <h1>{data.title}</h1>
         <h2>Insight</h2>
-        <h3>You sweat more in high pressure situations.</h3>
+        <h3>{data.insight}</h3>
         <h2>SMP</h2>
-        <h4>Smell unflappable</h4>
+        <h4>{data.smp}</h4>
 
         {/* Section for TV video */}
-        <section>
-          <h2>30 second TV ad</h2>
-          <div className="video"></div>
-        </section>
+        {data.tvAdvert &&
+          <section>
+            <h2>30 second TV ad</h2>
+            <div className="video"></div>
+          </section>
+        }
 
         {/* Section for activation */}
         <section>

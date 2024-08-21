@@ -1,4 +1,4 @@
-.box {
+.card.indexShowHelp {
     width: 250px;
     height: 250px;
     background-color: red;
@@ -52,7 +52,7 @@
 
 
 @media (min-width: 600px) {
-    .box {
+    .card.indexShowHelp {
         height: 300px;
         width: 300px;
         bottom: 10%;
@@ -63,4 +63,19 @@
         width: 30%;
         margin-left: 70%;
     }
+}
+
+@media (min-width: 1600px) {
+    .card.indexShowHelp {
+        height: 350px;
+        width: 350px;
+        bottom: 10%;
+        right: 15%;    
+    }
+    .contactContent {
+        width: 25%;
+        margin-left: 75%;
+        font-size: 1.1em;
+    }
+
 }
