@@ -19,7 +19,8 @@
         "smp": "bank more American.",
         "insight": "Brits are uncomfortable talking about money, but Americans aren't.",
         "imgUrl": "src/assets/vinylCoverImages/ChaseFooFighters.jpg",
-        "endline": ""
+        "endline": "",
+        "posters": ["src/assets/media/chase/poster1.webp", "src/assets/media/chase/poster2.webp", "src/assets/media/chase/poster3.webp"]
     },
     {
         "id": 3,
@@ -27,7 +28,9 @@
         "smp": "Smell unflappable.",
         "insight": "You sweat more in high pressure situations, which makes you smell.",
         "imgUrl": "src/assets/vinylCoverImages/BrutBruceSpringsteen.jpg",
-        "endline": "Smell Unflappable"
+        "endline": "Smell Unflappable",
+        "posters": ["src/assets/media/brut/poster1.webp", "src/assets/media/brut/poster2.webp", "src/assets/media/brut/poster3.webp"],
+        "activation": "src/assets/media/brut/activation.webp"
     },
     {
         "id": 4,
@@ -35,7 +38,9 @@
         "smp": "A Paul Smith tie makes you hard to forget.",
         "insight": "No one stands out in a suit anymore because they don’t wear a tie.",
         "imgUrl": "src/assets/vinylCoverImages/PaulSmithPinkFloyd.jpg",
-        "endline": "Leave an impression"
+        "endline": "Leave an impression",
+        "posters": ["src/assets/media/paulSmith/poster1.webp", "src/assets/media/paulSmith/poster2.webp", "src/assets/media/paulSmith/poster3.webp"],
+        "radioAd": ["src/assets/media/paulSmith/radio1.mp3", "src/assets/media/paulSmith/radio2.mp3", "src/assets/media/paulSmith/radio3.mp3"]
     },
     {
         "id": 5,
@@ -43,7 +48,11 @@
         "smp": "Rustlers will ensure your night out gets a happy ending.",
         "insight": "Drama can ruin a night out.",
         "imgUrl": "src/assets/vinylCoverImages/RustlersRollingStones.jpg",
-        "endline": ""
+        "endline": "",
+        "posters": ["src/assets/media/rustlers/poster1.webp", "src/assets/media/rustlers/poster2.webp", "src/assets/media/rustlers/poster3.webp"],
+        "prStunt": "src/assets/media/rustlers/prStunt.webp",
+        "datingApp": "src/assets/media/rustlers/datingApp.webp",
+        "uberApp": "src/assets/media/rustlers/uberApp.webp"
     },
     {
         "id": 6,
@@ -51,7 +60,10 @@
         "smp": "See things you wouldn’t see from the air",
         "insight": "You miss detailed scenery when you travel by plane.",
         "imgUrl": "src/assets/vinylCoverImages/EurostarBlur.jpg",
-        "endline": "Take a more scenic route."
+        "endline": "Take a more scenic route.",
+        "posters": ["src/assets/media/eurostar/poster1.webp", "src/assets/media/eurostar/poster2.webp", "src/assets/media/eurostar/poster3.webp"],
+        "travel": "src/assets/media/eurostar/travel.webp",
+        "app": "src/assets/media/eurostar/app.webp"
     },
     {
         "id": 7,
@@ -59,7 +71,10 @@
         "smp": "We speak Bike so you don’t have to.",
         "insight": "Bicycle owners don't know what the bike's parts are called.",
         "imgUrl": "src/assets/vinylCoverImages/HalfordsTheBeatles.jpg",
-        "endline": "We speak Bike so you don’t have to."
+        "endline": "We speak Bike so you don’t have to.",
+        "posters": ["src/assets/media/halfords/poster1.webp", "src/assets/media/halfords/poster2.webp", "src/assets/media/halfords/poster3.webp"],
+        "brandPartnership": "src/assets/media/halfords/brandPartnership.webp",
+        "digitalBanner": "src/assets/media/halfords/digitalBanner.webp"
     },
     {
         "id": 8,
