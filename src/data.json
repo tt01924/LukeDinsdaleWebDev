@@ -5,7 +5,13 @@
         "smp": "Wotsits are so addictive they should be illegal.",
         "insight": "Cheese releases the same chemical in our brains as hard drugs.",
         "imgUrl": "src/assets/vinylCoverImages/WotsitsAndyWarhol.jpg",
-        "endline": ""
+        "endline": "",
+        "posters": ["src/assets/media/wotsits/poster1.webp", "src/assets/media/wotsits/poster2.webp", "src/assets/media/wotsits/poster3.webp"],
+        "radioAd": ["src/assets/media/wotsits/radioAd.mp3"],
+        "brandCollab": ["src/assets/media/wotsits/brandCollab1.webp", "src/assets/media/wotsits/brandCollab2.webp"],
+        "prStunt": "src/assets/media/wotsits/prStunt.webp",
+        "sticker": "src/assets/media/wotsits/sticker.webp",
+        "socialMedia": "src/assets/media/wotsits/socialMedia.webp"
     },
     {
         "id": 2,
