@@ -34,13 +34,14 @@
     },
     {
         "id": 4,
-        "title": "Paul Smith",
-        "smp": "A Paul Smith tie makes you hard to forget.",
-        "insight": "No one stands out in a suit anymore because they don’t wear a tie.",
-        "imgUrl": "src/assets/vinylCoverImages/PaulSmithPinkFloyd.jpg",
-        "endline": "Leave an impression",
-        "posters": ["src/assets/media/paulSmith/poster1.webp", "src/assets/media/paulSmith/poster2.webp", "src/assets/media/paulSmith/poster3.webp"],
-        "radioAd": ["src/assets/media/paulSmith/radio1.mp3", "src/assets/media/paulSmith/radio2.mp3", "src/assets/media/paulSmith/radio3.mp3"]
+        "title": "Eurostar",
+        "smp": "See things you wouldn’t see from the air",
+        "insight": "You miss detailed scenery when you travel by plane.",
+        "imgUrl": "src/assets/vinylCoverImages/EurostarBlur.jpg",
+        "endline": "Take a more scenic route.",
+        "posters": ["src/assets/media/eurostar/poster1.webp", "src/assets/media/eurostar/poster2.webp", "src/assets/media/eurostar/poster3.webp"],
+        "travel": "src/assets/media/eurostar/travel.webp",
+        "app": "src/assets/media/eurostar/app.webp"
     },
     {
         "id": 5,
@@ -56,17 +57,6 @@
     },
     {
         "id": 6,
-        "title": "Eurostar",
-        "smp": "See things you wouldn’t see from the air",
-        "insight": "You miss detailed scenery when you travel by plane.",
-        "imgUrl": "src/assets/vinylCoverImages/EurostarBlur.jpg",
-        "endline": "Take a more scenic route.",
-        "posters": ["src/assets/media/eurostar/poster1.webp", "src/assets/media/eurostar/poster2.webp", "src/assets/media/eurostar/poster3.webp"],
-        "travel": "src/assets/media/eurostar/travel.webp",
-        "app": "src/assets/media/eurostar/app.webp"
-    },
-    {
-        "id": 7,
         "title": "Halfords",
         "smp": "We speak Bike so you don’t have to.",
         "insight": "Bicycle owners don't know what the bike's parts are called.",
@@ -77,11 +67,21 @@
         "digitalBanner": "src/assets/media/halfords/digitalBanner.webp"
     },
     {
-        "id": 8,
+        "id": 7,
         "title": "Coke",
         "smp": "Connect GenZ to Coca Cola",
         "insight": "D&AD New Blood Brief:",
         "imgUrl": "src/assets/vinylCoverImages/CokeGreenDay.jpg",
         "endline": ""
+    },
+    {
+        "id": 8,
+        "title": "Paul Smith",
+        "smp": "A Paul Smith tie makes you hard to forget.",
+        "insight": "No one stands out in a suit anymore because they don’t wear a tie.",
+        "imgUrl": "src/assets/vinylCoverImages/PaulSmithPinkFloyd.jpg",
+        "endline": "Leave an impression",
+        "posters": ["src/assets/media/paulSmith/poster1.webp", "src/assets/media/paulSmith/poster2.webp", "src/assets/media/paulSmith/poster3.webp"],
+        "radioAd": ["src/assets/media/paulSmith/radio1.mp3", "src/assets/media/paulSmith/radio2.mp3", "src/assets/media/paulSmith/radio3.mp3"]
     }
 ]
