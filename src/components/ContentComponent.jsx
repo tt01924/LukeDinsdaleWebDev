@@ -30,11 +30,12 @@ const ContentComponent = ({data, setExpanded}) => {
     <div className="container">
       <img src={rewind} className="expandedview__back" alt="back" onClick={back} />
       {/* Poster section */}
+      {data.posters &&
       <section className="posterWrapper">
-        <div className="poster" src=""></div>
-        <div className="poster" src=""></div>
-        <div className="poster" src=""></div>
-      </section>
+        {data.posters.map((posterUrl, i) => {
+          return <img className="poster" key={i} src={posterUrl} />
+        })}
+      </section>}
 
       {/* Rectangle w.text */}
       <div className="rectangle">
@@ -45,7 +46,7 @@ const ContentComponent = ({data, setExpanded}) => {
         <h4>{data.smp}</h4>
 
         {/* Section for TV video */}
-        {data.tvAdvert &&
+        {true &&
           <section>
             <h2>30 second TV ad</h2>
             <div className="video"></div>
@@ -53,7 +54,8 @@ const ContentComponent = ({data, setExpanded}) => {
         }
 
         {/* Section for activation */}
-        <section>
+
+        {data.activation && <section>
           <h2>Activation</h2>
           <p>
             Scunthorpe United are set to play Liverpool in the FA Cup, and need
@@ -70,7 +72,7 @@ const ContentComponent = ({data, setExpanded}) => {
             <br />
           </p>
           <img className="activation" src="" alt="Activation" />
-        </section>
+        </section>}
 
         {/* Section for Social Media */}
         <section>
@@ -82,6 +84,11 @@ const ContentComponent = ({data, setExpanded}) => {
         {/* Section for Radio Ad */}
         <section>
           <h2>60 second radio ad:</h2>
+          {data.radioAd && 
+            <audio controls>
+              <source src={data.radioAd} type="audio/mpeg" />
+            </audio>
+          }
           <p>User (Thick East End accent, hushed tone):</p>
           <p className="scriptBold">‘ere mate, can I eh... Can I get 36g of the finest?</p>
           <p>Dealer:</p>

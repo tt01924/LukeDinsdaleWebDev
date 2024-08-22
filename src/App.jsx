@@ -116,7 +116,9 @@ const wrapperStyle = {
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  height: "100vh"
+  height: "100vh",
+  maxWidth: "500px",
+  margin: "0 auto"
 };
 
 const cardWrapStyle = {

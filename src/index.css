@@ -29,12 +29,10 @@ body {
   display: flex;
   place-items: center;
   min-width: 100%;
-  min-height: 100vh;
 }
 
 #root {
-  margin: 0 auto;
-  width: 500px;
+  width: 100%
 }
 
 h1 {
