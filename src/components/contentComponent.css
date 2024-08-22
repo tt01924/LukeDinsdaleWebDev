@@ -28,13 +28,33 @@
 
 body {
     background-image: url(/src/assets/LucasTexture.jpg);
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+}
+
+.grid-container .wide {
+    grid-column: 1 / span 2;
+}
+
+.grid-container .side {
+    background-color: antiquewhite;
+}
+
+.grid-container img {
+    max-width: 100%;
 }
 
 /* Poster section */
 
 .posterWrapper{
     position: relative;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .poster {
@@ -64,7 +84,7 @@ body {
 
 /* Rectangle and text */
 
-.rectangle {
+/* .rectangle {
     background-color: antiquewhite;
     height: 6500px;
     width: 30%;
@@ -72,9 +92,9 @@ body {
     top: 0;
     z-index: 1;
     right: 0; 
-}
+} */
 
-.rectangle h2 {
+.side h2 {
     margin-top: 80px;
 }
 
@@ -133,21 +153,16 @@ h4 {
 }
 
 .activation {
-    width: 65vw;
     background-color: darkgray;
-    margin-top: -200px; 
-    position: relative;
     z-index: 2;
+    max-width: 100%;
 }
 
 .socialMedia {
-    width: 80vw;
-    height: 30vw;
-    background-color: darkgray;
-    margin-top: 40px; 
-    position: relative;
+    /* height: 30vw; */
+    /* background-color: darkgray; */
     z-index: 2;
-    left: -60vw;
+    max-width: 100%;
 }
 
 /* Topicals section */
