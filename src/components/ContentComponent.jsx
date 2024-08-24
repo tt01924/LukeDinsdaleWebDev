@@ -59,7 +59,7 @@ const ContentComponent = ({data, setExpanded}) => {
 
         {data.activation && 
         <>
-          <img className="activation" src="" alt="Activation" />
+          <img className="activation" src={data.activation} alt="Activation" />
           <section className="side">
             <h2>Activation</h2>
             <p>
@@ -82,7 +82,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {/* Section for Social Media */}
         {data.socialMedia && 
         <>
-        {data.sticker ? <img src={data.sticker} style={{maxWidth: "500px", margin: "0 auto"}}/> : <div></div>}
+        {data.sticker ? <img src={data.sticker} className="sticker" /> : <div></div>}
         <section className="side">
           <h2>Social Media</h2>
           <p>Hello World!</p>
@@ -96,11 +96,13 @@ const ContentComponent = ({data, setExpanded}) => {
           <img src="/src/assets/temporaryRadio.jpeg" /> 
           <section className="side">
             <h2>60 second radio ad:</h2>
-              <audio controls>
-                <source src={data.radioAd} type="audio/mpeg" />
+            {data.radioAd.map(audioSource => {
+              return <audio controls key={audioSource}>
+                <source src={audioSource} type="audio/mpeg" />
               </audio>
+            })}
             
-            <p>User (Thick East End accent, hushed tone):</p>
+            {data.title === "Wotsits" && <><p>User (Thick East End accent, hushed tone):</p>
             <p className="scriptBold">‘ere mate, can I eh... Can I get 36g of the finest?</p>
             <p>Dealer:</p>
             <p className="scriptBold">Sure.</p>
@@ -123,7 +125,7 @@ const ContentComponent = ({data, setExpanded}) => {
               being wolfed down by the user as he moans in ecstasy).
             </p>
             <p>V/O (A whispering East End accent):</p>
-            <p className="scriptBold">Wotsits. Addictively Cheesy.</p>
+            <p className="scriptBold">Wotsits. Addictively Cheesy.</p></>}
           </section>
         </>}
 
