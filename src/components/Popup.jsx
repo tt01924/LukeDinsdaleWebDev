@@ -63,18 +63,20 @@ const Popup = () => {
                         <div className="contactContent" onClick={(e) => e.stopPropagation()}>
                             <span id="indexPopupClose" onClick={closePopup}>close</span>
                             <h2>
-                                Avi and Luke.</h2>
+                                I bet your ad agency doesn’t feature rarities like these…</h2>
+                            <h3>
+                                Avi:</h3>
                             <p>
-                                The hottest upcoming duo you've never heard of, are about to make their debut.</p>
+                                I’m a creative who is driven by my current mood. I can turn any emotion into original songs and compositions because I believe music can heal the creator and the listener. Trigger warning, if you don’t like Taylor Swift, you may not like what I play. But I don’t care. I’m always at my happiest when my music is connecting with someone and helping them to make sense of something in their lives. That’s a creative’s purpose. My purpose.</p>
+                            
+                            <h3>
+                                Luke:</h3>
                             <p>
-                                We recently caught up with them and managed to see what's whipped this small, yet loyal following up into a frenzy. </p>
-                            <p>
-                                On first impression, space oddities wouldn't even cut it when describing their creative output. </p>
-                            <p>
-                                The lasting impression is you want to keep going back for more. Let's hope they don't sell out.</p>
+                                I’m a Jazz-Cat and word-smith who expresses my creativity through music and clothing.<br></br>
+                                For 19 years I’ve penned prose, sang, and played guitar with numerous punk bands, literally and figuratively tearing up the stage. You’ll normally catch me sippin’ on espresso and people watching at Bar Italia—I’m the guy wearing a thoughtfully curated look that features 1960’s suits, paired with a bold shirt and sleek tie.</p>
 
-                            <h3 class="buskingText">
-                                Avi and Luke Go Busking:</h3>
+                            <h2 class="buskingText">
+                                Avi and Luke Go Busking:</h2>
 
                             <div class='imageContainer'></div>
 

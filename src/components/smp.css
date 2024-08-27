@@ -1,8 +1,8 @@
-.card.indexShowHelp {
+.card.indexShowHelpSmp {
     width: 250px;
     height: 250px;
     background-color: red;
-    /* background-image: url("src/assets/vinylCoverImages/Eurostar.w"); */
+    background-image: url("/src/assets/vinylCoverImages/smpsRiot.webp");
     background-size: cover;
     bottom: -1rem;
     right: 0;
@@ -56,7 +56,7 @@ h3 {
 
 
 @media (min-width: 600px) {
-    .card.indexShowHelp {
+    .card.indexShowHelpSmp {
         height: 300px;
         width: 300px;
         bottom: 35%;
@@ -70,7 +70,7 @@ h3 {
 }
 
 @media (min-width: 1600px) {
-    .card.indexShowHelp {
+    .card.indexShowHelpSmp {
         height: 350px;
         width: 350px;
         bottom: 35%;

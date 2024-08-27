@@ -1,8 +1,8 @@
-.card.indexShowHelp {
+.card.indexShowHelpTopicals {
     width: 250px;
     height: 250px;
     background-color: red;
-    /* background-image: url("src/assets/vinylCoverImages/Eurostar.w"); */
+    background-image: url("/src/assets/vinylCoverImages/topicalsReputation.webp");
     background-size: cover;
     bottom: -1rem;
     right: 0;
@@ -57,7 +57,7 @@
 
 
 @media (min-width: 600px) {
-    .card.indexShowHelp {
+    .card.indexShowHelpTopicals {
         height: 300px;
         width: 300px;
         bottom: 10%;
@@ -71,7 +71,7 @@
 }
 
 @media (min-width: 1600px) {
-    .card.indexShowHelp {
+    .card.indexShowHelpTopicals {
         height: 350px;
         width: 350px;
         bottom: 10%;

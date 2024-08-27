@@ -41,12 +41,12 @@ const Topicals = () => {
 
     return (
         <div>
-            <motion.button id="indexShowHelp"
+            <motion.button id="indexShowHelpTopicals"
                 variants={buttonVariants}
                 animate={isPopupVisible ? "open" : "closed"}
                 transition={{ type: "spring", duration: 0.5 }}
                 whileTap={{ scale: 1.2 }}
-                className="card indexShowHelp"
+                className="card indexShowHelpTopicals"
                 onClick={showPopup}>
                 Avi and Luke
             </motion.button>
