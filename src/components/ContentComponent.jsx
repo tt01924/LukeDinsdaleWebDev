@@ -21,15 +21,15 @@ const ContentComponent = ({data, setExpanded}) => {
     <img src={rewind} className="expandedview__back" alt="back" onClick={back} />
     <div className="grid-container">
       {/* Poster section */}
-      {data.posters &&
+      {data.posters ?
       <section className="posterWrapper">
         {data.posters.map((posterUrl, i) => {
           return <motion.img className="poster" variants={posterVariants} custom={i} initial="initial" whileInView="animate" transition={{ duration: 0.4, ease: easeInOut}} key={i} src={posterUrl} />
         })}
-      </section>}
+      </section> : <div></div> }
 
       {/* Rectangle w.text */}
-      <div className="side">
+      <div className="side sidebar-info">
         <h1>{data.title}</h1>
         <h2>Insight</h2>
         <h3>{data.insight}</h3>
@@ -39,10 +39,12 @@ const ContentComponent = ({data, setExpanded}) => {
 
         {/* Section for TV video */}
         {data.tvAdvert &&
-          <section className="wide">
+        <>
+          <iframe width="560" height="315" src={data.tvAdvert} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className={data.title}></iframe>
+          <section className="side">
             <h2>30 second TV ad</h2>
-            <div className="video"></div>
           </section>
+          </>
         }
 
         {/* Section for activation */}

@@ -30,7 +30,8 @@
         "imgUrl": "/vinylCoverImages/BrutBruceSpringsteen.webp",
         "endline": "Smell Unflappable",
         "posters": ["/media/brut/poster1.webp", "/media/brut/poster2.webp", "/media/brut/poster3.webp"],
-        "activation": "/media/brut/activation.webp"
+        "activation": "/media/brut/activation.webp",
+        "tvAdvert": "https://www.youtube.com/embed/mQlw5mpwMBg?si=KVw5Do7g2OpxwmYt"
     },
     {
         "id": 4,
@@ -70,7 +71,8 @@
         "smp": "Connect GenZ to Coca Cola",
         "insight": "D&AD New Blood Brief:",
         "imgUrl": "/vinylCoverImages/CokeGreenDay.webp",
-        "endline": ""
+        "endline": "",
+        "tvAdvert": "https://www.youtube.com/embed/lacybA6paks?si=Cb6jhmR3oL9nINfT"
     },
     {
         "id": 8,
