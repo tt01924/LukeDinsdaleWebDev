@@ -2,7 +2,7 @@
     width: 250px;
     height: 250px;
     background-color: red;
-    background-image: url("src/assets/vinylCoverImages/ALWhiteStripesCoverSleeve.jpg");
+    /* background-image: url("src/assets/vinylCoverImages/Eurostar.w"); */
     background-size: cover;
     bottom: -1rem;
     right: 0;
@@ -55,7 +55,7 @@
     .card.indexShowHelp {
         height: 300px;
         width: 300px;
-        bottom: 30%;
+        bottom: 10%;
         right: 10%;    
     }
 
@@ -69,7 +69,7 @@
     .card.indexShowHelp {
         height: 350px;
         width: 350px;
-        bottom: 30%;
+        bottom: 10%;
         right: 15%;    
     }
     .contactContent {

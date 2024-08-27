@@ -62,19 +62,28 @@ const Popup = () => {
                         onClick={closePopup}>
                         <div className="contactContent" onClick={(e) => e.stopPropagation()}>
                             <span id="indexPopupClose" onClick={closePopup}>close</span>
+                            <h2>
+                                Avi and Luke.</h2>
                             <p>
-                                Avi and Luke.
-                            </p>
-                            <p>
-                                The hottest upcoming duo you've never heard of, are about to make their debut.
-                            </p>
+                                The hottest upcoming duo you've never heard of, are about to make their debut.</p>
                             <p>
                                 We recently caught up with them and managed to see what's whipped this small, yet loyal following up into a frenzy. </p>
                             <p>
                                 On first impression, space oddities wouldn't even cut it when describing their creative output. </p>
                             <p>
-                                The lasting impression is you want to keep going back for more. Let's hope they don't sell out.
-                            </p>
+                                The lasting impression is you want to keep going back for more. Let's hope they don't sell out.</p>
+
+                            <h2 class="buskingText">
+                                Avi and Luke Go Busking:</h2>
+
+                            <div class='imageContainer'></div>
+
+                            <p>
+                                To drum up some attention for ourselves, we planned a busking tour around some of London’s advertising agencies.</p>
+                            <p>
+                                A few nights before our tour, we stuck up our tour posters across London, creating hype for our upcoming musical showcase.</p>
+                            <p>Then, wrote a special song highlighting all the reasons why we should be hired. And we sang our hearts out, over two days, for all the agencies to hear.</p>
+
                         </div>
                     </motion.div>
                 )}

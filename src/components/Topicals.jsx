@@ -30,12 +30,12 @@ const Topicals = () => {
         open: {
             rotate: -70,
             x: -150,
-            y: "-30%", 
+            y: "-10%", 
         },
         closed: {
-            rotate: -15,
+            rotate: -25,
             x: 30,
-            y: "20%"   
+            y: "80%"   
         }
     }
 
