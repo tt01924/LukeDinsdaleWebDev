@@ -1,19 +1,28 @@
 import { useState } from "react";
-import { useAnimate, stagger, AnimatePresence, usePresence } from "framer-motion";
-import data from "./data.json"
+import { useAnimate, stagger, AnimatePresence } from "framer-motion";
 import Popup from "./components/Popup.jsx"
 import ContentComponent from './components/ContentComponent.jsx';
 import "./App.css"
 import Record from "./components/Record.jsx";
+import { useEffect } from "react";
 
 const App = () => {
-  const [cards, setCards] = useState(data);
+  const [cards, setCards] = useState([]);
   const [clicked, setClicked] = useState(false)
   const [expanded, setExpanded] = useState(null)
   const [scope, animate] = useAnimate();
-  // eslint-disable-next-line no-unused-vars
-  const [isPresent, safeToRemove] = usePresence();
   const [isDragging, setIsDragging] = useState(false);
+
+  useEffect(()=> {
+    const getData = () => {
+      fetch("/data.json")
+      .then(response => response.json())
+      .then(data => {
+        setCards(data)
+      })
+    }
+    getData()
+  },[])
 
   const moveToEnd = () => {
     resetAnimation();
