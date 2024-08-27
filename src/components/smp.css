@@ -26,6 +26,10 @@
     display: flex;
 }
 
+h3 {
+    margin-top: 3em;
+}
+
 .contactContent {
     margin-left:40%;
     color: black;
@@ -34,7 +38,7 @@
     /* border: 1px solid #888; */
     background-color: white;
     width: 60%;
-    height: 100%;
+    height: 100% !important;
     /* border-radius: 8px; */
     /* text-align: center; */
     box-shadow: -4px -4px 10px rgba(22, 0, 60, 0.3);

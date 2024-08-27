@@ -35,7 +35,7 @@ const Smp = () => {
         closed: {
             rotate: -25,
             x: 30,
-            y: "80%"   
+            y: "50%"   
         }
     }
 
@@ -62,12 +62,23 @@ const Smp = () => {
                         onClick={closePopup}>
                         <div className="contactContent" onClick={(e) => e.stopPropagation()}>
                             <span id="indexPopupClose" onClick={closePopup}>close</span>
-                            <p>
-                                Topicals
-                            </p>
-                            {/* Section for Topicals */}
                             <section>
-                            <h2> SMP </h2>
+                            <h2> SMP's </h2>
+                            <h3>Playdough:</h3>
+                            <p>
+                                Play comes in different shapes and sizes.</p>
+                            <h3>It Airways:</h3>
+                            <p>
+                                Return a little italian.</p>
+                            <h3>Daye CBD Tampons:</h3>
+                            <p>
+                                Send your uterus on a trip.</p>
+                            <h3>Suzuki:</h3>
+                            <p>
+                                Find joy in the little things.</p>
+                            <h3>Invisalign:</h3>
+                            <p>
+                                Give your teeth the spotlight.</p>
                             </section>
                         </div>
                     </motion.div>
