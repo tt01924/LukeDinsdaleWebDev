@@ -73,8 +73,8 @@ const Popup = () => {
                             <p>
                                 The lasting impression is you want to keep going back for more. Let's hope they don't sell out.</p>
 
-                            <h2 class="buskingText">
-                                Avi and Luke Go Busking:</h2>
+                            <h3 class="buskingText">
+                                Avi and Luke Go Busking:</h3>
 
                             <div class='imageContainer'></div>
 

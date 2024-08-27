@@ -62,20 +62,16 @@ const Topicals = () => {
                         onClick={closePopup}>
                         <div className="contactContent" onClick={(e) => e.stopPropagation()}>
                             <span id="indexPopupClose" onClick={closePopup}>close</span>
-                            <p>
-                                Topicals
-                            </p>
-                            {/* Section for Topicals */}
                             <section>
-                            <h2>Topicals</h2>
+                            <h2>Topicals:</h2>
                             <div className="topicalsWrapper">
-                                <div className="topicalPoster" src="Last min"></div>
-                                <div className="topicalPoster" src="Karcher"></div>
-                                <div className="topicalPoster" src="GoHenry"></div>
-                                <div className="topicalPoster" src="Dementia"></div>
-                                <div className="topicalPoster" src="WhatsApp"></div>
-                                <div className="topicalPoster" src="Costa"></div>
-                                <div className="topicalPoster" src="RNIB"></div>
+                                <img class="imageOne" src="/src/assets/media/topicals/poster1.webp"></img>
+                                <img class="imageOne" src="/src/assets/media/topicals/poster2.webp"></img>
+                                <img class="imageOne" src="/src/assets/media/topicals/poster3.webp"></img>
+                                <img class="imageOne" src="/src/assets/media/topicals/poster4.webp"></img>
+                                <img class="imageOne" src="/src/assets/media/topicals/poster5.webp"></img>
+                                <img class="imageOne" src="/src/assets/media/topicals/poster6.webp"></img>
+                                <img class="imageOne" src="/src/assets/media/topicals/poster7.webp"></img>
                             </div>
                             </section>
                         </div>

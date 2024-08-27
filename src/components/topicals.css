@@ -40,6 +40,11 @@
     box-shadow: -4px -4px 10px rgba(22, 0, 60, 0.3);
 }
 
+.imageOne {
+    width: 100%;
+    margin-top: 1em;
+}
+
 #indexPopupClose {
     font-weight: bold;
     text-transform: uppercase;
