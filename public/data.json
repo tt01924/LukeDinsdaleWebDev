@@ -4,74 +4,74 @@
         "title": "Wotsits",
         "smp": "Wotsits are so addictive they should be illegal.",
         "insight": "Cheese releases the same chemical in our brains as hard drugs.",
-        "imgUrl": "src/assets/vinylCoverImages/WotsitsAndyWarhol.jpg",
+        "imgUrl": "/vinylCoverImages/WotsitsAndyWarhol.webp",
         "endline": "",
-        "posters": ["src/assets/media/wotsits/poster1.webp", "src/assets/media/wotsits/poster2.webp", "src/assets/media/wotsits/poster3.webp"],
-        "radioAd": ["src/assets/media/wotsits/radioAd.mp3"],
-        "brandCollab": ["src/assets/media/wotsits/brandCollab1.webp", "src/assets/media/wotsits/brandCollab2.webp"],
-        "prStunt": "src/assets/media/wotsits/prStunt.webp",
-        "sticker": "src/assets/media/wotsits/sticker.webp",
-        "socialMedia": "src/assets/media/wotsits/socialMedia.webp"
+        "posters": ["/media/wotsits/poster1.webp", "/media/wotsits/poster2.webp", "/media/wotsits/poster3.webp"],
+        "radioAd": ["/media/wotsits/radioAd.mp3"],
+        "brandCollab": ["/media/wotsits/brandCollab1.webp", "/media/wotsits/brandCollab2.webp"],
+        "prStunt": "/media/wotsits/prStunt.webp",
+        "sticker": "/media/wotsits/sticker.webp",
+        "socialMedia": "/media/wotsits/socialMedia.webp"
     },
     {
         "id": 2,
         "title": "Chase Bank",
         "smp": "bank more American.",
         "insight": "Brits are uncomfortable talking about money, but Americans aren't.",
-        "imgUrl": "src/assets/vinylCoverImages/ChaseFooFighters.jpg",
+        "imgUrl": "/vinylCoverImages/ChaseFooFighters.webp",
         "endline": "",
-        "posters": ["src/assets/media/chase/poster1.webp", "src/assets/media/chase/poster2.webp", "src/assets/media/chase/poster3.webp"]
+        "posters": ["/media/chase/poster1.webp", "/media/chase/poster2.webp", "/media/chase/poster3.webp"]
     },
     {
         "id": 3,
         "title": "Brut",
         "smp": "Smell unflappable.",
         "insight": "You sweat more in high pressure situations, which makes you smell.",
-        "imgUrl": "src/assets/vinylCoverImages/BrutBruceSpringsteen.jpg",
+        "imgUrl": "/vinylCoverImages/BrutBruceSpringsteen.webp",
         "endline": "Smell Unflappable",
-        "posters": ["src/assets/media/brut/poster1.webp", "src/assets/media/brut/poster2.webp", "src/assets/media/brut/poster3.webp"],
-        "activation": "src/assets/media/brut/activation.webp"
+        "posters": ["/media/brut/poster1.webp", "/media/brut/poster2.webp", "/media/brut/poster3.webp"],
+        "activation": "/media/brut/activation.webp"
     },
     {
         "id": 4,
         "title": "Eurostar",
         "smp": "See things you wouldn’t see from the air",
         "insight": "You miss detailed scenery when you travel by plane.",
-        "imgUrl": "src/assets/vinylCoverImages/EurostarBlur.jpg",
+        "imgUrl": "/vinylCoverImages/EurostarBlur.webp",
         "endline": "Take a more scenic route.",
-        "posters": ["src/assets/media/eurostar/poster1.webp", "src/assets/media/eurostar/poster2.webp", "src/assets/media/eurostar/poster3.webp"],
-        "travel": "src/assets/media/eurostar/travel.webp",
-        "app": "src/assets/media/eurostar/app.webp"
+        "posters": ["/media/eurostar/poster1.webp", "/media/eurostar/poster2.webp", "/media/eurostar/poster3.webp"],
+        "travel": "/media/eurostar/travel.webp",
+        "app": "/media/eurostar/app.webp"
     },
     {
         "id": 5,
         "title": "Rustlers",
         "smp": "Rustlers will ensure your night out gets a happy ending.",
         "insight": "Drama can ruin a night out.",
-        "imgUrl": "src/assets/vinylCoverImages/RustlersRollingStones.jpg",
+        "imgUrl": "/vinylCoverImages/RustlersRollingStones.webp",
         "endline": "",
-        "posters": ["src/assets/media/rustlers/poster1.webp", "src/assets/media/rustlers/poster2.webp", "src/assets/media/rustlers/poster3.webp"],
-        "prStunt": "src/assets/media/rustlers/prStunt.webp",
-        "datingApp": "src/assets/media/rustlers/datingApp.webp",
-        "uberApp": "src/assets/media/rustlers/uberApp.webp"
+        "posters": ["/media/rustlers/poster1.webp", "/media/rustlers/poster2.webp", "/media/rustlers/poster3.webp"],
+        "prStunt": "/media/rustlers/prStunt.webp",
+        "datingApp": "/media/rustlers/datingApp.webp",
+        "uberApp": "/media/rustlers/uberApp.webp"
     },
     {
         "id": 6,
         "title": "Halfords",
         "smp": "We speak Bike so you don’t have to.",
         "insight": "Bicycle owners don't know what the bike's parts are called.",
-        "imgUrl": "src/assets/vinylCoverImages/HalfordsTheBeatles.jpg",
+        "imgUrl": "/vinylCoverImages/HalfordsTheBeatles.webp",
         "endline": "We speak Bike so you don’t have to.",
-        "posters": ["src/assets/media/halfords/poster1.webp", "src/assets/media/halfords/poster2.webp", "src/assets/media/halfords/poster3.webp"],
-        "brandPartnership": "src/assets/media/halfords/brandPartnership.webp",
-        "digitalBanner": "src/assets/media/halfords/digitalBanner.webp"
+        "posters": ["/media/halfords/poster1.webp", "/media/halfords/poster2.webp", "/media/halfords/poster3.webp"],
+        "brandPartnership": "/media/halfords/brandPartnership.webp",
+        "digitalBanner": "/media/halfords/digitalBanner.webp"
     },
     {
         "id": 7,
         "title": "Coke",
         "smp": "Connect GenZ to Coca Cola",
         "insight": "D&AD New Blood Brief:",
-        "imgUrl": "src/assets/vinylCoverImages/CokeGreenDay.jpg",
+        "imgUrl": "/vinylCoverImages/CokeGreenDay.webp",
         "endline": ""
     },
     {
@@ -79,9 +79,9 @@
         "title": "Paul Smith",
         "smp": "A Paul Smith tie makes you hard to forget.",
         "insight": "No one stands out in a suit anymore because they don’t wear a tie.",
-        "imgUrl": "src/assets/vinylCoverImages/PaulSmithPinkFloyd.jpg",
+        "imgUrl": "/vinylCoverImages/PaulSmithPinkFloyd.webp",
         "endline": "Leave an impression",
-        "posters": ["src/assets/media/paulSmith/poster1.webp", "src/assets/media/paulSmith/poster2.webp", "src/assets/media/paulSmith/poster3.webp"],
-        "radioAd": ["src/assets/media/paulSmith/radio1.mp3", "src/assets/media/paulSmith/radio2.mp3", "src/assets/media/paulSmith/radio3.mp3"]
+        "posters": ["/media/paulSmith/poster1.webp", "/media/paulSmith/poster2.webp", "/media/paulSmith/poster3.webp"],
+        "radioAd": ["/media/paulSmith/radio1.mp3", "/media/paulSmith/radio2.mp3", "/media/paulSmith/radio3.mp3"]
     }
 ]
