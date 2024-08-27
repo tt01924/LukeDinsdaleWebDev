@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Oliver';
+  src: url('../assets/fonts/oliver_3/Oliver-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 .card {
     --base-size: 300px;
     display: flex;
@@ -22,6 +29,7 @@
   }
   
   .card__back .inner {
+    font-family: Oliver, sans-serif;
     display: grid;
     height: 100%;
     width: 100%;
@@ -31,6 +39,14 @@
     "insight smp";
     position: absolute;
     background-size: cover;
+  }
+
+  .inner h2 {
+    font-size: 2rem;
+  }
+
+  .inner p {
+    font-size: 0.9rem;
   }
   
   .record-image {

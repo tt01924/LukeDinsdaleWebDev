@@ -49,7 +49,7 @@ const Record = ({index, data, setIsDragging, handleClick, moveToEnd, totalRecord
                   style={{backgroundImage: `url(${record})`}} 
                  ></motion.div>
                 <div className="inner" style={{backgroundImage: `url("${sleeveBack}")`,}}>
-                  <h3 style={{gridArea: "title"}}>{data.title}</h3>
+                  <h2 style={{gridArea: "title"}}>{data.title}</h2>
                   <p style={{gridArea: "insight"}}>{data.insight}</p>
                   <p style={{gridArea: "smp"}}>{data.smp}</p>
                 </div>

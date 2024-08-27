@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./contentComponent.css";
 import rewind from "../assets/rewind.svg"
+import radio from "../assets/radio.png"
 import { motion } from "framer-motion"
 import { easeInOut } from "framer-motion";
 
@@ -82,7 +83,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {/* Section for Radio Ad */}
         {data.radioAd && 
         <>
-          <img className="radio" src="/src/assets/radio.png" /> 
+          <img className="radio" src={radio} /> 
           <section className="side">
             <h2>60 second radio ad:</h2>
             {data.radioAd.map(audioSource => {
