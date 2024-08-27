@@ -80,7 +80,7 @@ const App = () => {
       ]).then(() => {
         setExpanded(element)
         setClicked(false)
-        safeToRemove();
+        // safeToRemove();
       })
     }
   }

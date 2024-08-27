@@ -1,27 +1,15 @@
 /* eslint-disable react/prop-types */
-import { useEffect } from "react";
 import "./contentComponent.css";
 import rewind from "../assets/rewind.svg"
-import {motion } from "framer-motion"
+import { motion } from "framer-motion"
+import { easeInOut } from "framer-motion";
 
 const ContentComponent = ({data, setExpanded}) => {
-  useEffect(() => {
-    const thirdPoster = document.querySelector(".poster:nth-child(3)");
-    const allSections = document.querySelectorAll(".rectangle section");
 
-    let previousElementBottom =
-      thirdPoster.getBoundingClientRect().bottom + 50;
-
-    allSections.forEach((section) => {
-      section.style.position = "absolute";
-      section.style.top = `${previousElementBottom}px`;
-      section.style.left = "0";
-      section.style.right = "0";
-      section.style.margin = "0 auto";
-
-      previousElementBottom += section.offsetHeight + 50;
-    });
-  }, []);
+  const posterVariants = {
+      initial: {opacity: 0, },
+      animate: (i) => ({opacity: 1, rotate: i % 2=== 0 ? -2 : 2 })
+  }
 
   const back = () => {
     setExpanded(null)
@@ -35,7 +23,7 @@ const ContentComponent = ({data, setExpanded}) => {
       {data.posters &&
       <section className="posterWrapper">
         {data.posters.map((posterUrl, i) => {
-          return <motion.img className="poster" key={i} src={posterUrl} />
+          return <motion.img className="poster" variants={posterVariants} custom={i} initial="initial" whileInView="animate" transition={{ duration: 0.4, ease: easeInOut}} key={i} src={posterUrl} />
         })}
       </section>}
 
