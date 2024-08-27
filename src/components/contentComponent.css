@@ -43,6 +43,11 @@ body {
     padding: 1rem;
 }
 
+/* this forces info to stack on top of posters */
+.grid-container .side:nth-child(2) {
+    order: -1;
+}
+
 .grid-container img {
     max-width: 100%;
 }
@@ -110,6 +115,7 @@ h3, p {
 .scriptBold {
     font-weight: 500;
     font-size: large;
+    margin-top: 0;
 }
 
 .video {
@@ -143,6 +149,11 @@ h3, p {
 .radio {
     max-width: 700px;
     margin: 0 auto;
+}
+
+.wotsits-script .scriptSmall {
+    margin-bottom: 0;
+    color: #414f5a;
 }
 
 /* Topicals section */
@@ -222,15 +233,19 @@ h3, p {
 .expandedview__back {
     position:fixed;
     top: 1rem;
-    left: 1rem;
+    right: 1rem;
     cursor: pointer;
-    width: 80px;
+    width: 60px;
     z-index: 100;
 }
 
 @media (min-width: 800px) {
     .grid-container {
         grid-template-columns: 70% 30%;
+    }
+
+    .grid-container .side:nth-child(2) {
+        order: 0;
     }
 
     .grid-container .wide {
@@ -251,5 +266,9 @@ h3, p {
     .grid-container .poster {
         max-width: 40vw;
         max-height: 70vh;
+    }
+
+    .grid-container .side {
+        padding: 1.5rem;
     }
 }
