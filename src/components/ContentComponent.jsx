@@ -94,7 +94,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {/* Section for Radio Ad */}
         {data.radioAd && 
         <>
-          <img src="/src/assets/temporaryRadio.jpeg" /> 
+          <img className="radio" src="/src/assets/radio.png" /> 
           <section className="side">
             <h2>60 second radio ad:</h2>
             {data.radioAd.map(audioSource => {
