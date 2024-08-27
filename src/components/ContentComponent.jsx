@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import "./contentComponent.css";
 import rewind from "../assets/rewind.svg"
+import {motion } from "framer-motion"
 
 const ContentComponent = ({data, setExpanded}) => {
   useEffect(() => {
@@ -34,7 +35,7 @@ const ContentComponent = ({data, setExpanded}) => {
       {data.posters &&
       <section className="posterWrapper">
         {data.posters.map((posterUrl, i) => {
-          return <img className="poster" key={i} src={posterUrl} />
+          return <motion.img className="poster" key={i} src={posterUrl} />
         })}
       </section>}
 
@@ -44,7 +45,7 @@ const ContentComponent = ({data, setExpanded}) => {
         <h2>Insight</h2>
         <h3>{data.insight}</h3>
         <h2>SMP</h2>
-        <h4>{data.smp}</h4>
+        <h3>{data.smp}</h3>
       </div>
 
         {/* Section for TV video */}
@@ -128,20 +129,6 @@ const ContentComponent = ({data, setExpanded}) => {
             <p className="scriptBold">Wotsits. Addictively Cheesy.</p></>}
           </section>
         </>}
-
-        {/* Section for Topicals */}
-        <section className="wide">
-          <h2>Topicals</h2>
-          <div className="topicalsWrapper">
-            <div className="topicalPoster" src="Last min"></div>
-            <div className="topicalPoster" src="Karcher"></div>
-            <div className="topicalPoster" src="GoHenry"></div>
-            <div className="topicalPoster" src="Dementia"></div>
-            <div className="topicalPoster" src="WhatsApp"></div>
-            <div className="topicalPoster" src="Costa"></div>
-            <div className="topicalPoster" src="RNIB"></div>
-          </div>
-        </section>
       </div>
     </>
   );
