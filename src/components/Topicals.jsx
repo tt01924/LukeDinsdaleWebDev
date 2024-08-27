@@ -3,7 +3,7 @@ import { useState } from "react";
 import './topicals.css';
 import { AnimatePresence, motion } from "framer-motion";
 
-const Popup = () => {
+const Topicals = () => {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
 
     const showPopup = () => {
@@ -30,12 +30,12 @@ const Popup = () => {
         open: {
             rotate: -70,
             x: -150,
-            y: 0
+            y: "-30%", 
         },
         closed: {
             rotate: -15,
             x: 30,
-            y: "40%"
+            y: "20%"   
         }
     }
 
@@ -86,4 +86,4 @@ const Popup = () => {
     );
 }
 
-export default Popup;
+export default Topicals;

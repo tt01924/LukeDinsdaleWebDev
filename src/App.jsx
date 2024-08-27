@@ -5,6 +5,7 @@ import Popup from "./components/Popup.jsx"
 import ContentComponent from './components/ContentComponent.jsx';
 import "./App.css"
 import Record from "./components/Record.jsx";
+import Topicals from "./components/Topicals.jsx";
 
 const App = () => {
   const [cards, setCards] = useState(data);
@@ -105,6 +106,7 @@ const App = () => {
           </div>
           <button style={{ position: "fixed", bottom: 10 }} onClick={moveToEnd}>next</button>
           <Popup />
+          <Topicals />
         </div>}
     </AnimatePresence>
   );

@@ -1,15 +1,8 @@
-@font-face {
-    font-family: 'CustomSubtitle';
-    src: url('../assets/fonts/oliver_3/static/Mohave-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .card.indexShowHelp {
     width: 250px;
     height: 250px;
     background-color: red;
-    /* background-image: url("src/assets/vinylCoverImages/ALWhiteStripesCoverSleeve.jpg"); */
+    background-image: url("src/assets/vinylCoverImages/ALWhiteStripesCoverSleeve.jpg");
     background-size: cover;
     bottom: -1rem;
     right: 0;
@@ -17,7 +10,7 @@
     border: transparent;
     color: transparent;
     border-radius: 2px;
-    z-index: 12;
+    z-index: 11;
 }
 
 /* Styling for Help popup */
@@ -62,7 +55,7 @@
     .card.indexShowHelp {
         height: 300px;
         width: 300px;
-        bottom: 20%;
+        bottom: 30%;
         right: 10%;    
     }
 
@@ -85,86 +78,4 @@
         font-size: 1.1em;
     }
 
-}
-
-/* Topicals section */
-
-.topicalsWrapper {
-    margin-top: 50px; /* Adds space between the radio ad section and this section */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers the topical posters within the wrapper */
-    align-items: flex-start;
-    width: 100%;
-    padding: 20px 0; /* Optional padding for better spacing */
-    position: relative; /* Position relative to allow absolute centering */
-}
-
-.topicalPoster {
-    width: 30vw;
-    height: 40vw;
-    background-color: darkgray;
-    position: absolute; /* Ensure it's in the normal document flow */
-    transform: translateX(-50%); /* Center it horizontally */
-}
-
-.topicalPoster:nth-child(1) {
-    position: relative;
-    left: -850px;
-    top: -50px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-    transform:rotate(91deg)
-}
-
-.topicalPoster:nth-child(2) {
-    left: -150px;
-    top:70px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
-    transform:rotate(2deg);
-}
-
-.topicalPoster:nth-child(3) {
-    left:-900px;
-    top:490px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.7);
-    transform:rotate(-2deg);
-}
-
-.topicalPoster:nth-child(4) {
-    position: relative;
-    left: -180px;
-    top: 100px;
-    box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.2);
-    transform: rotate(-91deg);
-}
-
-.topicalPoster:nth-child(5) {
-    left:-900px;
-    top:1100px;
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.7);
-    transform:rotate(-92deg);
-}
-
-.topicalPoster:nth-child(6) {
-    position: relative;
-    left: -180px;
-    top: 250px;
-    box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.2);
-    transform:rotate(1deg);
-}
-
-.topicalPoster:nth-child(7) {
-    left:-800px;
-    top:1690px;
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.7);
-    transform:rotate(-2deg);
-}
-
-.expandedview__back {
-    position:fixed;
-    top: 1rem;
-    left: 1rem;
-    cursor: pointer;
-    width: 80px;
-    z-index: 100;
 }
