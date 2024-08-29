@@ -46,6 +46,7 @@ const Popup = () => {
                 animate={isPopupVisible ? "open" : "closed"}
                 transition={{ type: "spring", duration: 0.5 }}
                 whileTap={{ scale: 1.2 }}
+                whileHover={{scale: 1.1}}
                 className="card indexShowHelp"
                 onClick={showPopup}>
                 Avi and Luke

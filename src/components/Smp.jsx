@@ -29,8 +29,8 @@ const Smp = () => {
     const buttonVariants = {
         open: {
             rotate: -70,
-            x: -150,
-            y: "-10%", 
+            x: "-20vw",
+            y: "30%", 
         },
         closed: {
             rotate: 25,
@@ -46,6 +46,7 @@ const Smp = () => {
                 animate={isPopupVisible ? "open" : "closed"}
                 transition={{ type: "spring", duration: 0.5 }}
                 whileTap={{ scale: 1.2 }}
+                whileHover={{scale: 1.1}}
                 className="card indexShowHelpSmp"
                 onClick={showPopup}>
                 Avi and Luke
