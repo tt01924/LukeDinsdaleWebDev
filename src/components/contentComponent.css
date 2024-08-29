@@ -27,7 +27,7 @@
 }
 
 body {
-    background-image: url(/src/assets/LucasTexture.jpg);
+    background-image: url(/src/assets/LucasTexture.webp);
     font-family: "Mohave", sans-serif;
     /* background-attachment: fixed; */
 }

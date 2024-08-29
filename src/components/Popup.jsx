@@ -76,17 +76,17 @@ const Popup = () => {
                                 I’m a Jazz-Cat and word-smith who expresses my creativity through music and clothing.<br></br>
                                 For 19 years I’ve penned prose, sang, and played guitar with numerous punk bands, literally and figuratively tearing up the stage. You’ll normally catch me sippin’ on espresso and people watching at Bar Italia—I’m the guy wearing a thoughtfully curated look that features 1960’s suits, paired with a bold shirt and sleek tie.</p>
 
-                            <h2 class="buskingText">
+                            <h2 className="buskingText">
                                 Avi and Luke Go Busking:</h2>
 
-                            <div class='imageContainer'></div>
+                            <div className='imageContainer'></div>
 
                             <p>
                                 To drum up some attention for ourselves, we planned a busking tour around some of London’s advertising agencies.</p>
                             <p>
                                 A few nights before our tour, we stuck up our tour posters across London, creating hype for our upcoming musical showcase.</p>
                             <p>Then, wrote a special song highlighting all the reasons why we should be hired. And we sang our hearts out, over two days, for all the agencies to hear.</p>
-                            <p class='tag'>
+                            <p className='tag'>
                                 Software development by <a href="https://www.linkedin.com/in/todd-taylor-a8bba2220/" >Todd Taylor</a> & <a href="https://www.linkedin.com/in/jfgerrard/">Jana Gerrard</a></p>
                         </div>
                     </motion.div>
