@@ -5,6 +5,8 @@ import ContentComponent from './components/ContentComponent.jsx';
 import "./App.css"
 import Record from "./components/Record.jsx";
 import { useEffect } from "react";
+import Topicals from "./components/Topicals.jsx";
+import Smp from "./components/Smp.jsx";
 
 const App = () => {
   const [cards, setCards] = useState([]);
@@ -114,6 +116,8 @@ const App = () => {
           </div>
           <button style={{ position: "fixed", bottom: 10 }} onClick={moveToEnd}>next</button>
           <Popup />
+          <Topicals />
+          <Smp />
         </div>}
     </AnimatePresence>
   );
