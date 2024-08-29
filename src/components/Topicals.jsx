@@ -65,13 +65,13 @@ const Topicals = () => {
                             <section>
                             <h2>Topicals:</h2>
                             <div className="topicalsWrapper">
-                                <img class="imageOne" src="/src/assets/media/topicals/poster1.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster2.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster3.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster4.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster5.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster6.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster7.webp"></img>
+                                <img className="imageOne" src="/media/topicals/poster1.webp" />
+                                <img className="imageOne" src="/media/topicals/poster2.webp" />
+                                <img className="imageOne" src="/media/topicals/poster3.webp" />
+                                <img className="imageOne" src="/media/topicals/poster4.webp" />
+                                <img className="imageOne" src="/media/topicals/poster5.webp" />
+                                <img className="imageOne" src="/media/topicals/poster6.webp" />
+                                <img className="imageOne" src="/media/topicals/poster7.webp" />
                             </div>
                             </section>
                         </div>

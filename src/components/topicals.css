@@ -2,7 +2,7 @@
     width: 200px;
     height: 200px;
     background-color: red;
-    background-image: url("/src/assets/vinylCoverImages/topicalsReputation.webp");
+    background-image: url("/vinylCoverImages/topicalsReputation.webp");
     background-size: cover;
     position: fixed;
     border: transparent;
