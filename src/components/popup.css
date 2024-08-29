@@ -44,6 +44,15 @@
     margin-top: 10%;
 }
 
+.tag {
+    font-family: 'CustomText';
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-right: 2vw;
+}
+
 .imageContainer {
     background-image: url('../assets/Busking.webp');
     background-size: cover; 
