@@ -30,10 +30,10 @@ const Smp = () => {
         open: {
             rotate: -70,
             x: -150,
-            y: "-70%", 
+            y: "-10%", 
         },
         closed: {
-            rotate: -25,
+            rotate: 25,
             x: 30,
             y: "50%"   
         }

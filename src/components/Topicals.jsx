@@ -33,7 +33,7 @@ const Topicals = () => {
             y: "-10%", 
         },
         closed: {
-            rotate: -25,
+            rotate: 25,
             x: 30,
             y: "80%"   
         }
