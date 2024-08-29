@@ -1,15 +1,17 @@
-.card.indexShowHelp {
-    width: 210px;
-    height: 210px;
+.card.indexShowHelpSmp {
+    width: 200px;
+    height: 200px;
     background-color: red;
-    background-image: url("/src/assets/vinylCoverImages/ALWhiteStripesCoverSleeve.webp");
+    background-image: url("/src/assets/vinylCoverImages/smpsRiot.webp");
     background-size: cover;
     position: fixed;
     border: transparent;
     color: transparent;
     border-radius: 2px;
     z-index: 11;
-    bottom: 5rem;
+    bottom: 10rem; /* Positioned at the bottom right */
+    right: 15rem;
+    transform: rotate(0deg); /* No rotation for default */
 }
 
 /* Styling for Help popup */
@@ -19,10 +21,14 @@
     left: 0;
     top: 0;
     width: 100%;
-    /* height: max-content ; */
+    height: 100%;
     overflow: auto;
     background-color: transparent;
     display: flex;
+}
+
+h3 {
+    margin-top: 3.4em;
 }
 
 .contactContent {
@@ -33,30 +39,10 @@
     /* border: 1px solid #888; */
     background-color: white;
     width: 60%;
-    height: max-content !important;
+    height: max-content;
     /* border-radius: 8px; */
     /* text-align: center; */
     box-shadow: -4px -4px 10px rgba(22, 0, 60, 0.3);
-}
-
-.buskingText {
-    margin-top: 10%;
-}
-
-.tag {
-    font-family: 'CustomText';
-    font-weight: bold;
-    color: inherit;
-    text-decoration: none;
-    font-size: 0.8em;
-    margin-right: 2vw;
-}
-
-.imageContainer {
-    background-image: url('../assets/Busking.webp');
-    background-size: cover; 
-    background-position: center;
-    height: 350px;
 }
 
 #indexPopupClose {
@@ -68,14 +54,16 @@
     color: #777
 }
 
+
+
 @media (min-width: 600px) {
-    .card.indexShowHelp {
-        height: 300px;
-        width: 300px;
+    .card.indexShowHelpSmp {
+        height: 250px;
+        width: 250px;
         bottom: auto;
-        right: 10%;
-        top: 9rem;
-        z-index: 15;    
+        right: 16%; 
+        top: -3.5rem; 
+        /* transform: rotate(50deg);   */
     }
 
     .contactContent {
@@ -85,18 +73,17 @@
 }
 
 @media (min-width: 1600px) {
-    .card.indexShowHelp {
-        height: 350px;
-        width: 350px;
-        bottom: auto;
-        right: 25%; 
-        top: 23rem;   
-        z-index: 15;
+    .card.indexShowHelpSmp {
+        height: 300px;
+        width: 300px;
+        right: 20%; 
+        top: -3.5rem; 
+        bottom: auto; 
+        /* transform: rotate(40deg);  */
     }
     .contactContent {
         width: 25%;
         margin-left: 75%;
         font-size: 1.1em;
     }
-
 }

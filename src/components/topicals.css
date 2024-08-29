@@ -1,15 +1,17 @@
-.card.indexShowHelp {
-    width: 210px;
-    height: 210px;
+.card.indexShowHelpTopicals {
+    width: 200px;
+    height: 200px;
     background-color: red;
-    background-image: url("/src/assets/vinylCoverImages/ALWhiteStripesCoverSleeve.webp");
+    background-image: url("/src/assets/vinylCoverImages/topicalsReputation.webp");
     background-size: cover;
     position: fixed;
     border: transparent;
     color: transparent;
     border-radius: 2px;
     z-index: 11;
-    bottom: 5rem;
+    bottom: 45rem;
+    right: -4rem;
+    transform:rotate(0deg);
 }
 
 /* Styling for Help popup */
@@ -19,7 +21,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    /* height: max-content ; */
+    height: 100%;
     overflow: auto;
     background-color: transparent;
     display: flex;
@@ -33,30 +35,15 @@
     /* border: 1px solid #888; */
     background-color: white;
     width: 60%;
-    height: max-content !important;
+    height: 100%;
     /* border-radius: 8px; */
     /* text-align: center; */
     box-shadow: -4px -4px 10px rgba(22, 0, 60, 0.3);
 }
 
-.buskingText {
-    margin-top: 10%;
-}
-
-.tag {
-    font-family: 'CustomText';
-    font-weight: bold;
-    color: inherit;
-    text-decoration: none;
-    font-size: 0.8em;
-    margin-right: 2vw;
-}
-
-.imageContainer {
-    background-image: url('../assets/Busking.webp');
-    background-size: cover; 
-    background-position: center;
-    height: 350px;
+.imageOne {
+    width: 100%;
+    margin-top: 1em;
 }
 
 #indexPopupClose {
@@ -68,14 +55,16 @@
     color: #777
 }
 
+
+
 @media (min-width: 600px) {
-    .card.indexShowHelp {
-        height: 300px;
-        width: 300px;
+    .card.indexShowHelpTopicals {
+        height: 280px;
+        width: 280px;
         bottom: auto;
-        right: 10%;
-        top: 9rem;
-        z-index: 15;    
+        right: 14%; 
+        top: 20rem;
+        /* transform: rotate(50deg);  */
     }
 
     .contactContent {
@@ -85,13 +74,12 @@
 }
 
 @media (min-width: 1600px) {
-    .card.indexShowHelp {
-        height: 350px;
-        width: 350px;
+    .card.indexShowHelpTopicals {
+        height: 330px;
+        width: 330px;
         bottom: auto;
-        right: 25%; 
-        top: 23rem;   
-        z-index: 15;
+        right: 12%; 
+        top: 39rem;   
     }
     .contactContent {
         width: 25%;

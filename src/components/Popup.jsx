@@ -62,19 +62,31 @@ const Popup = () => {
                         onClick={closePopup}>
                         <div className="contactContent" onClick={(e) => e.stopPropagation()}>
                             <span id="indexPopupClose" onClick={closePopup}>close</span>
+                            <h2>
+                                I bet your ad agency doesn’t feature rarities like these…</h2>
+                            <h3>
+                                Avi:</h3>
                             <p>
-                                Avi and Luke.
-                            </p>
+                                I’m a creative who is driven by my current mood. I can turn any emotion into original songs and compositions because I believe music can heal the creator and the listener. Trigger warning, if you don’t like Taylor Swift, you may not like what I play. But I don’t care. I’m always at my happiest when my music is connecting with someone and helping them to make sense of something in their lives. That’s a creative’s purpose. My purpose.</p>
+                            
+                            <h3>
+                                Luke:</h3>
                             <p>
-                                The hottest upcoming duo you've never heard of, are about to make their debut.
-                            </p>
+                                I’m a Jazz-Cat and word-smith who expresses my creativity through music and clothing.<br></br>
+                                For 19 years I’ve penned prose, sang, and played guitar with numerous punk bands, literally and figuratively tearing up the stage. You’ll normally catch me sippin’ on espresso and people watching at Bar Italia—I’m the guy wearing a thoughtfully curated look that features 1960’s suits, paired with a bold shirt and sleek tie.</p>
+
+                            <h2 class="buskingText">
+                                Avi and Luke Go Busking:</h2>
+
+                            <div class='imageContainer'></div>
+
                             <p>
-                                We recently caught up with them and managed to see what's whipped this small, yet loyal following up into a frenzy. </p>
+                                To drum up some attention for ourselves, we planned a busking tour around some of London’s advertising agencies.</p>
                             <p>
-                                On first impression, space oddities wouldn't even cut it when describing their creative output. </p>
-                            <p>
-                                The lasting impression is you want to keep going back for more. Let's hope they don't sell out.
-                            </p>
+                                A few nights before our tour, we stuck up our tour posters across London, creating hype for our upcoming musical showcase.</p>
+                            <p>Then, wrote a special song highlighting all the reasons why we should be hired. And we sang our hearts out, over two days, for all the agencies to hear.</p>
+                            <p class='tag'>
+                                Software development by <a href="https://www.linkedin.com/in/todd-taylor-a8bba2220/" >Todd Taylor</a> & <a href="https://www.linkedin.com/in/jfgerrard/">Jana Gerrard</a></p>
                         </div>
                     </motion.div>
                 )}
