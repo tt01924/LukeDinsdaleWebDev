@@ -4,8 +4,6 @@
     background-color: red;
     background-image: url("/src/assets/vinylCoverImages/ALWhiteStripesCoverSleeve.webp");
     background-size: cover;
-    bottom: -1rem;
-    right: 0;
     position: fixed;
     border: transparent;
     color: transparent;
@@ -73,8 +71,10 @@
     .card.indexShowHelp {
         height: 300px;
         width: 300px;
-        bottom: 10%;
-        right: 10%;    
+        bottom: auto;
+        right: 25%;
+        top: 9rem;
+        z-index: 15;    
     }
 
     .contactContent {
@@ -87,8 +87,10 @@
     .card.indexShowHelp {
         height: 350px;
         width: 350px;
-        bottom: 10%;
-        right: 15%;    
+        bottom: auto;
+        right: 25%; 
+        top: 23rem;   
+        z-index: 15;
     }
     .contactContent {
         width: 25%;

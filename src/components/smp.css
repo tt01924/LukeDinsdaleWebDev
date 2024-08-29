@@ -9,8 +9,8 @@
     color: transparent;
     border-radius: 2px;
     z-index: 11;
-    bottom: 1rem; /* Positioned at the bottom right */
-    right: 15rem;
+    bottom: 3rem; /* Positioned at the bottom right */
+    right: 20rem;
     transform: rotate(0deg); /* No rotation for default */
 }
 
@@ -60,9 +60,9 @@ h3 {
     .card.indexShowHelpSmp {
         height: 250px;
         width: 250px;
-        bottom: auto; /* Reset bottom positioning */
-        right: 20%; /* Right positioning stays the same */
-        top: -3.5rem; /* Positioned at the top right */
+        bottom: auto;
+        right: 20%; 
+        top: -3.5rem; 
         /* transform: rotate(50deg);   */
     }
 

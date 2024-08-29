@@ -1,16 +1,17 @@
 .card.indexShowHelpTopicals {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-color: red;
     background-image: url("/src/assets/vinylCoverImages/topicalsReputation.webp");
     background-size: cover;
-    bottom: -1rem;
-    right: 0;
     position: fixed;
     border: transparent;
     color: transparent;
     border-radius: 2px;
     z-index: 11;
+    bottom: 53rem;
+    right: 0rem;
+    transform:rotate(0deg);
 }
 
 /* Styling for Help popup */
@@ -58,10 +59,12 @@
 
 @media (min-width: 600px) {
     .card.indexShowHelpTopicals {
-        height: 300px;
-        width: 300px;
-        bottom: 10%;
-        right: 10%;    
+        height: 280px;
+        width: 280px;
+        bottom: auto;
+        right: 14%; 
+        top: 25rem;
+        /* transform: rotate(50deg);  */
     }
 
     .contactContent {
@@ -72,10 +75,12 @@
 
 @media (min-width: 1600px) {
     .card.indexShowHelpTopicals {
-        height: 350px;
-        width: 350px;
-        bottom: 10%;
-        right: 15%;    
+        height: 330px;
+        width: 330px;
+        bottom: auto;
+        right: 12%; 
+        top: 39rem;   
+        /* transform: rotate(50deg);   */
     }
     .contactContent {
         width: 25%;
