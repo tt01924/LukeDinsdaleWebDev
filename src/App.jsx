@@ -100,7 +100,7 @@ const App = () => {
     <AnimatePresence>
       {expanded ? <ContentComponent setExpanded={setExpanded} data={expanded} /> :
         <div style={wrapperStyle}>
-          <div ref={scope} style={cardWrapStyle}>
+          <div ref={scope} className="stack-wrapper" style={cardWrapStyle}>
             {cards.map((card, index) => {
               return (
                 <Record
@@ -114,7 +114,7 @@ const App = () => {
               );
             })}
           </div>
-          <button style={{ position: "fixed", bottom: 10 }} onClick={moveToEnd}>next</button>
+          <button id="nextButton" onClick={moveToEnd}>next</button>
           <Popup />
           <Topicals />
           <Smp />
