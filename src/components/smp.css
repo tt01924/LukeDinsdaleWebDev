@@ -1,16 +1,17 @@
 .card.indexShowHelpSmp {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-color: red;
     background-image: url("/src/assets/vinylCoverImages/smpsRiot.webp");
     background-size: cover;
-    bottom: -1rem;
-    right: 0;
     position: fixed;
     border: transparent;
     color: transparent;
     border-radius: 2px;
     z-index: 11;
+    bottom: 1rem; /* Positioned at the bottom right */
+    right: 15rem;
+    transform: rotate(0deg); /* No rotation for default */
 }
 
 /* Styling for Help popup */
@@ -57,10 +58,12 @@ h3 {
 
 @media (min-width: 600px) {
     .card.indexShowHelpSmp {
-        height: 300px;
-        width: 300px;
-        bottom: 35%;
-        right: 10%;    
+        height: 250px;
+        width: 250px;
+        bottom: auto; /* Reset bottom positioning */
+        right: 20%; /* Right positioning stays the same */
+        top: -3.5rem; /* Positioned at the top right */
+        /* transform: rotate(50deg);   */
     }
 
     .contactContent {
@@ -71,15 +74,16 @@ h3 {
 
 @media (min-width: 1600px) {
     .card.indexShowHelpSmp {
-        height: 350px;
-        width: 350px;
-        bottom: 35%;
-        right: 15%;    
+        height: 300px;
+        width: 300px;
+        right: 20%; 
+        top: -3.5rem; 
+        bottom: auto; 
+        /* transform: rotate(40deg);  */
     }
     .contactContent {
         width: 25%;
         margin-left: 75%;
         font-size: 1.1em;
     }
-
 }

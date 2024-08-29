@@ -86,7 +86,7 @@ const Popup = () => {
                                 A few nights before our tour, we stuck up our tour posters across London, creating hype for our upcoming musical showcase.</p>
                             <p>Then, wrote a special song highlighting all the reasons why we should be hired. And we sang our hearts out, over two days, for all the agencies to hear.</p>
                             <p class='tag'>
-                                Web development by <a href="https://www.linkedin.com/in/todd-taylor-a8bba2220/" >Todd Taylor</a> & <a href="https://www.linkedin.com/in/jfgerrard/">Jana Gerrard</a></p>
+                                Software development by <a href="https://www.linkedin.com/in/todd-taylor-a8bba2220/" >Todd Taylor</a> & <a href="https://www.linkedin.com/in/jfgerrard/">Jana Gerrard</a></p>
                         </div>
                     </motion.div>
                 )}
