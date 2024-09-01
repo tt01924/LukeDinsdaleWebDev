@@ -2,7 +2,7 @@
     width: 210px;
     height: 210px;
     background-color: red;
-    background-image: url("/src/assets/vinylCoverImages/ALWhiteStripesCoverSleeve.webp");
+    background-image: url("/vinylCoverImages/ALWhiteStripesCoverSleeve.webp");
     background-size: cover;
     position: fixed;
     border: transparent;

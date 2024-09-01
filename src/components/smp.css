@@ -2,7 +2,7 @@
     width: 200px;
     height: 200px;
     background-color: red;
-    background-image: url("/src/assets/vinylCoverImages/smpsRiot.webp");
+    background-image: url("/vinylCoverImages/smpsRiot.webp");
     background-size: cover;
     position: fixed;
     border: transparent;

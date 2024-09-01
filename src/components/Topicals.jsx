@@ -29,8 +29,8 @@ const Topicals = () => {
     const buttonVariants = {
         open: {
             rotate: -70,
-            x: -150,
-            y: "-10%", 
+            x: "-25vw",
+            y: "80%", 
         },
         closed: {
             rotate: 25,
@@ -46,6 +46,7 @@ const Topicals = () => {
                 animate={isPopupVisible ? "open" : "closed"}
                 transition={{ type: "spring", duration: 0.5 }}
                 whileTap={{ scale: 1.2 }}
+                whileHover={{scale: 1.1}}
                 className="card indexShowHelpTopicals"
                 onClick={showPopup}>
                 Avi and Luke
@@ -65,13 +66,13 @@ const Topicals = () => {
                             <section>
                             <h2>Topicals:</h2>
                             <div className="topicalsWrapper">
-                                <img class="imageOne" src="/src/assets/media/topicals/poster1.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster2.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster3.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster4.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster5.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster6.webp"></img>
-                                <img class="imageOne" src="/src/assets/media/topicals/poster7.webp"></img>
+                                <img className="imageOne" src="/media/topicals/poster1.webp" />
+                                <img className="imageOne" src="/media/topicals/poster2.webp" />
+                                <img className="imageOne" src="/media/topicals/poster3.webp" />
+                                <img className="imageOne" src="/media/topicals/poster4.webp" />
+                                <img className="imageOne" src="/media/topicals/poster5.webp" />
+                                <img className="imageOne" src="/media/topicals/poster6.webp" />
+                                <img className="imageOne" src="/media/topicals/poster7.webp" />
                             </div>
                             </section>
                         </div>

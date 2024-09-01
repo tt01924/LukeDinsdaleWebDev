@@ -1,0 +1,89 @@
+[
+    {
+        "id": 1,
+        "title": "Wotsits",
+        "smp": "Wotsits are so addictive they should be illegal.",
+        "insight": "Cheese releases the same chemical in our brains as hard drugs.",
+        "imgUrl": "/vinylCoverImages/WotsitsAndyWarhol.webp",
+        "endline": "",
+        "posters": ["/media/wotsits/poster1.webp", "/media/wotsits/poster2.webp", "/media/wotsits/poster3.webp"],
+        "radioAd": ["/media/wotsits/radioAd.mp3"],
+        "brandCollab": ["/media/wotsits/brandCollab1.webp", "/media/wotsits/brandCollab2.webp"],
+        "prStunt": "/media/wotsits/prStunt.webp",
+        "sticker": "/media/wotsits/sticker.webp",
+        "socialMedia": "/media/wotsits/socialMedia.webp"
+    },
+    {
+        "id": 2,
+        "title": "Chase Bank",
+        "smp": "bank more American.",
+        "insight": "Brits are uncomfortable talking about money, but Americans aren't.",
+        "imgUrl": "/vinylCoverImages/ChaseFooFighters.webp",
+        "endline": "",
+        "posters": ["/media/chase/poster1.webp", "/media/chase/poster2.webp", "/media/chase/poster3.webp"]
+    },
+    {
+        "id": 3,
+        "title": "Brut",
+        "smp": "Smell unflappable.",
+        "insight": "You sweat more in high pressure situations, which makes you smell.",
+        "imgUrl": "/vinylCoverImages/BrutBruceSpringsteen.webp",
+        "endline": "Smell Unflappable",
+        "posters": ["/media/brut/poster1.webp", "/media/brut/poster2.webp", "/media/brut/poster3.webp"],
+        "activation": "/media/brut/activation.webp",
+        "tvAdvert": "https://www.youtube.com/embed/mQlw5mpwMBg?si=KVw5Do7g2OpxwmYt"
+    },
+    {
+        "id": 4,
+        "title": "Halfords",
+        "smp": "We speak Bike so you don’t have to.",
+        "insight": "Bicycle owners don't know what the bike's parts are called.",
+        "imgUrl": "/vinylCoverImages/HalfordsTheBeatles.webp",
+        "endline": "We speak Bike so you don’t have to.",
+        "posters": ["/media/halfords/poster1.webp", "/media/halfords/poster2.webp", "/media/halfords/poster3.webp"],
+        "brandPartnership": "/media/halfords/brandPartnership.webp",
+        "digitalBanner": "/media/halfords/digitalBanner.webp"
+    },
+    {
+        "id": 5,
+        "title": "Eurostar",
+        "smp": "See things you wouldn’t see from the air",
+        "insight": "You miss detailed scenery when you travel by plane.",
+        "imgUrl": "/vinylCoverImages/EurostarBlur.webp",
+        "endline": "Take a more scenic route.",
+        "posters": ["/media/eurostar/poster1.webp", "/media/eurostar/poster2.webp", "/media/eurostar/poster3.webp"],
+        "travel": "/media/eurostar/travel.webp",
+        "app": "/media/eurostar/app.webp"
+    },
+    {
+        "id": 6,
+        "title": "Paul Smith",
+        "smp": "A Paul Smith tie makes you hard to forget.",
+        "insight": "No one stands out in a suit anymore because they don’t wear a tie.",
+        "imgUrl": "/vinylCoverImages/PaulSmithPinkFloyd.webp",
+        "endline": "Leave an impression",
+        "posters": ["/media/paulSmith/poster1.webp", "/media/paulSmith/poster2.webp", "/media/paulSmith/poster3.webp"],
+        "radioAd": ["/media/paulSmith/radio1.mp3", "/media/paulSmith/radio2.mp3", "/media/paulSmith/radio3.mp3"]
+    },
+    {
+        "id": 7,
+        "title": "Coke",
+        "smp": "Connect GenZ to Coca Cola",
+        "insight": "D&AD New Blood Brief:",
+        "imgUrl": "/vinylCoverImages/CokeGreenDay.webp",
+        "endline": "",
+        "tvAdvert": "https://www.youtube.com/embed/lacybA6paks?si=Cb6jhmR3oL9nINfT"
+    },
+    {
+        "id": 8,
+        "title": "Rustlers",
+        "smp": "Rustlers will ensure your night out gets a happy ending.",
+        "insight": "Drama can ruin a night out.",
+        "imgUrl": "/vinylCoverImages/RustlersRollingStones.webp",
+        "endline": "",
+        "posters": ["/media/rustlers/poster1.webp", "/media/rustlers/poster2.webp", "/media/rustlers/poster3.webp"],
+        "prStunt": "/media/rustlers/prStunt.webp",
+        "datingApp": "/media/rustlers/datingApp.webp",
+        "uberApp": "/media/rustlers/uberApp.webp"
+    }
+]
