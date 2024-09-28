@@ -20,8 +20,7 @@ const Record = ({index, data, setIsDragging, handleClick, moveToEnd, totalRecord
       
     return (
         <motion.div
-              key={data.id}
-              className="card"
+              className={`card card-${index}`}
               style={{ ...cardStyle }}
               animate={{
                 top: index * -OFFSET,
@@ -56,6 +55,6 @@ const Record = ({index, data, setIsDragging, handleClick, moveToEnd, totalRecord
               </div>
             </motion.div>
     )
-}
+};
 
 export default Record;
