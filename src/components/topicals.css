@@ -9,7 +9,8 @@
     color: transparent;
     border-radius: 2px;
     z-index: 11;
-    bottom: 45rem;
+    /* bottom: 45rem; */
+    top: -7rem;
     right: -4rem;
     transform:rotate(0deg);
 }
@@ -55,6 +56,24 @@
     color: #777
 }
 
+.imagePopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.enlargedImage {
+    max-width: 90%;
+    max-height: 90%;
+}
+
 
 
 @media (min-width: 600px) {
@@ -62,9 +81,8 @@
         height: 280px;
         width: 280px;
         bottom: auto;
-        right: 14%; 
-        top: 20rem;
-        /* transform: rotate(50deg);  */
+        right: 10%; 
+        top: 12rem;
     }
 
     .contactContent {
@@ -75,11 +93,11 @@
 
 @media (min-width: 1600px) {
     .card.indexShowHelpTopicals {
-        height: 330px;
-        width: 330px;
+        height: 410px;
+        width: 410px;
         bottom: auto;
-        right: 12%; 
-        top: 39rem;   
+        right: 8%; 
+        top: 15rem;   
     }
     .contactContent {
         width: 25%;

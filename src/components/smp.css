@@ -9,7 +9,7 @@
     color: transparent;
     border-radius: 2px;
     z-index: 11;
-    bottom: 10rem; /* Positioned at the bottom right */
+    bottom: 6rem; /* Positioned at the bottom right */
     right: 15rem;
     transform: rotate(0deg); /* No rotation for default */
 }
@@ -61,8 +61,8 @@ h3 {
         height: 250px;
         width: 250px;
         bottom: auto;
-        right: 16%; 
-        top: -3.5rem; 
+        right: 6%; 
+        top: -3.7rem; 
         /* transform: rotate(50deg);   */
     }
 
@@ -74,10 +74,10 @@ h3 {
 
 @media (min-width: 1600px) {
     .card.indexShowHelpSmp {
-        height: 300px;
-        width: 300px;
-        right: 20%; 
-        top: -3.5rem; 
+        height: 380px;
+        width: 380px;
+        right: 3%; 
+        top: -6rem; 
         bottom: auto; 
         /* transform: rotate(40deg);  */
     }

@@ -1,21 +1,11 @@
 .stack-wrapper {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  top: 50px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    top: 50px;
 }
 
 #nextButton {
     position: absolute;
     bottom: 10px;
-}
-
-@media (min-width: 600px) {
-    .stack-wrapper {
-        left: -200px;
-    }
-
-    #nextButton {
-        left: 50px
-    }
 }
