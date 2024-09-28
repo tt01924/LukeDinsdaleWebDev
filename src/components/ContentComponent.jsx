@@ -21,13 +21,13 @@ const ContentComponent = ({data, setExpanded}) => {
     <img src={rewind} className="expandedview__back" alt="back" onClick={back} />
     <div className="grid-container">
       <div className="main">
-      {/* Poster section */}
-      {data.posters &&
-      <section className="posterWrapper">
-        {data.posters.map((posterUrl, i) => {
-          return <motion.img className="poster" variants={posterVariants} custom={i} initial="initial" whileInView="animate" transition={{ duration: 0.4, ease: easeInOut}} key={i} src={posterUrl} />
-        })}
-      </section>}
+        {/* Poster section */}
+        {data.posters &&
+        <section className="posterWrapper">
+          {data.posters.map((posterUrl, i) => {
+            return <motion.img className="poster" variants={posterVariants} custom={i} initial="initial" whileInView="animate" transition={{ duration: 0.4, ease: easeInOut}} key={i} src={posterUrl} />
+          })}
+        </section>}
 
         {/* Section for TV video */}
         {data.tvAdvert &&
@@ -42,8 +42,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {data.activation && 
         <>
           <img className="activation" src={data.activation} alt="Activation" />
-          <section className="">
-
+          <section className="paper">
             <h2>Activation</h2>
             <p>
               Scunthorpe United are set to play Liverpool in the FA Cup, and need
@@ -62,28 +61,20 @@ const ContentComponent = ({data, setExpanded}) => {
           </section>
         </>}
 
-        {/* Section for Social Media */}
-        {data.socialMedia && 
-        <>
-        {data.sticker ? <img src={data.sticker} className="sticker" /> : <div></div>}
-        <section className="">
-          <h2>Social Media</h2>
-          <p>Hello World!</p>
-          <img className="socialMedia" src={data.socialMedia} />
-        </section>
-        </>}
 
         {/* Section for Radio Ad */}
         {data.radioAd && 
         <>
-          <section className="">
+          <section className="paper">
             <h2>60 second radio ad:</h2>
-          <img className="radio" src={radio} /> 
-            {data.radioAd.map(audioSource => {
-              return <audio controls key={audioSource}>
-                <source src={audioSource} type="audio/mpeg" />
-              </audio>
-            })}
+            <div style={{display: "flex", gap: 16, alignItems: "center"}}>
+              <img className="radio" src={radio} /> 
+              {data.radioAd.map(audioSource => {
+                return <audio controls key={audioSource}>
+                  <source src={audioSource} type="audio/mpeg" />
+                </audio>
+              })}
+            </div>
             
             {data.title === "Wotsits" && <div className="wotsits-script">
               <p className="scriptSmall">User (Thick East End accent, hushed tone):</p>
@@ -112,9 +103,33 @@ const ContentComponent = ({data, setExpanded}) => {
               <p className="scriptBold">Wotsits. Addictively Cheesy.</p></div>}
           </section>
         </>}
+
+          {/* Section for Social Media */}
+          {data.socialMedia && 
+          <>
+          <section className="paper">
+            <h2>Social Media</h2>
+            <div style={{display: "flex", gap: 16, alignItems: "center", maxWidth: "100%"}} className="imagerow">
+              <img className="socialMedia" src={data.socialMedia} />
+              {data.sticker ? <img src={data.sticker} className="sticker" /> : <div></div>}
+            </div>
+          </section>
+          </>}
+
+          {data.brandCollab && 
+            <section className="paper">
+              <h2>Brand Collaboration</h2>
+              <div className="imagerow">
+              {data.brandCollab.map((src,i)=> {
+                return <img key={i} src={src}/>
+              })}
+              </div>
+            </section>}
+
+
         </div>
 
-        {/* Rectangle w.text */}
+        {/* SIDEBAR */}
         <div className="side sidebar-info">
           <div className="inner">
             <h1>{data.title}</h1>
@@ -124,6 +139,7 @@ const ContentComponent = ({data, setExpanded}) => {
             <h3>{data.smp}</h3>
           </div>
         </div>
+
       </div>
     </>
   );

@@ -17,7 +17,18 @@
 
 .grid-container section {
     margin: 0 auto;
-    width: fit-content;
+    max-width: 100%;
+}
+
+.grid-container section.paper {
+    background: white;
+    background-image: url("../assets/paper.webp");
+    background-size: cover;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.7);
 }
 
 
@@ -66,6 +77,11 @@ h3, p {
     font-weight: 400;
 }
 
+.main h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 .scriptBold {
     font-weight: 500;
     font-size: large;
@@ -89,7 +105,6 @@ iframe {
     max-width: 100%;
 }
 
-
 .activation {
     z-index: 2;
     max-width: 100%;
@@ -101,13 +116,8 @@ iframe {
     max-width: 100%;
 }
 
-.grid-container .sticker {
-    margin: 0 auto;
-    max-width: min(100%, 500px);
-}
-
 .grid-container .radio {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -151,9 +161,21 @@ audio {
         max-width: 50vw;
     }
 
-    .side h2 {
-        margin-top: 80px;
+    .imagerow {
+        display: flex;
+        gap: 1rem;
+        max-width: 100%;
+        height: min-content;
+        max-height: 400px;
     }
+
+    .imagerow > img {
+        height: auto;
+        max-height: 100%;
+        object-fit: contain;
+        max-width: calc(50% - 1rem);
+    }
+
 }
 
 @media (min-width: 1200px) {
