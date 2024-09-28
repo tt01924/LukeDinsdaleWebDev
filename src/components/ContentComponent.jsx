@@ -43,6 +43,7 @@ const ContentComponent = ({data, setExpanded}) => {
         <>
           <img className="activation" src={data.activation} alt="Activation" />
           <section className="">
+
             <h2>Activation</h2>
             <p>
               Scunthorpe United are set to play Liverpool in the FA Cup, and need
