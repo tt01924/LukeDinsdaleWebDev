@@ -33,16 +33,23 @@
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-rows: 60% auto;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "title title"
     "insight smp";
+    gap: 0.5rem;
     position: absolute;
     background-size: cover;
+    color: rgb(26, 26, 141);
   }
 
   .inner h2 {
     font-size: 2rem;
+  }
+
+  .inner h3 {
+    font-size: 1.3rem;
+    margin: 0
   }
 
   .inner p {

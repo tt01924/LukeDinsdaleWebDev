@@ -7,6 +7,7 @@ import Record from "./components/Record.jsx";
 import { useEffect } from "react";
 import Topicals from "./components/Topicals.jsx";
 import Smp from "./components/Smp.jsx";
+import { useRef } from "react";
 
 const App = () => {
   const [cards, setCards] = useState([]);
@@ -14,6 +15,7 @@ const App = () => {
   const [expanded, setExpanded] = useState(null)
   const [scope, animate] = useAnimate();
   const [isDragging, setIsDragging] = useState(false);
+  const topCardRef = useRef(null)
 
   useEffect(()=> {
     const getData = () => {
@@ -25,6 +27,25 @@ const App = () => {
     }
     getData()
   },[])
+
+  useEffect(() => {
+    const handleClickAway = (e) => {
+      if(topCardRef.current && !topCardRef.current.contains(e.target)) {
+        flip(0)
+      }
+    }
+    if(clicked) {
+      document.addEventListener("click", handleClickAway)
+    } else {
+      document.removeEventListener("click", handleClickAway)
+    }
+    return () => {document.removeEventListener("click", handleClickAway)}
+  },[clicked])
+
+  useEffect(() => {
+    const topCardElement = document.querySelector(`.card-0`);
+    topCardRef.current = topCardElement;
+  }, [cards])
 
   const moveToEnd = () => {
     resetAnimation();
@@ -98,8 +119,9 @@ const App = () => {
 
   return (
     <AnimatePresence>
-      {expanded ? <ContentComponent setExpanded={setExpanded} data={expanded} /> :
-        <div style={wrapperStyle}>
+      {expanded ? 
+        <ContentComponent setExpanded={setExpanded} data={expanded} /> :
+        <div style={wrapperStyle} >
           <div ref={scope} className="stack-wrapper" style={cardWrapStyle}>
             {cards.map((card, index) => {
               return (
