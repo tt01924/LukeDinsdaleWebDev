@@ -20,31 +20,21 @@ const ContentComponent = ({data, setExpanded}) => {
     <>
     <img src={rewind} className="expandedview__back" alt="back" onClick={back} />
     <div className="grid-container">
+      <div className="main">
       {/* Poster section */}
-      {data.posters ?
+      {data.posters &&
       <section className="posterWrapper">
         {data.posters.map((posterUrl, i) => {
           return <motion.img className="poster" variants={posterVariants} custom={i} initial="initial" whileInView="animate" transition={{ duration: 0.4, ease: easeInOut}} key={i} src={posterUrl} />
         })}
-      </section> : <div></div> }
-
-      {/* Rectangle w.text */}
-      <div className="side sidebar-info">
-        <h1>{data.title}</h1>
-        <h2>Insight</h2>
-        <h3>{data.insight}</h3>
-        <h2>SMP</h2>
-        <h3>{data.smp}</h3>
-      </div>
+      </section>}
 
         {/* Section for TV video */}
         {data.tvAdvert &&
-        <>
-          <iframe width="560" height="315" src={data.tvAdvert} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className={data.title}></iframe>
-          <section className="side">
+          <section className="">
             <h2>30 second TV ad</h2>
+            <iframe width="560" height="315" src={data.tvAdvert} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className={data.title}></iframe>
           </section>
-          </>
         }
 
         {/* Section for activation */}
@@ -52,7 +42,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {data.activation && 
         <>
           <img className="activation" src={data.activation} alt="Activation" />
-          <section className="side">
+          <section className="">
             <h2>Activation</h2>
             <p>
               Scunthorpe United are set to play Liverpool in the FA Cup, and need
@@ -75,7 +65,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {data.socialMedia && 
         <>
         {data.sticker ? <img src={data.sticker} className="sticker" /> : <div></div>}
-        <section className="side">
+        <section className="">
           <h2>Social Media</h2>
           <p>Hello World!</p>
           <img className="socialMedia" src={data.socialMedia} />
@@ -85,9 +75,9 @@ const ContentComponent = ({data, setExpanded}) => {
         {/* Section for Radio Ad */}
         {data.radioAd && 
         <>
-          <img className="radio" src={radio} /> 
-          <section className="side">
+          <section className="">
             <h2>60 second radio ad:</h2>
+          <img className="radio" src={radio} /> 
             {data.radioAd.map(audioSource => {
               return <audio controls key={audioSource}>
                 <source src={audioSource} type="audio/mpeg" />
@@ -121,6 +111,18 @@ const ContentComponent = ({data, setExpanded}) => {
               <p className="scriptBold">Wotsits. Addictively Cheesy.</p></div>}
           </section>
         </>}
+        </div>
+
+        {/* Rectangle w.text */}
+        <div className="side sidebar-info">
+          <div className="inner">
+            <h1>{data.title}</h1>
+            <h2>Insight</h2>
+            <h3>{data.insight}</h3>
+            <h2>SMP</h2>
+            <h3>{data.smp}</h3>
+          </div>
+        </div>
       </div>
     </>
   );
