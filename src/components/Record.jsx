@@ -49,8 +49,15 @@ const Record = ({index, data, setIsDragging, handleClick, moveToEnd, totalRecord
                  ></motion.div>
                 <div className="inner" style={{backgroundImage: `url("${sleeveBack}")`,}}>
                   <h2 style={{gridArea: "title"}}>{data.title}</h2>
-                  <p style={{gridArea: "insight"}}>{data.insight}</p>
-                  <p style={{gridArea: "smp"}}>{data.smp}</p>
+                  <div style={{gridArea: "insight"}}>
+                    <h3>insight</h3>
+                    <p>{data.insight}</p>
+                  </div>
+                  <div style={{gridArea: "smp"}}>
+                    <h3>smp</h3>
+                    <p>{data.smp}</p>
+
+                  </div>
                 </div>
               </div>
             </motion.div>
