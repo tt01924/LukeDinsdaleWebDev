@@ -1,5 +1,35 @@
+
+@font-face {
+  font-family: 'Mohave';
+  src: url('./assets/fonts/oliver_3/static/Mohave-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mohave';
+  src: url('./assets/fonts/oliver_3/static/Mohave-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mohave';
+  src: url('./assets/fonts/oliver_3/static/Mohave-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mohave';
+  src: url('./assets/fonts/oliver_3/static/Mohave-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Mohave', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -29,6 +59,10 @@ body {
   display: flex;
   place-items: center;
   min-width: 100%;
+
+  background-image: url(/src/assets/LucasTexture.webp);
+  font-family: "Mohave", sans-serif;
+  /* background-attachment: fixed; */
 }
 
 #root {
