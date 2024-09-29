@@ -11,7 +11,8 @@
         "brandCollab": ["/media/wotsits/brandCollab1.webp", "/media/wotsits/brandCollab2.webp"],
         "prStunt": "/media/wotsits/prStunt.webp",
         "sticker": "/media/wotsits/sticker.webp",
-        "socialMedia": "/media/wotsits/socialMedia.webp"
+        "socialMedia": "/media/wotsits/socialMedia.webp",
+        "merch": ["/media/wotsits/merchPack1.webp", "/media/wotsits/merchPack2.webp"]
     },
     {
         "id": 2,
@@ -31,7 +32,8 @@
         "endline": "Smell Unflappable",
         "posters": ["/media/brut/poster1.webp", "/media/brut/poster2.webp", "/media/brut/poster3.webp"],
         "activation": "/media/brut/activation.webp",
-        "tvAdvert": "https://www.youtube.com/embed/mQlw5mpwMBg?si=KVw5Do7g2OpxwmYt"
+        "tvAdvert": "https://www.youtube.com/embed/mQlw5mpwMBg?si=KVw5Do7g2OpxwmYt",
+        "prStunt": "https://youtube.com/shorts/naLAdPF5P-E?feature=share"
     },
     {
         "id": 4,
