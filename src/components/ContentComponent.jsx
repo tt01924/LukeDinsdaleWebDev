@@ -21,30 +21,30 @@ const ContentComponent = ({data, setExpanded}) => {
     <img src={rewind} className="expandedview__back" alt="back" onClick={back} />
     <div className="grid-container">
       <div className="main">
-      {/* Poster section */}
-      {data.posters &&
-      <section className="posterWrapper">
-        {data.posters.map((posterUrl, i) => {
-          return <motion.img className="poster" variants={posterVariants} custom={i} initial="initial" whileInView="animate" transition={{ duration: 0.4, ease: easeInOut}} key={i} src={posterUrl} />
-        })}
-      </section>}
+        {/* Poster section */}
+        {data.posters &&
+        <section className="posterWrapper">
+          {data.posters.map((posterUrl, i) => {
+            return <motion.img className="poster" variants={posterVariants} custom={i} initial="initial" whileInView="animate" transition={{ duration: 0.4, ease: easeInOut}} key={i} src={posterUrl} />
+          })}
+        </section>}
 
         {/* Section for TV video */}
         {data.tvAdvert &&
-          <section className="">
+          <section className="paper">
             <h2>30 second TV ad</h2>
             <iframe width="560" height="315" src={data.tvAdvert} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className={data.title}></iframe>
           </section>
         }
 
+
         {/* Section for activation */}
 
         {data.activation && 
         <>
-          <img className="activation" src={data.activation} alt="Activation" />
-          <section className="">
-
+          <section className="paper">
             <h2>Activation</h2>
+            <img className="activation" src={data.activation} alt="Activation" />
             <p>
               Scunthorpe United are set to play Liverpool in the FA Cup, and need
               to smell unflappable in the face of such a big challenge.
@@ -62,28 +62,26 @@ const ContentComponent = ({data, setExpanded}) => {
           </section>
         </>}
 
-        {/* Section for Social Media */}
-        {data.socialMedia && 
-        <>
-        {data.sticker ? <img src={data.sticker} className="sticker" /> : <div></div>}
-        <section className="">
-          <h2>Social Media</h2>
-          <p>Hello World!</p>
-          <img className="socialMedia" src={data.socialMedia} />
-        </section>
-        </>}
+        {data.videoPrStunt &&
+          <section className="paper">
+            <h2>PR Stunt</h2>
+            <iframe width="560" height="315" src={data.videoPrStunt} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className={data.title}></iframe>
+          </section>
+        }
 
         {/* Section for Radio Ad */}
         {data.radioAd && 
         <>
-          <section className="">
+          <section className="paper">
             <h2>60 second radio ad:</h2>
-          <img className="radio" src={radio} /> 
-            {data.radioAd.map(audioSource => {
-              return <audio controls key={audioSource}>
-                <source src={audioSource} type="audio/mpeg" />
-              </audio>
-            })}
+            <div style={{display: "flex", gap: 16, alignItems: "center"}}>
+              <img className="radio" src={radio} /> 
+              {data.radioAd.map(audioSource => {
+                return <audio controls key={audioSource}>
+                  <source src={audioSource} type="audio/mpeg" />
+                </audio>
+              })}
+            </div>
             
             {data.title === "Wotsits" && <div className="wotsits-script">
               <p className="scriptSmall">User (Thick East End accent, hushed tone):</p>
@@ -112,9 +110,85 @@ const ContentComponent = ({data, setExpanded}) => {
               <p className="scriptBold">Wotsits. Addictively Cheesy.</p></div>}
           </section>
         </>}
+
+
+
+          {data.sticker && 
+            <section>
+              <div className="imagerow">
+              {data.sticker.map((src,i)=> {
+                return <img key={i} src={src}/>
+              })}
+              </div>
+            </section>}
+
+          {/* Section for Social Media */}
+          {data.socialMedia && 
+            <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
+              <img className="socialMedia" src={data.socialMedia} />
+            </div>}
+
+
+          {data.brandCollab && 
+            <section className="paper">
+              <h2>Brand Collaboration</h2>
+              <div className="imagerow">
+              {data.brandCollab.map((src,i)=> {
+                return <img key={i} src={src}/>
+              })}
+              </div>
+            </section>}
+
+          {data.merch && 
+            <section>
+              <div className="imagerow">
+              {data.merch.map((src,i)=> {
+                return <img key={i} src={src}/>
+              })}
+              </div>
+            </section>}
+
+          {data.travel && 
+            <section>
+            <img src={data.travel} />
+            <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
+              <img src={data.app} />
+            </div>
+            </section>
+          }
+
+          {data.prStunt && data.title === "Rustlers" && 
+          <section className="paper">
+            <h2>PR Stunt</h2>
+            <img src={data.prStunt} className="prstunt" />
+          </section>
+          }
+
+          {data.datingApp &&
+            <section>
+              <div className="imagerow">
+                <img src={data.uberApp} />
+                <img src={data.datingApp} />
+              </div>
+
+            </section>
+          }
+
+          {data.digitalBanner &&
+          <section>
+            <img src={data.digitalBanner} />
+          </section>
+          }
+
+          {data.brandPartnership &&
+          <section className="paper">
+            <h2>Brand Partnership</h2>
+            <img src={data.brandPartnership} />
+          </section>
+          }
         </div>
 
-        {/* Rectangle w.text */}
+        {/* SIDEBAR */}
         <div className="side sidebar-info">
           <div className="inner">
             <h1>{data.title}</h1>
@@ -124,6 +198,7 @@ const ContentComponent = ({data, setExpanded}) => {
             <h3>{data.smp}</h3>
           </div>
         </div>
+
       </div>
     </>
   );
