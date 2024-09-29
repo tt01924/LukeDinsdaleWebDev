@@ -114,7 +114,7 @@ const ContentComponent = ({data, setExpanded}) => {
 
 
           {data.sticker && 
-            <section>
+            <section className="paper">
               <div className="imagerow">
               {data.sticker.map((src,i)=> {
                 return <img key={i} src={src}/>
@@ -124,9 +124,11 @@ const ContentComponent = ({data, setExpanded}) => {
 
           {/* Section for Social Media */}
           {data.socialMedia && 
+            <section className="paper">
             <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
               <img className="socialMedia" src={data.socialMedia} />
-            </div>}
+            </div>
+            </section>}
 
 
           {data.brandCollab && 
@@ -140,7 +142,7 @@ const ContentComponent = ({data, setExpanded}) => {
             </section>}
 
           {data.merch && 
-            <section>
+            <section className="paper">
               <div className="imagerow">
               {data.merch.map((src,i)=> {
                 return <img key={i} src={src}/>
@@ -149,7 +151,7 @@ const ContentComponent = ({data, setExpanded}) => {
             </section>}
 
           {data.travel && 
-            <section>
+            <section className="paper">
             <img src={data.travel} />
             <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
               <img src={data.app} />
@@ -165,7 +167,7 @@ const ContentComponent = ({data, setExpanded}) => {
           }
 
           {data.datingApp &&
-            <section>
+            <section className="paper">
               <div className="imagerow">
                 <img src={data.uberApp} />
                 <img src={data.datingApp} />
@@ -175,7 +177,8 @@ const ContentComponent = ({data, setExpanded}) => {
           }
 
           {data.digitalBanner &&
-          <section>
+          <section className="paper">
+            <h2>Digital Banner</h2>
             <img src={data.digitalBanner} />
           </section>
           }
