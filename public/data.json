@@ -9,8 +9,7 @@
         "posters": ["/media/wotsits/poster1.webp", "/media/wotsits/poster2.webp", "/media/wotsits/poster3.webp"],
         "radioAd": ["/media/wotsits/radioAd.mp3"],
         "brandCollab": ["/media/wotsits/brandCollab1.webp", "/media/wotsits/brandCollab2.webp"],
-        "prStunt": "/media/wotsits/prStunt.webp",
-        "sticker": "/media/wotsits/sticker.webp",
+        "sticker": ["/media/wotsits/sticker.webp","/media/wotsits/prStunt.webp"],
         "socialMedia": "/media/wotsits/socialMedia.webp",
         "merch": ["/media/wotsits/merchPack1.webp", "/media/wotsits/merchPack2.webp"]
     },
@@ -33,7 +32,7 @@
         "posters": ["/media/brut/poster1.webp", "/media/brut/poster2.webp", "/media/brut/poster3.webp"],
         "activation": "/media/brut/activation.webp",
         "tvAdvert": "https://www.youtube.com/embed/mQlw5mpwMBg?si=KVw5Do7g2OpxwmYt",
-        "prStunt": "https://youtube.com/shorts/naLAdPF5P-E?feature=share"
+        "videoPrStunt": "https://youtube.com/embed/naLAdPF5P-E?feature=share"
     },
     {
         "id": 4,
