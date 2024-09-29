@@ -45,7 +45,7 @@ const App = () => {
   useEffect(() => {
     const topCardElement = document.querySelector(`.card-0`);
     topCardRef.current = topCardElement;
-  }, [cards])
+  }, [cards, expanded])
 
   const moveToEnd = () => {
     resetAnimation();
