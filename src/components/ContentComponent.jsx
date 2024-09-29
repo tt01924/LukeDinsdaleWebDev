@@ -32,7 +32,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {/* Section for TV video */}
         {data.tvAdvert &&
           <section className="paper">
-            <h2>30 second TV ad</h2>
+            <h2>30 Second TV Ad</h2>
             <iframe width="560" height="315" src={data.tvAdvert} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className={data.title}></iframe>
           </section>
         }
@@ -73,7 +73,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {data.radioAd && 
         <>
           <section className="paper">
-            <h2>60 second radio ad:</h2>
+            <h2>60 Second Radio Ad: The Deal</h2>
             <div style={{display: "flex", gap: 16, alignItems: "center"}}>
               <img className="radio" src={radio} /> 
               {data.radioAd.map(audioSource => {
@@ -115,39 +115,74 @@ const ContentComponent = ({data, setExpanded}) => {
 
           {data.sticker && 
             <section className="paper">
+              <h2>PR Stunt:</h2>
               <div className="imagerow">
               {data.sticker.map((src,i)=> {
                 return <img key={i} src={src}/>
               })}
               </div>
+              <p>We’ll create a special phone number that people can contact to get a free baggie of Wotsits.
+                <br />
+                <br />
+                This stunt will run for one day only.
+                <br />
+                <br />
+                To promote the PR stunt, we’ll put the phone number on branded stickers, and place them around London in the weeks leading up to our free give away. 
+                <br />
+                <br />
+                We’ll stick them in the kind of places drug dealers advertise—such as London’s phone booths, and pub and club toilets. We'll also post the sticker across Wotsits' social platforms.
+              </p>
             </section>}
 
           {/* Section for Social Media */}
           {data.socialMedia && 
             <section className="paper">
+              <h2>Social Media:</h2>
             <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
               <img className="socialMedia" src={data.socialMedia} />
             </div>
+            <p>
+                We’ll contact everyone who calls or messages our special number via Whatsapp (or Wotsapp).
+                <br />
+                <br />
+                The messages that we’ll send back to our audience will contain a link to their nearest ‘dealer’—who will deliver their Wotsits.
+                <br />
+                <br />
+                This stunt will run for one day only.
+              </p>
             </section>}
 
 
           {data.brandCollab && 
             <section className="paper">
-              <h2>Brand Collaboration</h2>
+              <h2>Brand Collaboration:</h2>
               <div className="imagerow">
               {data.brandCollab.map((src,i)=> {
                 return <img key={i} src={src}/>
               })}
               </div>
+              <p>
+                To help us deliver our free Wotsits, we’ll partner with Deliveroo and create the ‘Deliveroo Dealers’.
+                <br />
+                <br />
+                They’ll drop off your baggies anytime, any place—just like your trusted dealer.
+              </p>
             </section>}
 
           {data.merch && 
             <section className="paper">
+              <h2>Limited Merch:</h2>
               <div className="imagerow">
               {data.merch.map((src,i)=> {
                 return <img key={i} src={src}/>
               })}
               </div>
+              <p>
+                We’ll create limited edition Wotsits bumbags.
+                <br />
+                <br />
+                These will act as a nod towards the streetwear trends that are inspired by drug dealer culture. 
+              </p>
             </section>}
 
           {data.travel && 
