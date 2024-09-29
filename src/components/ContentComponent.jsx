@@ -32,7 +32,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {/* Section for TV video */}
         {data.tvAdvert &&
           <section className="paper">
-            <h2>30 Second TV Ad</h2>
+            <h2>30 Second TV Ad:</h2>
             <iframe width="560" height="315" src={data.tvAdvert} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className={data.title}></iframe>
           </section>
         }
@@ -43,7 +43,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {data.activation && 
         <>
           <section className="paper">
-            <h2>Activation</h2>
+            <h2>Activation:</h2>
             <img className="activation" src={data.activation} alt="Activation" />
             <p>
               Scunthorpe United are set to play Liverpool in the FA Cup, and need
@@ -64,7 +64,7 @@ const ContentComponent = ({data, setExpanded}) => {
 
         {data.videoPrStunt &&
           <section className="paper">
-            <h2>PR Stunt</h2>
+            <h2>PR Stunt:</h2>
             <iframe width="560" height="315" src={data.videoPrStunt} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className={data.title}></iframe>
           </section>
         }
@@ -189,6 +189,13 @@ const ContentComponent = ({data, setExpanded}) => {
             <section className="paper">
             <img src={data.travel} />
             <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
+            </div>
+            </section>
+          }
+
+          {data.travel && 
+            <section className="paper">
+            <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
               <img src={data.app} />
             </div>
             </section>
@@ -196,32 +203,70 @@ const ContentComponent = ({data, setExpanded}) => {
 
           {data.prStunt && data.title === "Rustlers" && 
           <section className="paper">
-            <h2>PR Stunt</h2>
+            <h2>PR Stunt:</h2>
             <img src={data.prStunt} className="prstunt" />
+              <p>
+              We’ll work with St. John Ambulance to create Rustlers pop-up spots across the UK’s city centres on Saturday nights.
+              <br />
+              <br />
+              This stunt will ensure people’s nights-out get a happy ending.
+              </p>
           </section>
           }
 
           {data.datingApp &&
             <section className="paper">
-              <div className="imagerow">
+              <h2>Uber Ad:</h2>
+              <div style={{display:"flex", maxWidth: "50%", margin:"0 auto", justifyContent: "center", alignItems: "center"}}>
                 <img src={data.uberApp} />
+              </div>
+              <p>
+              We’ll advertise on the Uber ride app throughout the weekend.
+              <br />
+              <br />
+              This will target people who’re on their way home from the club, and remind them that their night-out will finish with a happy ending.
+              </p>
+            </section>
+          }
+
+          {data.datingApp &&
+            <section className="paper">
+              <h2>Dating App Ad:</h2>
+              <div style={{display:"flex", maxWidth: "50%", margin:"0 auto", justifyContent: "center", alignItems: "center"}}>
                 <img src={data.datingApp} />
               </div>
-
+              <p>
+              We’ll advertise across the most popular dating apps, and push the message that Rustlers is guaranteed to give your night a happy ending.
+              <br />
+              <br />
+              No matter how bad your date goes.
+              </p>
             </section>
           }
 
           {data.digitalBanner &&
           <section className="paper">
-            <h2>Digital Banner</h2>
+            <h2>Digital Banner:</h2>
             <img src={data.digitalBanner} />
+            <p>
+            In the lead-up to the Tour de France and the Paris Olympics, Halfords will post banner ads across the official sites for these sporting events.
+              <br />
+              <br />
+              They’ll appear on the associated ticket sites for these events as well.
+            </p>
           </section>
           }
 
           {data.brandPartnership &&
           <section className="paper">
-            <h2>Brand Partnership</h2>
+            <h2>Brand Partnership:</h2>
             <img src={data.brandPartnership} />
+            <p>
+              With so many people travelling to France for a summer of cycling, we thought Halfords should help the punters learn Bike lingo.
+              <br />
+              <br />
+              We’ll partner with Duolingo to create ‘Speak Bike’. These lessons will help the audience understand the ins-and-outs of bicycle racing commentary.
+            </p>
           </section>
           }
         </div>
