@@ -128,30 +128,16 @@ const ContentComponent = ({data, setExpanded}) => {
             </div>
             
             {data.title === "Paul Smith" && <div className="wotsits-script">
-              <p className="scriptSmall">User (Thick East End accent, hushed tone):</p>
-              <p className="scriptBold">‘ere mate, can I eh... Can I get 36g of the finest?</p>
-              <p className="scriptSmall">Dealer:</p>
-              <p className="scriptBold">Sure.</p>
-              <p className="scriptSmall">User:</p>
-              <p className="scriptBold">Woar, that’s the stuff.</p>
-              <p className="scriptSmall">Dealer (Sounding bemused): </p>
-              <p className="scriptBold">Um, you got payment?</p>
-              <p className="scriptSmall">User (Sounding transfixed):</p>
-              <p className="scriptBold">Eh? Oh yeah,‘ere you go.</p>
-              <p className="scriptSmall">
-                (Sound of a card machine beeping communicating that he’s actually
-                bought the Wotsits from a shop).
-              </p>
-              <p className="scriptSmall">User (Sounding transfixed):</p>
-              <p className="scriptBold">Ta.</p>
-              <p className="scriptSmall">Dealer (Sounding a little judgemental):</p>
-              <p className="scriptBold">See you later.</p>
-              <p className="scriptSmall">
-                (Sound of Wotsits bag being ripped open and the sound of snacks
-                being wolfed down by the user as he moans in ecstasy).
-              </p>
-              <p className="scriptSmall">V/O (A whispering East End accent):</p>
-              <p className="scriptBold">Wotsits. Addictively Cheesy.</p></div>}
+              <p className="scriptSmall">Police Officer (Stressed, and under fire):</p>
+              <p className="scriptBold">Officer in pursuit—suspect has just robbed a jewellers.</p>
+              <p className="scriptSmall">Detective (Decisive tone):</p>
+              <p className="scriptBold">Copy, Detective Palmer En route. Situation report?</p>
+              <p className="scriptSmall">Police Officer (Stressed, confused, and under fire): </p>
+              <p className="scriptBold">Suspect is wearing the most stunning hand woven burnt orange and bright teal striped silk tie.</p>
+              <p className="scriptSmall">Detective (Surprised): </p>
+              <p className="scriptBold">Oh! There he is!</p>
+              <p className="scriptSmall">V/O: </p>
+              <p className="scriptBold">Paul Smith, leave an impression.</p></div>}
           </section>
         </>}
 
@@ -170,30 +156,16 @@ const ContentComponent = ({data, setExpanded}) => {
             </div>
             
             {data.title === "Paul Smith" && <div className="wotsits-script">
-              <p className="scriptSmall">User (Thick East End accent, hushed tone):</p>
-              <p className="scriptBold">‘ere mate, can I eh... Can I get 36g of the finest?</p>
-              <p className="scriptSmall">Dealer:</p>
-              <p className="scriptBold">Sure.</p>
-              <p className="scriptSmall">User:</p>
-              <p className="scriptBold">Woar, that’s the stuff.</p>
-              <p className="scriptSmall">Dealer (Sounding bemused): </p>
-              <p className="scriptBold">Um, you got payment?</p>
-              <p className="scriptSmall">User (Sounding transfixed):</p>
-              <p className="scriptBold">Eh? Oh yeah,‘ere you go.</p>
-              <p className="scriptSmall">
-                (Sound of a card machine beeping communicating that he’s actually
-                bought the Wotsits from a shop).
-              </p>
-              <p className="scriptSmall">User (Sounding transfixed):</p>
-              <p className="scriptBold">Ta.</p>
-              <p className="scriptSmall">Dealer (Sounding a little judgemental):</p>
-              <p className="scriptBold">See you later.</p>
-              <p className="scriptSmall">
-                (Sound of Wotsits bag being ripped open and the sound of snacks
-                being wolfed down by the user as he moans in ecstasy).
-              </p>
-              <p className="scriptSmall">V/O (A whispering East End accent):</p>
-              <p className="scriptBold">Wotsits. Addictively Cheesy.</p></div>}
+              <p className="scriptSmall">Niece (Sad and inquisitive):</p>
+              <p className="scriptBold">Hello, I’m here to identify my uncle’s body. He was brought in sometime last night.</p>
+              <p className="scriptSmall">Mortuary Assistant (Bored):</p>
+              <p className="scriptBold">What’s his date of birth?</p>
+              <p className="scriptSmall">Niece (Wistfully): </p>
+              <p className="scriptBold">Well, he always wears the most fantastic British racing green and cobalt Prince of Wales check cotton tie.</p>
+              <p className="scriptSmall">Mortuary Assistant (Recollecting): </p>
+              <p className="scriptBold">Oh yes! Fridge number 3.</p>
+              <p className="scriptSmall">V/O: </p>
+              <p className="scriptBold">Paul Smith, leave an impression.</p></div>}
           </section>
         </>}
 
@@ -212,30 +184,16 @@ const ContentComponent = ({data, setExpanded}) => {
             </div>
             
             {data.title === "Paul Smith" && <div className="wotsits-script">
-              <p className="scriptSmall">User (Thick East End accent, hushed tone):</p>
-              <p className="scriptBold">‘ere mate, can I eh... Can I get 36g of the finest?</p>
-              <p className="scriptSmall">Dealer:</p>
-              <p className="scriptBold">Sure.</p>
-              <p className="scriptSmall">User:</p>
-              <p className="scriptBold">Woar, that’s the stuff.</p>
-              <p className="scriptSmall">Dealer (Sounding bemused): </p>
-              <p className="scriptBold">Um, you got payment?</p>
-              <p className="scriptSmall">User (Sounding transfixed):</p>
-              <p className="scriptBold">Eh? Oh yeah,‘ere you go.</p>
-              <p className="scriptSmall">
-                (Sound of a card machine beeping communicating that he’s actually
-                bought the Wotsits from a shop).
-              </p>
-              <p className="scriptSmall">User (Sounding transfixed):</p>
-              <p className="scriptBold">Ta.</p>
-              <p className="scriptSmall">Dealer (Sounding a little judgemental):</p>
-              <p className="scriptBold">See you later.</p>
-              <p className="scriptSmall">
-                (Sound of Wotsits bag being ripped open and the sound of snacks
-                being wolfed down by the user as he moans in ecstasy).
-              </p>
-              <p className="scriptSmall">V/O (A whispering East End accent):</p>
-              <p className="scriptBold">Wotsits. Addictively Cheesy.</p></div>}
+              <p className="scriptSmall">Wife (Stressed and angry):</p>
+              <p className="scriptBold">Excuse me, did my husband come into this restaurant last week with another woman? I think he’s cheating on me.</p>
+              <p className="scriptSmall">Host (Empathic):</p>
+              <p className="scriptBold">I’m sorry to hear that—do you know what day he came in? </p>
+              <p className="scriptSmall">Wife (Stressed, and confused): </p>
+              <p className="scriptBold">Well, he wore his most marvellous dusky pink and royal purple Houndstooth big-knit wool tie.</p>
+              <p className="scriptSmall">Host (Recalling): </p>
+              <p className="scriptBold">Oh yes! He met with someone here last Wednesday! </p>
+              <p className="scriptSmall">V/O: </p>
+              <p className="scriptBold">Paul Smith, leave an impression.</p></div>}
           </section>
         </>}
 
