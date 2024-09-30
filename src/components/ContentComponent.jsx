@@ -69,8 +69,8 @@ const ContentComponent = ({data, setExpanded}) => {
           </section>
         }
 
-        {/* Section for Radio Ad */}
-        {data.radioAd && 
+        {/* Section for Radio Ad Wotsits */}
+        {data.radioAd && data.title === "Wotsits" && 
         <>
           <section className="paper">
             <h2>60 Second Radio Ad: The Deal</h2>
@@ -111,6 +111,133 @@ const ContentComponent = ({data, setExpanded}) => {
           </section>
         </>}
 
+
+
+        {/* Section for Radio Ad Paul Smith 1 */}
+        {data.radioAd && data.title === "Paul Smith" && 
+        <>
+          <section className="paper">
+            <h2>30 Second Radio Ad Script: The Chase</h2>
+            <div style={{display: "flex", gap: 16, alignItems: "center"}}>
+              <img className="radio" src={radio} /> 
+              {data.radioAd.map(audioSource => {
+                return <audio controls key={audioSource}>
+                  <source src={audioSource} type="audio/mpeg" />
+                </audio>
+              })}
+            </div>
+            
+            {data.title === "Paul Smith" && <div className="wotsits-script">
+              <p className="scriptSmall">User (Thick East End accent, hushed tone):</p>
+              <p className="scriptBold">‘ere mate, can I eh... Can I get 36g of the finest?</p>
+              <p className="scriptSmall">Dealer:</p>
+              <p className="scriptBold">Sure.</p>
+              <p className="scriptSmall">User:</p>
+              <p className="scriptBold">Woar, that’s the stuff.</p>
+              <p className="scriptSmall">Dealer (Sounding bemused): </p>
+              <p className="scriptBold">Um, you got payment?</p>
+              <p className="scriptSmall">User (Sounding transfixed):</p>
+              <p className="scriptBold">Eh? Oh yeah,‘ere you go.</p>
+              <p className="scriptSmall">
+                (Sound of a card machine beeping communicating that he’s actually
+                bought the Wotsits from a shop).
+              </p>
+              <p className="scriptSmall">User (Sounding transfixed):</p>
+              <p className="scriptBold">Ta.</p>
+              <p className="scriptSmall">Dealer (Sounding a little judgemental):</p>
+              <p className="scriptBold">See you later.</p>
+              <p className="scriptSmall">
+                (Sound of Wotsits bag being ripped open and the sound of snacks
+                being wolfed down by the user as he moans in ecstasy).
+              </p>
+              <p className="scriptSmall">V/O (A whispering East End accent):</p>
+              <p className="scriptBold">Wotsits. Addictively Cheesy.</p></div>}
+          </section>
+        </>}
+
+                {/* Section for Radio Ad Paul Smith 2 */}
+                {data.radioAd && data.title === "Paul Smith" && 
+        <>
+          <section className="paper">
+            <h2>30 Second Radio Ad Script: The Cadaver</h2>
+            <div style={{display: "flex", gap: 16, alignItems: "center"}}>
+              <img className="radio" src={radio} /> 
+              {data.radioAd.map(audioSource => {
+                return <audio controls key={audioSource}>
+                  <source src={audioSource} type="audio/mpeg" />
+                </audio>
+              })}
+            </div>
+            
+            {data.title === "Paul Smith" && <div className="wotsits-script">
+              <p className="scriptSmall">User (Thick East End accent, hushed tone):</p>
+              <p className="scriptBold">‘ere mate, can I eh... Can I get 36g of the finest?</p>
+              <p className="scriptSmall">Dealer:</p>
+              <p className="scriptBold">Sure.</p>
+              <p className="scriptSmall">User:</p>
+              <p className="scriptBold">Woar, that’s the stuff.</p>
+              <p className="scriptSmall">Dealer (Sounding bemused): </p>
+              <p className="scriptBold">Um, you got payment?</p>
+              <p className="scriptSmall">User (Sounding transfixed):</p>
+              <p className="scriptBold">Eh? Oh yeah,‘ere you go.</p>
+              <p className="scriptSmall">
+                (Sound of a card machine beeping communicating that he’s actually
+                bought the Wotsits from a shop).
+              </p>
+              <p className="scriptSmall">User (Sounding transfixed):</p>
+              <p className="scriptBold">Ta.</p>
+              <p className="scriptSmall">Dealer (Sounding a little judgemental):</p>
+              <p className="scriptBold">See you later.</p>
+              <p className="scriptSmall">
+                (Sound of Wotsits bag being ripped open and the sound of snacks
+                being wolfed down by the user as he moans in ecstasy).
+              </p>
+              <p className="scriptSmall">V/O (A whispering East End accent):</p>
+              <p className="scriptBold">Wotsits. Addictively Cheesy.</p></div>}
+          </section>
+        </>}
+
+                {/* Section for Radio Ad Paul Smith 3 */}
+                {data.radioAd && data.title === "Paul Smith" && 
+        <>
+          <section className="paper">
+            <h2>30 Second Radio Ad Script: The Mistress</h2>
+            <div style={{display: "flex", gap: 16, alignItems: "center"}}>
+              <img className="radio" src={radio} /> 
+              {data.radioAd.map(audioSource => {
+                return <audio controls key={audioSource}>
+                  <source src={audioSource} type="audio/mpeg" />
+                </audio>
+              })}
+            </div>
+            
+            {data.title === "Paul Smith" && <div className="wotsits-script">
+              <p className="scriptSmall">User (Thick East End accent, hushed tone):</p>
+              <p className="scriptBold">‘ere mate, can I eh... Can I get 36g of the finest?</p>
+              <p className="scriptSmall">Dealer:</p>
+              <p className="scriptBold">Sure.</p>
+              <p className="scriptSmall">User:</p>
+              <p className="scriptBold">Woar, that’s the stuff.</p>
+              <p className="scriptSmall">Dealer (Sounding bemused): </p>
+              <p className="scriptBold">Um, you got payment?</p>
+              <p className="scriptSmall">User (Sounding transfixed):</p>
+              <p className="scriptBold">Eh? Oh yeah,‘ere you go.</p>
+              <p className="scriptSmall">
+                (Sound of a card machine beeping communicating that he’s actually
+                bought the Wotsits from a shop).
+              </p>
+              <p className="scriptSmall">User (Sounding transfixed):</p>
+              <p className="scriptBold">Ta.</p>
+              <p className="scriptSmall">Dealer (Sounding a little judgemental):</p>
+              <p className="scriptBold">See you later.</p>
+              <p className="scriptSmall">
+                (Sound of Wotsits bag being ripped open and the sound of snacks
+                being wolfed down by the user as he moans in ecstasy).
+              </p>
+              <p className="scriptSmall">V/O (A whispering East End accent):</p>
+              <p className="scriptBold">Wotsits. Addictively Cheesy.</p></div>}
+          </section>
+        </>}
 
 
           {data.sticker && 
