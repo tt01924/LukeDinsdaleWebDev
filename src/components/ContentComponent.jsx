@@ -32,7 +32,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {/* Section for TV video */}
         {data.tvAdvert &&
           <section className="paper">
-            <h2>30 second TV ad</h2>
+            <h2>30 Second TV Ad:</h2>
             <iframe width="560" height="315" src={data.tvAdvert} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className={data.title}></iframe>
           </section>
         }
@@ -43,7 +43,7 @@ const ContentComponent = ({data, setExpanded}) => {
         {data.activation && 
         <>
           <section className="paper">
-            <h2>Activation</h2>
+            <h2>Activation:</h2>
             <img className="activation" src={data.activation} alt="Activation" />
             <p>
               Scunthorpe United are set to play Liverpool in the FA Cup, and need
@@ -64,16 +64,16 @@ const ContentComponent = ({data, setExpanded}) => {
 
         {data.videoPrStunt &&
           <section className="paper">
-            <h2>PR Stunt</h2>
+            <h2>PR Stunt:</h2>
             <iframe width="560" height="315" src={data.videoPrStunt} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen className={data.title}></iframe>
           </section>
         }
 
-        {/* Section for Radio Ad */}
-        {data.radioAd && 
+        {/* Section for Radio Ad Wotsits */}
+        {data.radioAd && data.title === "Wotsits" && 
         <>
           <section className="paper">
-            <h2>60 second radio ad:</h2>
+            <h2>60 Second Radio Ad: The Deal</h2>
             <div style={{display: "flex", gap: 16, alignItems: "center"}}>
               <img className="radio" src={radio} /> 
               {data.radioAd.map(audioSource => {
@@ -113,80 +113,259 @@ const ContentComponent = ({data, setExpanded}) => {
 
 
 
+        {/* Section for Radio Ad Paul Smith 1 */}
+        {data.radioAd && data.title === "Paul Smith" && 
+        <>
+          <section className="paper">
+            <h2>30 Second Radio Ad Script: The Chase</h2>
+            <div style={{display: "flex", gap: 16, alignItems: "center"}}>
+              <img className="radio" src={radio} /> 
+              <audio controls>
+                  <source src={data.radioAd[0]} type="audio/mpeg" />
+                </audio>
+            </div>
+            
+            {data.title === "Paul Smith" && <div className="wotsits-script">
+              <p className="scriptSmall">Police Officer (Stressed, and under fire):</p>
+              <p className="scriptBold">Officer in pursuit—suspect has just robbed a jewellers.</p>
+              <p className="scriptSmall">Detective (Decisive tone):</p>
+              <p className="scriptBold">Copy, Detective Palmer En route. Situation report?</p>
+              <p className="scriptSmall">Police Officer (Stressed, confused, and under fire): </p>
+              <p className="scriptBold">Suspect is wearing the most stunning hand woven burnt orange and bright teal striped silk tie.</p>
+              <p className="scriptSmall">Detective (Surprised): </p>
+              <p className="scriptBold">Oh! There he is!</p>
+              <p className="scriptSmall">V/O: </p>
+              <p className="scriptBold">Paul Smith, leave an impression.</p></div>}
+          </section>
+        </>}
+
+                {/* Section for Radio Ad Paul Smith 2 */}
+                {data.radioAd && data.title === "Paul Smith" && 
+        <>
+          <section className="paper">
+            <h2>30 Second Radio Ad Script: The Cadaver</h2>
+            <div style={{display: "flex", gap: 16, alignItems: "center"}}>
+              <img className="radio" src={radio} /> 
+                <audio controls>
+                  <source src={data.radioAd[1]} type="audio/mpeg" />
+                </audio>
+            </div>
+            
+            {data.title === "Paul Smith" && <div className="wotsits-script">
+              <p className="scriptSmall">Niece (Sad and inquisitive):</p>
+              <p className="scriptBold">Hello, I’m here to identify my uncle’s body. He was brought in sometime last night.</p>
+              <p className="scriptSmall">Mortuary Assistant (Bored):</p>
+              <p className="scriptBold">What’s his date of birth?</p>
+              <p className="scriptSmall">Niece (Wistfully): </p>
+              <p className="scriptBold">Well, he always wears the most fantastic British racing green and cobalt Prince of Wales check cotton tie.</p>
+              <p className="scriptSmall">Mortuary Assistant (Recollecting): </p>
+              <p className="scriptBold">Oh yes! Fridge number 3.</p>
+              <p className="scriptSmall">V/O: </p>
+              <p className="scriptBold">Paul Smith, leave an impression.</p></div>}
+          </section>
+        </>}
+
+                {/* Section for Radio Ad Paul Smith 3 */}
+                {data.radioAd && data.title === "Paul Smith" && 
+        <>
+          <section className="paper">
+            <h2>30 Second Radio Ad Script: The Mistress</h2>
+            <div style={{display: "flex", gap: 16, alignItems: "center"}}>
+              <img className="radio" src={radio} /> 
+                <audio controls >
+                  <source src={data.radioAd[2]} type="audio/mpeg" />
+                </audio>
+            </div>
+            
+            {data.title === "Paul Smith" && <div className="wotsits-script">
+              <p className="scriptSmall">Wife (Stressed and angry):</p>
+              <p className="scriptBold">Excuse me, did my husband come into this restaurant last week with another woman? I think he’s cheating on me.</p>
+              <p className="scriptSmall">Host (Empathic):</p>
+              <p className="scriptBold">I’m sorry to hear that—do you know what day he came in? </p>
+              <p className="scriptSmall">Wife (Stressed, and confused): </p>
+              <p className="scriptBold">Well, he wore his most marvellous dusky pink and royal purple Houndstooth big-knit wool tie.</p>
+              <p className="scriptSmall">Host (Recalling): </p>
+              <p className="scriptBold">Oh yes! He met with someone here last Wednesday! </p>
+              <p className="scriptSmall">V/O: </p>
+              <p className="scriptBold">Paul Smith, leave an impression.</p></div>}
+          </section>
+        </>}
+
+
           {data.sticker && 
             <section className="paper">
+              <h2>PR Stunt:</h2>
               <div className="imagerow">
               {data.sticker.map((src,i)=> {
                 return <img key={i} src={src}/>
               })}
               </div>
+              <p>We’ll create a special phone number that people can contact to get a free baggie of Wotsits.
+                <br />
+                <br />
+                This stunt will run for one day only.
+                <br />
+                <br />
+                To promote the PR stunt, we’ll put the phone number on branded stickers, and place them around London in the weeks leading up to our free give away. 
+                <br />
+                <br />
+                We’ll stick them in the kind of places drug dealers advertise—such as London’s phone booths, and pub and club toilets. We'll also post the sticker across Wotsits' social platforms.
+              </p>
             </section>}
 
           {/* Section for Social Media */}
           {data.socialMedia && 
             <section className="paper">
+              <h2>Social Media:</h2>
             <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
               <img className="socialMedia" src={data.socialMedia} />
             </div>
+            <p>
+                We’ll contact everyone who calls or messages our special number via Whatsapp (or Wotsapp).
+                <br />
+                <br />
+                The messages that we’ll send back to our audience will contain a link to their nearest ‘dealer’—who will deliver their Wotsits.
+                <br />
+                <br />
+                This stunt will run for one day only.
+              </p>
             </section>}
 
 
           {data.brandCollab && 
             <section className="paper">
-              <h2>Brand Collaboration</h2>
+              <h2>Brand Collaboration:</h2>
               <div className="imagerow">
               {data.brandCollab.map((src,i)=> {
                 return <img key={i} src={src}/>
               })}
               </div>
+              <p>
+                To help us deliver our free Wotsits, we’ll partner with Deliveroo and create the ‘Deliveroo Dealers’.
+                <br />
+                <br />
+                They’ll drop off your baggies anytime, any place—just like your trusted dealer.
+              </p>
             </section>}
 
           {data.merch && 
             <section className="paper">
+              <h2>Limited Merch:</h2>
               <div className="imagerow">
               {data.merch.map((src,i)=> {
                 return <img key={i} src={src}/>
               })}
               </div>
+              <p>
+                We’ll create limited edition Wotsits bumbags.
+                <br />
+                <br />
+                These will act as a nod towards the streetwear trends that are inspired by drug dealer culture. 
+              </p>
             </section>}
 
           {data.travel && 
             <section className="paper">
+              <h2>Travel Map Extension:</h2>
             <img src={data.travel} />
+            <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
+            </div>
+            <p>
+            We all love something we can touch and feel. We also love bringing things home from the trips we take—be it paper tickets, postcards, etc.
+            <br />
+            <br />
+            Leaning into this, we’ll create a journey map for every Eurostar route and place them on the seats and tables of their trains.
+            <br />
+            <br />
+            It’ll show passengers where all the interesting landmarks are located along the route of their trip, and give them some fun information about that place too.
+            </p>
+            </section>
+          }
+
+          {data.travel && 
+            <section className="paper">
+              <h2>App Extension:</h2>
             <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
               <img src={data.app} />
             </div>
+            <p>
+            To help passengers make the most of the view on their journey, we’ll create an extension for the Eurostar App.
+            <br />
+            <br />
+            It’ll notify passengers when their train’s about to pass the interesting sights that are highlighted on their maps. 
+            <br />
+            <br />
+            Ensuring they see all the things they would’ve missed if they’d travelled by plane.
+            </p>
             </section>
           }
 
           {data.prStunt && data.title === "Rustlers" && 
           <section className="paper">
-            <h2>PR Stunt</h2>
+            <h2>PR Stunt:</h2>
             <img src={data.prStunt} className="prstunt" />
+              <p>
+              We’ll work with St. John Ambulance to create Rustlers pop-up spots across the UK’s city centres on Saturday nights.
+              <br />
+              <br />
+              This stunt will ensure people’s nights-out get a happy ending.
+              </p>
           </section>
           }
 
           {data.datingApp &&
             <section className="paper">
-              <div className="imagerow">
+              <h2>Uber Ad:</h2>
+              <div style={{display:"flex", maxWidth: "50%", margin:"0 auto", justifyContent: "center", alignItems: "center"}}>
                 <img src={data.uberApp} />
+              </div>
+              <p>
+              We’ll advertise on the Uber ride app throughout the weekend.
+              <br />
+              <br />
+              This will target people who’re on their way home from the club, and remind them that their night-out will finish with a happy ending.
+              </p>
+            </section>
+          }
+
+          {data.datingApp &&
+            <section className="paper">
+              <h2>Dating App Ad:</h2>
+              <div style={{display:"flex", maxWidth: "50%", margin:"0 auto", justifyContent: "center", alignItems: "center"}}>
                 <img src={data.datingApp} />
               </div>
-
+              <p>
+              We’ll advertise across the most popular dating apps, and push the message that Rustlers is guaranteed to give your night a happy ending.
+              <br />
+              <br />
+              No matter how bad your date goes.
+              </p>
             </section>
           }
 
           {data.digitalBanner &&
           <section className="paper">
-            <h2>Digital Banner</h2>
+            <h2>Digital Banner:</h2>
             <img src={data.digitalBanner} />
+            <p>
+            In the lead-up to the Tour de France and the Paris Olympics, Halfords will post banner ads across the official sites for these sporting events.
+              <br />
+              <br />
+              They’ll appear on the associated ticket sites for these events as well.
+            </p>
           </section>
           }
 
           {data.brandPartnership &&
           <section className="paper">
-            <h2>Brand Partnership</h2>
+            <h2>Brand Partnership:</h2>
             <img src={data.brandPartnership} />
+            <p>
+              With so many people travelling to France for a summer of cycling, we thought Halfords should help the punters learn Bike lingo.
+              <br />
+              <br />
+              We’ll partner with Duolingo to create ‘Speak Bike’. These lessons will help the audience understand the ins-and-outs of bicycle racing commentary.
+            </p>
           </section>
           }
         </div>
