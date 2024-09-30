@@ -187,17 +187,37 @@ const ContentComponent = ({data, setExpanded}) => {
 
           {data.travel && 
             <section className="paper">
+              <h2>Travel Map Extension:</h2>
             <img src={data.travel} />
             <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
             </div>
+            <p>
+            We all love something we can touch and feel. We also love bringing things home from the trips we take—be it paper tickets, postcards, etc.
+            <br />
+            <br />
+            Leaning into this, we’ll create a journey map for every Eurostar route and place them on the seats and tables of their trains.
+            <br />
+            <br />
+            It’ll show passengers where all the interesting landmarks are located along the route of their trip, and give them some fun information about that place too.
+            </p>
             </section>
           }
 
           {data.travel && 
             <section className="paper">
+              <h2>App Extension:</h2>
             <div style={{display: "flex", gap: 16, justifyContent: "center", maxWidth: "100%", marginTop: -24}} className="imagerow">
               <img src={data.app} />
             </div>
+            <p>
+            To help passengers make the most of the view on their journey, we’ll create an extension for the Eurostar App.
+            <br />
+            <br />
+            It’ll notify passengers when their train’s about to pass the interesting sights that are highlighted on their maps. 
+            <br />
+            <br />
+            Ensuring they see all the things they would’ve missed if they’d travelled by plane.
+            </p>
             </section>
           }
 
