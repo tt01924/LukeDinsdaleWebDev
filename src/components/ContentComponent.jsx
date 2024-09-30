@@ -120,11 +120,9 @@ const ContentComponent = ({data, setExpanded}) => {
             <h2>30 Second Radio Ad Script: The Chase</h2>
             <div style={{display: "flex", gap: 16, alignItems: "center"}}>
               <img className="radio" src={radio} /> 
-              {data.radioAd.map(audioSource => {
-                return <audio controls key={audioSource}>
-                  <source src={audioSource} type="audio/mpeg" />
+              <audio controls>
+                  <source src={data.radioAd[0]} type="audio/mpeg" />
                 </audio>
-              })}
             </div>
             
             {data.title === "Paul Smith" && <div className="wotsits-script">
@@ -148,11 +146,9 @@ const ContentComponent = ({data, setExpanded}) => {
             <h2>30 Second Radio Ad Script: The Cadaver</h2>
             <div style={{display: "flex", gap: 16, alignItems: "center"}}>
               <img className="radio" src={radio} /> 
-              {data.radioAd.map(audioSource => {
-                return <audio controls key={audioSource}>
-                  <source src={audioSource} type="audio/mpeg" />
+                <audio controls>
+                  <source src={data.radioAd[1]} type="audio/mpeg" />
                 </audio>
-              })}
             </div>
             
             {data.title === "Paul Smith" && <div className="wotsits-script">
@@ -176,11 +172,9 @@ const ContentComponent = ({data, setExpanded}) => {
             <h2>30 Second Radio Ad Script: The Mistress</h2>
             <div style={{display: "flex", gap: 16, alignItems: "center"}}>
               <img className="radio" src={radio} /> 
-              {data.radioAd.map(audioSource => {
-                return <audio controls key={audioSource}>
-                  <source src={audioSource} type="audio/mpeg" />
+                <audio controls >
+                  <source src={data.radioAd[2]} type="audio/mpeg" />
                 </audio>
-              })}
             </div>
             
             {data.title === "Paul Smith" && <div className="wotsits-script">
