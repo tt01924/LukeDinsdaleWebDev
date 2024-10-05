@@ -1,6 +1,6 @@
 .card.indexShowHelpSmp {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     background-color: red;
     background-image: url("/vinylCoverImages/smpsRiot.webp");
     background-size: cover;
@@ -9,8 +9,8 @@
     color: transparent;
     border-radius: 2px;
     z-index: 11;
-    bottom: 6rem; /* Positioned at the bottom right */
-    right: 15rem;
+    bottom: 52rem; /* Positioned at the bottom right */
+    right: 20rem;
     transform: rotate(0deg); /* No rotation for default */
 }
 

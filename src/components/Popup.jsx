@@ -33,7 +33,7 @@ const Popup = () => {
             y: 0
         },
         closed: {
-            rotate: -15,
+            rotate: 15,
             x: 30,
             y: "40%"
         }

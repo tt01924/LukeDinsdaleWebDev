@@ -1,6 +1,6 @@
 .card.indexShowHelp {
-    width: 210px;
-    height: 210px;
+    width: 180px;
+    height: 180px;
     background-color: red;
     background-image: url("/vinylCoverImages/ALWhiteStripesCoverSleeve.webp");
     background-size: cover;
@@ -8,8 +8,9 @@
     border: transparent;
     color: transparent;
     border-radius: 2px;
-    z-index: 11;
-    bottom: 5rem;
+    z-index: 19;
+    top: 3rem;
+    right: 18rem;
 }
 
 /* Styling for Help popup */

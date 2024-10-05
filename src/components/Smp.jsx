@@ -33,7 +33,7 @@ const Smp = () => {
             y: "30%", 
         },
         closed: {
-            rotate: 25,
+            rotate: -25,
             x: 30,
             y: "50%"   
         }
