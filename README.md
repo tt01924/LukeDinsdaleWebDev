@@ -12,6 +12,7 @@ Landing page: Series of records which can be spooled through via animation, once
 Content page: A simple but logical and systematic content page displaying the content of each projects medium's & media whilst still maintaining aesthetic consistency.
 
 ![Image](https://github.com/user-attachments/assets/f77cb0ca-c3ff-4230-b4bb-3a96ffd5b633)
+![Image](https://github.com/user-attachments/assets/663dd30b-f32f-4489-9895-fc6e2b469d34)
 
 __Must be mobile friendly__
 
