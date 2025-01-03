@@ -5,21 +5,32 @@
   font-style: normal;
 }
 
-.card {
-    --base-size: 300px;
+  .card {
+    --base-size: 300px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    /* font-size: 3rem; */
     box-shadow: 0 0px 8px rgba(22, 0, 60, 0.5);
     width: var(--base-size);
     height: var(--base-size);
-    transform-origin: top center;
+    transform-origin: center center; /* Ensure scaling rotates from the center */
     list-style: none;
     border-radius: 2px;
     transform-style: preserve-3d;
-  }
+    position: relative; /* Ensure it respects the parent’s positioning */
+    margin: 0 auto; /* Ensure it stays centered horizontally */
+  }  
 
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust based on your layout */
+    overflow: hidden;
+  }
+  
   .card__front, .card__back {
     height: 100%;
     width: 100%;
